@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import '../styles/navbar.css';
+import logo from '../images/dgdlogo.svg';
 
 const Navbar = () => (
   <nav className="navbar">
     <div className="navbar-brand">
       <a href="/portfolio/#/home" to="/home" className="navbar-item logo">
-        <img src="" alt="" />
+        <img src={logo} alt="navbar logo home" />
       </a>
 
       <div
@@ -33,16 +34,22 @@ const Navbar = () => (
         <span />
       </div>
     </div>
-    <div id="navMenu" className="navbar-menu">
+    <div id="navMenu" className="navbar-menu navmenu">
       <div className="navbar-end">
-        <Link to="/home" className="navbar-item navbar-link">
-          Home
+        <Link to="/home" className="navbar-item navitem">
+          VIDEOS
         </Link>
-        <Link to="/about" className="navbar-item navbar-link">
-          About
+        <Link to="/" className="navbar-item navitem">
+          STORE
         </Link>
-        <Link to="/contact" className="navbar-item navbar-link">
-          Contact
+        <Link to="/" className="navbar-item navitem">
+          TOUR
+        </Link>
+        <Link to="/about" className="navbar-item navitem">
+          ALBUMS
+        </Link>
+        <Link to="/contact" className="navbar-item navitem">
+          SOCIAL
         </Link>
       </div>
     </div>

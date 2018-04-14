@@ -1,0 +1,66 @@
+//Breakpoints
+@mixin breakpoint($class) {
+  @if $class==xs {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @else if $class==sm {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @else if $class==md {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  @else if $class==lg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+//     @include breakpoint(sm) {
+//       float: none;
+//       width: 100%;
+//     }
+//   }
+//Colors 
+$orange: #FFA949;
+$darkGray: #191716;
+$offWhite: #EEEEE6;
+/////////center      @include ctr(both) = center middle - (y) = vertical (x) = horizontal
+@mixin absolutecenter($axis: "both") {
+  position: absolute;
+  @if $axis=="y" {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @if $axis=="x" {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @if $axis=="both" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+//////////clearfix 
+@mixin cf() {
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+} ////@include cf() {codehere}
