@@ -12,7 +12,15 @@ const Navbar = () => (
 
       <div
         className="navbar-burger"
+        role="button"
+        tabIndex="0"
         onClick={() => {
+          const toggle = document.querySelector('.navbar-burger');
+          const menu = document.querySelector('.navbar-menu');
+          toggle.classList.toggle('is-active');
+          menu.classList.toggle('is-active');
+        }}
+        onKeyDown={() => {
           const toggle = document.querySelector('.navbar-burger');
           const menu = document.querySelector('.navbar-menu');
           toggle.classList.toggle('is-active');
@@ -27,13 +35,13 @@ const Navbar = () => (
     </div>
     <div id="navMenu" className="navbar-menu">
       <div className="navbar-end">
-        <Link to="/home" className="navbar-item">
+        <Link to="/home" className="navbar-item navbar-link">
           Home
         </Link>
-        <Link to="/about" className="navbar-item">
+        <Link to="/about" className="navbar-item navbar-link">
           About
         </Link>
-        <Link to="/contact" className="navbar-item">
+        <Link to="/contact" className="navbar-item navbar-link">
           Contact
         </Link>
       </div>
