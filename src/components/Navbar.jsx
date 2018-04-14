@@ -6,7 +6,26 @@ import logo from '../images/dgdlogo.svg';
 
 const Navbar = () => (
   <nav className="navbar">
-      <p> hi</p>
+    <div className="navbar-icon">
+      <img src={logo} alt="Dance Gavin Dance Logo" />
+    </div>
+    <ul className="navbar-menu">
+      <Link to="/">
+        <li>lol</li>
+      </Link>
+      <Link to="/">
+        <li>lol</li>
+      </Link>
+      <Link to="/">
+        <li>lol</li>
+      </Link>
+      <Link to="/">
+        <li>lol</li>
+      </Link>
+      <Link to="/">
+        <li>lol</li>
+      </Link>
+    </ul>
   </nav>
 );
 

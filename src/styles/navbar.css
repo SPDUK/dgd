@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  height: 70px;
+  background-color: white;
+  color: black;
+  border-bottom: solid black; }
+  .navbar-icon {
+    width: 70px;
+    height: 70px; }
+    .navbar-icon img {
+      left: 15px;
+      top: 10px;
+      position: relative;
+      height: 70xp;
+      width: 70xp; }
