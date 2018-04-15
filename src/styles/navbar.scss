@@ -4,7 +4,6 @@
 .navbar {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  align-items: center;
   display: flex;
   justify-content: space-between;
   height: 70px;
@@ -13,6 +12,9 @@
   background-color: white;
   color: black;
   border-bottom: solid black;
+  @include breakpoint(sm){
+      align-items: center;
+  }
   &-icon {
     position: relative;
     cursor: pointer;
@@ -20,12 +22,31 @@
     width: 70px;
     height: 50px;
   }
+  &-burger {
+    height: 70px;
+    background-color: red;
+    width: 70px;
+    @include breakpoint(sm){
+      display: flex;
+      display: none;
+    }
+  }
   &-menu {
+    transform: translateY(70px);
+    width:100%;
+    justify-self: flex-end;
     list-style-type: none;
-    display: flex;
+    align-items: center;
+    text-align: center;
+    @include breakpoint(sm){
+      display: flex;
+    }
     &-link {
+      &:hover {
+        background-color: green;
+      }
       cursor: pointer;
-      padding: 20px;
+      padding: 28px 30px;
     }
   }
 }
