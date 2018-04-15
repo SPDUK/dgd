@@ -38,7 +38,9 @@ const Navbar = () => (
         <li className="navbar-menu-link">DISCOGRAPHY</li>
       </Link>
       <Link to="/">
-        <li className="navbar-menu-link">ABOUT</li>
+        <li id="lastMenu" className="navbar-menu-link">
+          ABOUT
+        </li>
       </Link>
     </ul>
     <div onClick={mobileToggle} className="navbar-burger">

@@ -18,6 +18,10 @@
     top: 10px;
     width: 70px;
     height: 50px; }
+    @media (max-width: 767px) {
+      .navbar-icon {
+        margin-top: 10px;
+        margin-left: 15px; } }
     @media (min-width: 768px) {
       .navbar-icon {
         position: relative;
@@ -64,7 +68,7 @@
     align-items: center;
     text-align: center;
     visibility: hidden;
-    line-height: 0;
+    line-height: 0em;
     width: 100%; }
     @media (max-width: 767px) {
       .navbar-menu {
@@ -77,7 +81,7 @@
         width: auto;
         transform: translateY(0px); } }
     .navbar-menu-link {
-      background-color: whitesmoke;
+      background-color: white;
       cursor: pointer;
       color: transparent;
       -webkit-transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -85,11 +89,12 @@
       padding: -20px 0px; }
       @media (min-width: 768px) {
         .navbar-menu-link {
+          color: black;
           opacity: 1;
-          padding: 32px 20px;
+          padding: 35px 20px;
           margin-right: 0px; } }
       .navbar-menu-link:hover {
-        background-color: green; }
+        background-color: lightGray; }
 
 @media (max-width: 767px) {
   .navbar-menu-link.open {
@@ -99,3 +104,7 @@
     transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
     visibility: visible;
     padding: 20px 0px; } }
+
+@media (max-width: 767px) {
+  #lastMenu {
+    box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.4); } }
