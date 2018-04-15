@@ -13,18 +13,21 @@
     .navbar {
       align-items: center; } }
   .navbar-icon {
-    position: relative;
+    position: absolute;
     cursor: pointer;
     left: 15px;
+    top: 10px;
     width: 70px;
     height: 50px; }
+    @media (min-width: 768px) {
+      .navbar-icon {
+        position: relative;
+        top: 0px; } }
   .navbar-burger {
     height: 70px;
-    background-color: red;
-    width: 70px; }
+    width: 85px; }
     @media (min-width: 768px) {
       .navbar-burger {
-        display: flex;
         display: none; } }
     .navbar-burger span {
       opacity: 100%;
@@ -32,7 +35,7 @@
       transition: 0.25s ease-in;
       height: 4px;
       border-radius: 3px;
-      background-color: white;
+      background-color: black;
       width: 30px;
       margin: 5px;
       right: 10px;
@@ -56,17 +59,32 @@
         transform: rotate(-135deg);
         top: 24px; }
   .navbar-menu {
-    transform: translateY(50px);
+    transform: translateY(70px);
     justify-self: flex-end;
     list-style-type: none;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    width: 100%; }
     @media (min-width: 768px) {
       .navbar-menu {
         display: flex;
+        justify-content: flex-end;
+        width: auto;
         transform: translateY(0px); } }
     .navbar-menu-link {
       cursor: pointer;
-      padding: 28px 30px; }
+      transition: 1s ease all;
+      padding: 0px 0px;
+      background-color: red;
+      margin-right: -69px; }
+      @media (min-width: 768px) {
+        .navbar-menu-link {
+          padding: 27px 20px;
+          margin-right: 0px; } }
       .navbar-menu-link:hover {
         background-color: green; }
+
+.navbar-menu-link.open {
+  background-color: green !important;
+  padding: 20px 0px; }

@@ -8,6 +8,16 @@ function burgerMenu() {
   const burger = document.querySelector('.navbar-burger');
   burger.classList.toggle('open');
 }
+function toggleMenu() {
+  const mobileMenu = document.getElementsByClassName('navbar-menu-link');
+  for (let i = 0; i < mobileMenu.length; i++) {
+    mobileMenu[i].classList.toggle('open');
+  }
+}
+function mobileToggle() {
+  burgerMenu();
+  toggleMenu();
+}
 
 const Navbar = () => (
   <nav className="navbar">
@@ -31,7 +41,7 @@ const Navbar = () => (
         <li className="navbar-menu-link">ABOUT</li>
       </Link>
     </ul>
-    <div onClick={burgerMenu} className="navbar-burger">
+    <div onClick={mobileToggle} className="navbar-burger">
       <span />
       <span />
       <span />

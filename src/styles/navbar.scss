@@ -16,18 +16,21 @@
       align-items: center;
   }
   &-icon {
-    position: relative;
+    position:  absolute;
     cursor: pointer;
     left: 15px;
+    top: 10px;
     width: 70px;
     height: 50px;
+    @include breakpoint(sm){
+      position: relative;
+      top: 0px;
+    }
   }
   &-burger {
     height: 70px;
-    background-color: red;
-    width: 70px;
+    width: 85px;
     @include breakpoint(sm){
-      display: flex;
       display: none;
     }
     span {
@@ -36,7 +39,7 @@
       transition: 0.25s ease-in;
       height: 4px;
       border-radius: 3px;
-      background-color: white;
+      background-color: black;
       width: 30px;
       margin: 5px;
       right: 10px;
@@ -69,21 +72,37 @@
     }
   }
   &-menu {
-    transform: translateY(50px);
+    transform: translateY(70px);
     justify-self: flex-end;
     list-style-type: none;
     align-items: center;
     text-align: center;
+    position: relative;
+    width: 100%;
     @include breakpoint(sm){
       display: flex;
+      justify-content: flex-end;
+      width: auto;
       transform: translateY(0px);
     }
     &-link {
+      cursor: pointer;
+      transition: 1s ease all;
+      padding: 0px 0px;
+      background-color: red;
+      margin-right: -69px;
+      @include breakpoint(sm){
+        padding: 27px 20px;
+        margin-right: 0px;
+      }
       &:hover {
         background-color: green;
       }
-      cursor: pointer;
-      padding: 28px 30px;
     }
   }
+}
+
+.navbar-menu-link.open {
+  background-color: green !important;
+  padding: 20px 0px;
 }
