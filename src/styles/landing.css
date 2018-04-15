@@ -1,31 +1,49 @@
 .landing {
-  height: 3000px;
+  height: 1700px;
   background-color: #EEEEE6; }
-
-.landing-background {
-  background: url(../images/background.jpg) center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 450px; }
-  @media (min-width: 768px) {
-    .landing-background {
-      background: url(../images/background.jpg) center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      height: 700px; } }
-  @media screen and (min-width: 900px) {
-    .landing-background {
-      height: 900px; } }
-  @media (min-width: 1200px) {
-    .landing-background {
-      height: 1200px; } }
-  @media screen and (min-height: 900px) {
-    .landing-background {
-      height: 1400px; } }
-  @media screen and (min-height: 1440px) {
-    .landing-background {
-      height: 1448px; } }
+  .landing-background {
+    background: url(../images/background.jpg) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px; }
+    @media (min-width: 768px) {
+      .landing-background {
+        background: url(../images/background.jpg) center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 700px; } }
+    @media screen and (min-width: 900px) {
+      .landing-background {
+        height: 900px; } }
+    @media (min-width: 1200px) {
+      .landing-background {
+        height: 1200px; } }
+    @media screen and (min-height: 900px) {
+      .landing-background {
+        height: 1400px; } }
+    @media screen and (min-height: 1440px) {
+      .landing-background {
+        height: 1448px; } }
+  .landing-info {
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2em;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px; }
+    .landing-info-date {
+      color: #FFA949; }
+  .landing-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute; }
+    .landing-title img {
+      width: 240px; }

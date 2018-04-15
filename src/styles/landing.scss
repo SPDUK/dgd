@@ -1,40 +1,52 @@
 @import 'variables.scss';
-
 .landing {
-  height: 3000px;
+  height: 1700px;
   background-color: $offWhite;
-}
-
-.landing-background {
-  background: url(../images/background.jpg) center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 450px;
-  @include breakpoint(sm){
+  &-background {
     background: url(../images/background.jpg) center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 700px;
+    height: 500px;
+    @include breakpoint(sm) {
+      background: url(../images/background.jpg) center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 700px;
+    }
+    @media screen and (min-width: 900px) {
+      height: 900px;
+    }
+    @include breakpoint(lg) {
+      height: 1200px;
+    }
+    @media screen and (min-height: 900px) {
+      height: 1400px;
+    }
+    @media screen and (min-height: 1440px) {
+      height: 1448px;
+    }
   }
-  @media screen and (min-width: 900px) {
-    height: 900px;
+  &-info {
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2em;
+    width: 80%;
+    @include absolutecenter(x);
+    margin-top: 50px;
+    &-date {
+      color: $orange
+    }
   }
-  @include breakpoint(lg) {
-    height: 1200px;
+  &-title {
+    @include absolutecenter(x);
+    position: absolute;
+    img {
+      width: 240px;
+    }
   }
-  @media screen and (min-height: 900px) {
-    height: 1400px;
-  }
-  @media screen and (min-height: 1440px) {
-    height: 1448px;
-  }
-  // @media screen and (min-height: 1400px) {
-  //   height: 1600px;
-  // }
-
-
 }
