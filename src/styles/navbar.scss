@@ -30,16 +30,53 @@
       display: flex;
       display: none;
     }
+    span {
+      opacity: 100%;
+      position: fixed;
+      transition: 0.25s ease-in;
+      height: 4px;
+      border-radius: 3px;
+      background-color: white;
+      width: 30px;
+      margin: 5px;
+      right: 10px;
+      display: inline-block;
+    }
+    span:nth-child(1) {
+      top: 15px;
+    }
+    span:nth-child(2) {
+      top: 25px;
+    }
+    span:nth-child(3) {
+      top: 35px;
+    }
+    &.open {
+      position: relative;
+      top:15x;
+      float: right;
+       span:nth-child(1) {
+         transform: rotate(135deg);
+        top: 24px;
+       }
+       span:nth-child(2) {
+         opacity: 0;
+       }
+       span:nth-child(3) {
+        transform: rotate(-135deg);
+        top: 24px;
+       }
+    }
   }
   &-menu {
-    transform: translateY(70px);
-    width:100%;
+    transform: translateY(50px);
     justify-self: flex-end;
     list-style-type: none;
     align-items: center;
     text-align: center;
     @include breakpoint(sm){
       display: flex;
+      transform: translateY(0px);
     }
     &-link {
       &:hover {

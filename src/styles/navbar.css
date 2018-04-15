@@ -26,16 +26,45 @@
       .navbar-burger {
         display: flex;
         display: none; } }
+    .navbar-burger span {
+      opacity: 100%;
+      position: fixed;
+      transition: 0.25s ease-in;
+      height: 4px;
+      border-radius: 3px;
+      background-color: white;
+      width: 30px;
+      margin: 5px;
+      right: 10px;
+      display: inline-block; }
+    .navbar-burger span:nth-child(1) {
+      top: 15px; }
+    .navbar-burger span:nth-child(2) {
+      top: 25px; }
+    .navbar-burger span:nth-child(3) {
+      top: 35px; }
+    .navbar-burger.open {
+      position: relative;
+      top: 15x;
+      float: right; }
+      .navbar-burger.open span:nth-child(1) {
+        transform: rotate(135deg);
+        top: 24px; }
+      .navbar-burger.open span:nth-child(2) {
+        opacity: 0; }
+      .navbar-burger.open span:nth-child(3) {
+        transform: rotate(-135deg);
+        top: 24px; }
   .navbar-menu {
-    transform: translateY(70px);
-    width: 100%;
+    transform: translateY(50px);
     justify-self: flex-end;
     list-style-type: none;
     align-items: center;
     text-align: center; }
     @media (min-width: 768px) {
       .navbar-menu {
-        display: flex; } }
+        display: flex;
+        transform: translateY(0px); } }
     .navbar-menu-link {
       cursor: pointer;
       padding: 28px 30px; }

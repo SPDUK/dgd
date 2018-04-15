@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
 import logo from '../images/dgdlogo.svg';
 
+function burgerMenu() {
+  const burger = document.querySelector('.navbar-burger');
+  burger.classList.toggle('open');
+}
+
 const Navbar = () => (
   <nav className="navbar">
     <div className="navbar-icon">
@@ -26,7 +31,7 @@ const Navbar = () => (
         <li className="navbar-menu-link">ABOUT</li>
       </Link>
     </ul>
-    <div className="navbar-burger">
+    <div onClick={burgerMenu} className="navbar-burger">
       <span />
       <span />
       <span />
