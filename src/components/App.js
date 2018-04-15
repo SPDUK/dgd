@@ -5,6 +5,8 @@ import Navbar from './Navbar';
 import Landing from './Landing';
 import HelloWorld from './HelloWorld';
 
+import '../styles/app.css';
+
 class App extends Component {
   render() {
     return (

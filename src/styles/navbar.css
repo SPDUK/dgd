@@ -1,15 +1,24 @@
 .navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  align-items: center;
   display: flex;
+  justify-content: space-between;
   height: 70px;
+  width: 100%;
+  margin: 0 auto;
   background-color: white;
   color: black;
   border-bottom: solid black; }
   .navbar-icon {
+    position: relative;
+    cursor: pointer;
+    left: 15px;
     width: 70px;
-    height: 70px; }
-    .navbar-icon img {
-      left: 15px;
-      top: 10px;
-      position: relative;
-      height: 70xp;
-      width: 70xp; }
+    height: 50px; }
+  .navbar-menu {
+    list-style-type: none;
+    display: flex; }
+    .navbar-menu-link {
+      cursor: pointer;
+      padding: 20px; }
