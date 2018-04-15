@@ -11,7 +11,6 @@
   margin: 0 auto;
   background-color: white;
   color: black;
-  border-bottom: solid black;
   @include breakpoint(sm){
       align-items: center;
   }
