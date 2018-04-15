@@ -25,7 +25,7 @@
     @media screen and (min-height: 900px) {
       .landing-background {
         height: 1400px; } }
-    @media screen and (min-height: 1440px) {
+    @media screen and (min-width: 1440px) {
       .landing-background {
         height: 1448px; } }
   .landing-info {
@@ -40,6 +40,12 @@
     margin-top: 50px; }
     .landing-info-date {
       color: #FFA949; }
+    @media screen and (min-width: 1440px) {
+      .landing-info {
+        transform: translate(100px, -590px);
+        font-size: 1.9em;
+        color: white;
+        width: 400px; } }
   .landing-title {
     position: absolute;
     left: 50%;
@@ -47,3 +53,8 @@
     position: absolute; }
     .landing-title img {
       width: 240px; }
+    @media screen and (min-width: 1440px) {
+      .landing-title {
+        transform: translate(-550px, -545px); }
+        .landing-title img {
+          width: 400px; } }
