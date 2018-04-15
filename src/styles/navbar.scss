@@ -19,17 +19,9 @@
   &-icon {
     cursor: pointer;
     left: 15px;
-    top: 10px;
     width: 70px;
-    height: 50px;
-    @include breakpoint(xs){
-      margin-top: 10px;
-      margin-left: 15px;
-    }
-    @include breakpoint(sm){
-      position: relative;
-      top: 0px;
-    }
+    height: 70px;
+    padding-left: 15px;
   }
   &-burger {
     height: 70px;

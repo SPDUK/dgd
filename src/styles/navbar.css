@@ -15,17 +15,9 @@
   .navbar-icon {
     cursor: pointer;
     left: 15px;
-    top: 10px;
     width: 70px;
-    height: 50px; }
-    @media (max-width: 767px) {
-      .navbar-icon {
-        margin-top: 10px;
-        margin-left: 15px; } }
-    @media (min-width: 768px) {
-      .navbar-icon {
-        position: relative;
-        top: 0px; } }
+    height: 70px;
+    padding-left: 15px; }
   .navbar-burger {
     height: 70px;
     width: 80px; }

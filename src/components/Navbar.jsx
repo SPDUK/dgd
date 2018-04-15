@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import '../styles/navbar.css';
-import logo from '../images/dgdlogo.svg';
+import logo from '../images/dgdlogo.png';
 
 function burgerMenu() {
   const burger = document.querySelector('.navbar-burger');
