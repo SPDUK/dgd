@@ -122,6 +122,11 @@
   visibility: visible;
   padding: 20px 0px;
   }
+
+  // for sideways mobile views 
+  @media screen and (max-height: 350px), screen and (max-width: 760px) {
+    padding: 15px 0px;
+  }
 }
 
 #lastMenu {

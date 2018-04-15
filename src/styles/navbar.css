@@ -105,6 +105,10 @@
     visibility: visible;
     padding: 20px 0px; } }
 
+@media screen and (max-height: 350px), screen and (max-width: 760px) {
+  .navbar-menu-link.open {
+    padding: 15px 0px; } }
+
 @media (max-width: 767px) {
   #lastMenu {
     box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.4); } }
