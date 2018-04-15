@@ -1,0 +1,40 @@
+@import 'variables.scss';
+
+.landing {
+  height: 3000px;
+  background-color: $offWhite;
+}
+
+.landing-background {
+  background: url(../images/background.jpg) center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 450px;
+  @include breakpoint(sm){
+    background: url(../images/background.jpg) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 700px;
+  }
+  @media screen and (min-width: 900px) {
+    height: 900px;
+  }
+  @include breakpoint(lg) {
+    height: 1200px;
+  }
+  @media screen and (min-height: 900px) {
+    height: 1400px;
+  }
+  @media screen and (min-height: 1440px) {
+    height: 1448px;
+  }
+  // @media screen and (min-height: 1400px) {
+  //   height: 1600px;
+  // }
+
+
+}
