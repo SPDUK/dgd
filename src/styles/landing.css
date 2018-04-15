@@ -27,7 +27,7 @@
         height: 1400px; } }
     @media screen and (min-width: 1440px) {
       .landing-background {
-        height: 1448px; } }
+        height: 1408px; } }
   .landing-info {
     position: absolute;
     text-align: center;
@@ -42,7 +42,7 @@
       color: #FFA949; }
     @media screen and (min-width: 1440px) {
       .landing-info {
-        transform: translate(100px, -590px);
+        transform: translate(100px, -571px);
         font-size: 1.9em;
         color: white;
         width: 400px; } }
@@ -55,6 +55,6 @@
       width: 240px; }
     @media screen and (min-width: 1440px) {
       .landing-title {
-        transform: translate(-550px, -545px); }
+        transform: translate(-550px, -530px); }
         .landing-title img {
           width: 400px; } }
