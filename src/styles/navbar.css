@@ -14,8 +14,8 @@
   color: white; }
   @media (min-width: 768px) {
     .navbar {
+      font-size: 1.1em;
       animation: navAnim2 0.350s forwards;
-      font-size: 1.2em;
       justify-content: center;
       align-items: center;
       background-color: rgba(255, 255, 255, 0);
@@ -130,8 +130,7 @@
   @media (min-width: 768px) {
     .nav-scrolled {
       background-color: white;
-      justify-content: space-between;
-      font-size: 1em; } }
+      justify-content: space-between; } }
   @media (min-width: 768px) {
     .nav-scrolled .navbar-menu-link:hover {
       border-bottom: 2px solid black; } }
@@ -144,17 +143,17 @@
 
 @keyframes navAnim {
   0% {
-    opacity: 0.1;
-    transform: translate(0px, -70px);
-    font-size: 1em; }
+    transform: translate(0px, -100px);
+    justify-content: space-between; }
   100% {
     opacity: 1;
     transform: translate(0px, 0px); } }
 
 @keyframes navAnim2 {
   0% {
-    transform: translateY(-70px);
-    font-size: 1.2em; }
+    transform: translateY(-20px);
+    justify-content: center;
+    align-items: center; }
   10% {
     background-color: rgba(255, 255, 255, 0); }
   100% {

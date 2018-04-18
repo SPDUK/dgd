@@ -14,8 +14,8 @@
   background-color: white;
   color: white;
   @include breakpoint(sm) {
+    font-size: 1.1em;
     animation: navAnim2 0.350s forwards;
-    font-size: 1.2em;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
@@ -157,7 +157,6 @@
   @include breakpoint(sm) {
     background-color: white;
     justify-content: space-between;
-    font-size: 1em;
   }
   .navbar-menu-link {
     &:hover {
@@ -178,11 +177,9 @@
 
 @keyframes navAnim {
   0% {
-    opacity: 0.1;
-    transform: translate(0px, -70px);
-    font-size: 1em;
+    transform: translate(0px, -100px);
+    justify-content: space-between;
   }
-
 
   100% {
   opacity: 1;
@@ -191,16 +188,15 @@
 }
 @keyframes navAnim2 {
   0% { 
-    transform: translateY(-70px);
-    font-size: 1.2em;
+    transform: translateY(-20px);
+    justify-content: center;
+    align-items: center;
   }
   10% {
     background-color: rgba(255, 255, 255, 0);
-
   }
 
-  100% {
-    
+  100% {  
     transform: translateY(0px);
   }
 }
