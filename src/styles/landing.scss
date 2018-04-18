@@ -6,15 +6,15 @@
     background: url(../images/mobilepic.jpg)no-repeat center center;
     background-size: cover;
     height: 500px;
-    @include breakpoint(sm){
+    @include breakpoint(sm) {
       background: url(../images/comp.jpg)no-repeat center center;
       background-size: cover;
       height: 620px;
     }
-    @include breakpoint(md){
+    @include breakpoint(md) {
       height: 800px;
     }
-    @include breakpoint(lg){
+    @include breakpoint(lg) {
       height: 1000px;
     }
     @media screen and (min-width: 1450px) {
@@ -46,7 +46,7 @@
     &-date {
       color: $orange
     }
-    @include breakpoint(sm){
+    @include breakpoint(sm) {
       visibility: hidden;
     }
   }
@@ -56,7 +56,7 @@
     img {
       width: 240px;
     }
-    @include breakpoint(sm){
+    @include breakpoint(sm) {
       visibility: hidden;
     }
   }

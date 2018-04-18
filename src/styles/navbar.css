@@ -14,6 +14,7 @@
   color: white; }
   @media (min-width: 768px) {
     .navbar {
+      font-size: 1.2em;
       justify-content: center;
       align-items: center;
       background-color: rgba(255, 255, 255, 0);
@@ -125,9 +126,11 @@
   background-color: white; }
   @media (min-width: 768px) {
     .nav-scrolled {
-      justify-content: space-between; } }
-  .nav-scrolled .navbar-menu-link:hover {
-    border-bottom: 2px solid black; }
+      justify-content: space-between;
+      font-size: 1em; } }
+  @media (min-width: 768px) {
+    .nav-scrolled .navbar-menu-link:hover {
+      border-bottom: 2px solid black; } }
   @media (min-width: 768px) {
     .nav-scrolled .navbar-menu-link {
       color: black; } }
