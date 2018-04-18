@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../styles/landing.css';
-import landingImage from '../images/background.jpg';
 import dgdTitle from '../images/dgdtitle.png';
 
 class Landing extends Component {
