@@ -4,53 +4,32 @@ import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
 import logo from '../images/dgdlogo.png';
 
-class Navbar extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      menuToggled: true
-    };
+function toggleMenu() {
+  const burger = document.querySelector('.navbar-burger');
+  const mobileMenu = document.getElementsByClassName('navbar-menu-link');
+  for (let i = 0; i < mobileMenu.length; i += 1) {
+    mobileMenu[i].classList.toggle('open');
+    burger.classList.toggle('open');
   }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-    this.handleScroll();
-  }
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  toggleMenu = () => {
-    this.setState({
-      menuToggled: !this.state.menuToggled
-    });
-
-    const burger = document.querySelector('.navbar-burger');
-    const mobileMenu = document.getElementsByClassName('navbar-menu-link');
-
-    if (this.state.menuToggled) {
-      for (let i = 0; i < mobileMenu.length; i += 1) {
-        mobileMenu[i].classList.add('open');
-        burger.classList.add('open');
-      }
+}
+function handleScroll() {
+  const myNav = document.querySelector('.navbar');
+  window.onscroll = function navScrollFunc() {
+    if (document.documentElement.scrollTop >= 135) {
+      myNav.classList.add('nav-scrolled');
     } else {
-      for (let i = 0; i < mobileMenu.length; i += 1) {
-        mobileMenu[i].classList.remove('open');
-        burger.classList.remove('open');
-      }
+      myNav.classList.remove('nav-scrolled');
     }
   };
+}
 
-  handleScroll() {
-    const myNav = document.querySelector('.navbar');
-    window.onscroll = function navScrollFunc() {
-      if (document.documentElement.scrollTop >= 135) {
-        myNav.classList.add('nav-scrolled');
-      } else {
-        myNav.classList.remove('nav-scrolled');
-      }
-    };
+class Navbar extends Component {
+  componentDidMount() {
+    window.addEventListener('scroll', handleScroll());
+    handleScroll();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', handleScroll());
   }
 
   render() {
@@ -78,7 +57,13 @@ class Navbar extends Component {
             </li>
           </Link>
         </ul>
-        <div onClick={this.toggleMenu} className="navbar-burger">
+        <div
+          role="menu"
+          tabIndex="0"
+          onKeyDown={toggleMenu}
+          onClick={toggleMenu}
+          className="navbar-burger"
+        >
           <span />
           <span />
           <span />

@@ -74,6 +74,9 @@
         top: 24px;
        }
     }
+    &:focus {
+      outline: none;
+    }
   }
   &-menu {
     transform: translateY(70px);
@@ -102,11 +105,11 @@
       -webkit-transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
       transition:         all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
       padding: -20px 0px;
-      @include breakpoint(sm){
-        border-bottom: 3px solid green;
+      @include breakpoint(sm){    
         background-color: rgba(0, 0, 0, 0);
         color: white;
         opacity: 1;
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
         // For some reason different browsers respond differently to this padding?
         // using 32 to make it fit properly on all browsers but would be better to
         //have 1-3px more on chrome
@@ -115,7 +118,7 @@
       }
       &:hover {
           @include breakpoint(sm){
-            border-bottom: 2px solid green;
+            border-bottom: 2px solid white;
           }
       }
     }
@@ -156,6 +159,9 @@
   justify-content: space-between;
   }
   .navbar-menu-link {
+    &:hover {
+      border-bottom: 2px solid black;
+    }
     @include breakpoint(sm){
       color: black;
     }

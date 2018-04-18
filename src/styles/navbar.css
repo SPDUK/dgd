@@ -62,6 +62,8 @@
       .navbar-burger.open span:nth-child(3) {
         transform: rotate(-135deg);
         top: 24px; }
+    .navbar-burger:focus {
+      outline: none; }
   .navbar-menu {
     transform: translateY(70px);
     justify-self: flex-end;
@@ -91,15 +93,15 @@
       padding: -20px 0px; }
       @media (min-width: 768px) {
         .navbar-menu-link {
-          border-bottom: 3px solid green;
           background-color: transparent;
           color: white;
           opacity: 1;
+          border-bottom: 2px solid transparent;
           padding: 32px 20px;
           margin-right: 0px; } }
       @media (min-width: 768px) {
         .navbar-menu-link:hover {
-          border-bottom: 2px solid green; } }
+          border-bottom: 2px solid white; } }
 
 @media (max-width: 767px) {
   .navbar-menu-link.open {
@@ -124,6 +126,8 @@
   @media (min-width: 768px) {
     .nav-scrolled {
       justify-content: space-between; } }
+  .nav-scrolled .navbar-menu-link:hover {
+    border-bottom: 2px solid black; }
   @media (min-width: 768px) {
     .nav-scrolled .navbar-menu-link {
       color: black; } }
