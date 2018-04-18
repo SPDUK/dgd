@@ -21,7 +21,6 @@ function handleScroll() {
   const myNav = document.getElementById('navbar');
 
   window.onscroll = function navScrollFunc() {
-    console.log(myNav);
     if (window.scrollY >= 135) {
       myNav.classList.add('nav-scrolled');
     } else {

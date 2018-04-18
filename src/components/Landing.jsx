@@ -11,7 +11,7 @@ class Landing extends Component {
       <div className="landing">
         <div className="landing-background" />
         <div className="landing-title">
-          <img src={dgdTitle} />
+          <img alt="Dance Gavin Dance Logo" src={dgdTitle} />
         </div>
         <div className="landing-info">
           <h2 className="landing-info-album">ARTIFICIAL SELECTION</h2>
