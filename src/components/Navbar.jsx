@@ -7,9 +7,10 @@ import logo from '../images/dgdlogo.png';
 class Navbar extends Component {
   constructor() {
     super();
-    this.burgerMenu = this.burgerMenu.bind(this);
-    this.toggleMenu = this.toggleMenu.bind(this);
-    this.mobileToggle = this.toggleMenu.bind(this);
+
+    this.state = {
+      menuToggled: true
+    };
   }
 
   componentDidMount() {
@@ -20,20 +21,26 @@ class Navbar extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
-  burgerMenu() {
+  toggleMenu = () => {
+    this.setState({
+      menuToggled: !this.state.menuToggled
+    });
+
     const burger = document.querySelector('.navbar-burger');
-    burger.classList.toggle('open');
-  }
-  toggleMenu() {
     const mobileMenu = document.getElementsByClassName('navbar-menu-link');
-    for (let i = 0; i < mobileMenu.length; i++) {
-      mobileMenu[i].classList.toggle('open');
+
+    if (this.state.menuToggled) {
+      for (let i = 0; i < mobileMenu.length; i += 1) {
+        mobileMenu[i].classList.add('open');
+        burger.classList.add('open');
+      }
+    } else {
+      for (let i = 0; i < mobileMenu.length; i += 1) {
+        mobileMenu[i].classList.remove('open');
+        burger.classList.remove('open');
+      }
     }
-  }
-  mobileToggle() {
-    this.burgerMenu();
-    this.toggleMenu();
-  }
+  };
 
   handleScroll() {
     const myNav = document.querySelector('.navbar');
@@ -71,7 +78,7 @@ class Navbar extends Component {
             </li>
           </Link>
         </ul>
-        <div onClick={this.mobileToggle} className="navbar-burger">
+        <div onClick={this.toggleMenu} className="navbar-burger">
           <span />
           <span />
           <span />

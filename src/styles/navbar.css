@@ -82,6 +82,7 @@
         width: auto;
         transform: translateY(0px); } }
     .navbar-menu-link {
+      box-sizing: border-box;
       background-color: white;
       cursor: pointer;
       color: transparent;
@@ -90,13 +91,15 @@
       padding: -20px 0px; }
       @media (min-width: 768px) {
         .navbar-menu-link {
+          border-bottom: 3px solid green;
           background-color: transparent;
           color: white;
           opacity: 1;
           padding: 32px 20px;
           margin-right: 0px; } }
-      .navbar-menu-link:hover {
-        background-color: lightGray; }
+      @media (min-width: 768px) {
+        .navbar-menu-link:hover {
+          border-bottom: 2px solid green; } }
 
 @media (max-width: 767px) {
   .navbar-menu-link.open {

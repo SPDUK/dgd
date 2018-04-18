@@ -95,6 +95,7 @@
       transform: translateY(0px);
     }
     &-link {
+      box-sizing: border-box;
       background-color: white;
       cursor: pointer;
       color: rgba(0, 0, 0, 0);
@@ -102,6 +103,7 @@
       transition:         all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
       padding: -20px 0px;
       @include breakpoint(sm){
+        border-bottom: 3px solid green;
         background-color: rgba(0, 0, 0, 0);
         color: white;
         opacity: 1;
@@ -112,7 +114,9 @@
         margin-right: 0px;
       }
       &:hover {
-        background-color: lightGray;
+          @include breakpoint(sm){
+            border-bottom: 2px solid green;
+          }
       }
     }
   }
