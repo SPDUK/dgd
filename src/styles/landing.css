@@ -2,50 +2,52 @@
   height: 1700px;
   background-color: #EEEEE6; }
   .landing-background {
-    background: url(../images/background.jpg) center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(../images/mobilepic.jpg) no-repeat center center;
     background-size: cover;
     height: 500px; }
     @media (min-width: 768px) {
       .landing-background {
-        background: url(../images/background.jpg) center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+        background: url(../images/comp.jpg) no-repeat center center;
         background-size: cover;
-        height: 700px; } }
-    @media screen and (min-width: 900px) {
+        height: 620px; } }
+    @media (min-width: 992px) {
       .landing-background {
-        height: 900px; } }
+        height: 800px; } }
     @media (min-width: 1200px) {
       .landing-background {
+        height: 1000px; } }
+    @media screen and (min-width: 1450px) {
+      .landing-background {
         height: 1200px; } }
-    @media screen and (min-height: 900px) {
+    @media screen and (min-width: 1750px) {
       .landing-background {
-        height: 1400px; } }
-    @media screen and (min-width: 1440px) {
+        height: 1448px; } }
+    @media screen and (min-width: 1950px) {
       .landing-background {
-        height: 1408px; } }
+        height: 1600px; } }
+    @media screen and (min-width: 2550px) {
+      .landing-background {
+        height: 2300px; } }
+    @media screen and (min-width: 3000px) {
+      .landing-background {
+        height: 100vw; } }
   .landing-info {
     position: absolute;
     text-align: center;
     font-weight: 700;
     font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
     width: 80%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 50px; }
+    margin-top: 50px;
+    color: black; }
     .landing-info-date {
       color: #FFA949; }
-    @media screen and (min-width: 1440px) {
+    @media (min-width: 768px) {
       .landing-info {
-        transform: translate(100px, -571px);
-        font-size: 1.9em;
-        color: white;
-        width: 400px; } }
+        visibility: hidden; } }
   .landing-title {
     position: absolute;
     left: 50%;
@@ -53,8 +55,6 @@
     position: absolute; }
     .landing-title img {
       width: 240px; }
-    @media screen and (min-width: 1440px) {
+    @media (min-width: 768px) {
       .landing-title {
-        transform: translate(-550px, -530px); }
-        .landing-title img {
-          width: 400px; } }
+        visibility: hidden; } }
