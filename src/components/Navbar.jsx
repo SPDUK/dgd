@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
 import logo from '../images/dgdlogo.png';
 
+// toggles the menu to go from burger to X
+// loop through each link and enable visibility then add padding
 function toggleMenu() {
   const burger = document.querySelector('.navbar-burger');
   const mobileMenu = document.getElementsByClassName('navbar-menu-link');
@@ -12,6 +14,9 @@ function toggleMenu() {
     burger.classList.toggle('open');
   }
 }
+
+// moves navbar from center to the sides and changes from transparent
+// to white & black
 function handleScroll() {
   const myNav = document.querySelector('.navbar');
   window.onscroll = function navScrollFunc() {
