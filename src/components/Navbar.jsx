@@ -38,7 +38,7 @@ class Navbar extends Component {
   handleScroll() {
     const myNav = document.querySelector('.navbar');
     window.onscroll = function navScrollFunc() {
-      if (document.documentElement.scrollTop >= 305) {
+      if (document.documentElement.scrollTop >= 135) {
         myNav.classList.add('nav-scrolled');
       } else {
         myNav.classList.remove('nav-scrolled');
