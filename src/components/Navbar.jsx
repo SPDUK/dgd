@@ -18,9 +18,11 @@ function toggleMenu() {
 // moves navbar from center to the sides and changes from transparent
 // to white & black
 function handleScroll() {
-  const myNav = document.querySelector('.navbar');
+  const myNav = document.getElementById('navbar');
+
   window.onscroll = function navScrollFunc() {
-    if (document.documentElement.scrollTop >= 135) {
+    console.log(myNav);
+    if (window.scrollY >= 135) {
       myNav.classList.add('nav-scrolled');
     } else {
       myNav.classList.remove('nav-scrolled');
@@ -30,16 +32,16 @@ function handleScroll() {
 
 class Navbar extends Component {
   componentDidMount() {
-    window.addEventListener('scroll', handleScroll());
+    window.addEventListener('scroll', handleScroll);
     handleScroll();
   }
   componentWillUnmount() {
-    window.removeEventListener('scroll', handleScroll());
+    window.removeEventListener('scroll', handleScroll);
   }
 
   render() {
     return (
-      <nav className="navbar">
+      <nav id="navbar" className="navbar">
         <div className="navbar-icon">
           <img src={logo} alt="Dance Gavin Dance Logo" />
         </div>

@@ -1,6 +1,6 @@
 @import 'variables.scss';
 .landing {
-  height: 1700px;
+  height: 2300px;
   background-color: $offWhite;
   &-background {
     background: url(../images/mobilepic.jpg)no-repeat center center;
@@ -39,7 +39,7 @@
     font-weight: 700;
     font-size: 1.2em;
     font-family: 'Montserrat', sans-serif;
-    width: 80%;
+    width: 300px;
     @include absolutecenter(x);
     margin-top: 50px;
     color: black;
@@ -61,3 +61,9 @@
     }
   }
 }
+
+// spacing for the mobile only title beneath background
+.mobile-block {
+  height: 180px;
+}
+

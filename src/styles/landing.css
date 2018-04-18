@@ -1,5 +1,5 @@
 .landing {
-  height: 1700px;
+  height: 2300px;
   background-color: #EEEEE6; }
   .landing-background {
     background: url(../images/mobilepic.jpg) no-repeat center center;
@@ -37,7 +37,7 @@
     font-weight: 700;
     font-size: 1.2em;
     font-family: 'Montserrat', sans-serif;
-    width: 80%;
+    width: 300px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -58,3 +58,6 @@
     @media (min-width: 768px) {
       .landing-title {
         visibility: hidden; } }
+
+.mobile-block {
+  height: 180px; }

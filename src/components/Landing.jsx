@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import '../styles/landing.css';
 import dgdTitle from '../images/dgdtitle.png';
+import LandingVideos from './LandingVideos';
 
 class Landing extends Component {
   render() {
@@ -16,6 +17,8 @@ class Landing extends Component {
           <h2 className="landing-info-album">ARTIFICIAL SELECTION</h2>
           <h2 className="landing-info-date">JUNE 8TH 2018</h2>
         </div>
+        <div className="mobile-block" />
+        <LandingVideos />
       </div>
     );
   }
