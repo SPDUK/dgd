@@ -9,6 +9,9 @@ import firstVideo from '../images/first-small.jpg';
 import secondVideo from '../images/second-small.jpg';
 import play from '../images/play-circle.svg';
 
+function buttonClick() {
+  alert('clicked button');
+}
 class LandingVideo extends Component {
   render() {
     return (
@@ -39,7 +42,13 @@ class LandingVideo extends Component {
           </div>
         </div>
         <div className="landingvideo-more">
-          <h1 className="landingvideo-more-button">VIEW MORE</h1>
+          <h1
+            onClick={buttonClick}
+            role="button"
+            className="landingvideo-more-button"
+          >
+            VIEW MORE
+          </h1>
         </div>
       </div>
     );
