@@ -3,3 +3,31 @@
   font-size: 1em;
   text-align: center;
   width: 100%; }
+
+.landingvideo-videos {
+  border: 1px solid red;
+  display: block;
+  padding: 0 6%; }
+  @media screen and (min-width: 700px) {
+    .landingvideo-videos {
+      background-color: yellow;
+      padding: 0 15%; } }
+  @media (min-width: 992px) {
+    .landingvideo-videos {
+      display: flex;
+      padding: 0px 15%; } }
+  .landingvideo-videos-first {
+    position: relative;
+    flex: 1;
+    border: 2px solid green;
+    margin-bottom: 50px; }
+    @media (min-width: 992px) {
+      .landingvideo-videos-first {
+        margin-bottom: 0px;
+        margin-right: 60px; } }
+  .landingvideo-videos-second {
+    flex: 1;
+    border: 2px solid blue; }
+  .landingvideo-videos img {
+    height: auto;
+    max-width: 100%; }

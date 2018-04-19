@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 // 2 x 1 layout pc
 import '../styles/landingvideo.css';
 
+import btbtg from '../images/btbtg.jpg';
+import mnc from '../images/mnc.jpg';
+
 class LandingVideo extends Component {
   render() {
     return (
@@ -14,10 +17,10 @@ class LandingVideo extends Component {
         </div>
         <div className="landingvideo-videos">
           <div className="landingvideo-videos-first">
-            <img src="" alt="" />
+            <img src={mnc} alt="" />
           </div>
           <div className="landingvideo-videos-second">
-            <img src="" alt="" />
+            <img src={btbtg} alt="" />
           </div>
         </div>
       </div>
