@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 // 2 x 1 layout pc
 import '../styles/landingvideo.css';
 
-import firstVideo from '../images/first.jpg';
-import secondVideo from '../images/second.jpg';
+import firstVideo from '../images/first-small.jpg';
+import secondVideo from '../images/second-small.jpg';
 import play from '../images/play-circle.svg';
 
 class LandingVideo extends Component {
