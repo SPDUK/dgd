@@ -1,5 +1,6 @@
 @import 'variables.scss';
 .landingvideo {
+
   &-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -17,13 +18,24 @@
     @include breakpoint(md){
       display: flex;
     }
+
+
+    //top image
     &-first {
       position: relative;
       flex: 1;
       margin-bottom: 50px;
+      @include breakpoint(sm){
+        transform: translateY(0px);
+        transition: ease 0.3s;
+      }
       @include breakpoint(md){
         margin-bottom: 0px;
         margin-right: 60px;
+      }
+      &:hover {
+       transform: translateY(-15px);
+       transition: ease 0.3s; 
       }
       &-name {
         padding-top: 6px;
@@ -46,9 +58,21 @@
         }
       }
     }
+
+    // bottom image
     &-second {
       flex: 1;
       position: relative;
+      @include breakpoint(sm){
+        transform: translateY(0px);
+        transition: ease 0.3s;
+      }
+      &:hover {
+        @include breakpoint(sm){
+          transition: ease 0.3s;
+          transform: translateY(-15px);
+        }
+      }
       &-name {
         padding-top: 6px;
         text-align: center;
@@ -72,12 +96,11 @@
     }
     img {
       cursor: pointer;
-      border: 3px solid white;
       height: auto;
       max-width: 100%;
+      border-radius: 5px;
       &:hover {
-        filter: grayscale(100);
-        transition: 3s;
+        transition: 0.2s ease;
       }
     }
   }
@@ -85,7 +108,8 @@
 
 
 .fa-play {
-  opacity: 0;
+  // transition: 0.35s ease;
+  opacity: 0.8;
   font-size: 2em;
   color: white;
   position: relative;
@@ -98,7 +122,7 @@
     font-size: 2em;
   }
   @include breakpoint(lg){
-    font-size:3em;
+    font-size:4em;
     transform: translateY(-50px);
   }
 }

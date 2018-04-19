@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 // 2 x 1 layout pc
 import '../styles/landingvideo.css';
 
-import btbtg from '../images/btbtg.jpg';
-import mnc from '../images/mnc.jpg';
+import firstVideo from '../images/first.jpg';
+import secondVideo from '../images/second.jpg';
 import play from '../images/play-circle.svg';
 
 class LandingVideo extends Component {
@@ -19,7 +19,7 @@ class LandingVideo extends Component {
         <div className="landingvideo-videos">
           <div className="landingvideo-videos-first">
             <div>
-              <img src={mnc} alt="" />
+              <img src={firstVideo} alt="" />
               <a href="/">
                 <i className="fa fa-play" />
               </a>
@@ -28,13 +28,13 @@ class LandingVideo extends Component {
           </div>
           <div className="landingvideo-videos-second">
             <div>
-              <img src={btbtg} alt="" />
+              <img src={secondVideo} alt="" />
               <a href="/">
                 <i className="fa fa-play" />
               </a>
             </div>
             <h2 className="landingvideo-videos-second-name">
-              BETRAYED BY THE GAME
+              INSPIRE THE LIARS
             </h2>
           </div>
         </div>
