@@ -7,6 +7,7 @@ import '../styles/landingvideo.css';
 
 import btbtg from '../images/btbtg.jpg';
 import mnc from '../images/mnc.jpg';
+import play from '../images/play-circle.svg';
 
 class LandingVideo extends Component {
   render() {
@@ -17,10 +18,24 @@ class LandingVideo extends Component {
         </div>
         <div className="landingvideo-videos">
           <div className="landingvideo-videos-first">
-            <img src={mnc} alt="" />
+            <div>
+              <img src={mnc} alt="" />
+              <a href="/">
+                <i className="fa fa-play" />
+              </a>
+            </div>
+            <h2 className="landingvideo-videos-first-name">MIDNIGHT CRUSADE</h2>
           </div>
           <div className="landingvideo-videos-second">
-            <img src={btbtg} alt="" />
+            <div>
+              <img src={btbtg} alt="" />
+              <a href="/">
+                <i className="fa fa-play" />
+              </a>
+            </div>
+            <h2 className="landingvideo-videos-second-name">
+              BETRAYED BY THE GAME
+            </h2>
           </div>
         </div>
       </div>

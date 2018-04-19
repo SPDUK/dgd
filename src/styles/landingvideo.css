@@ -1,33 +1,101 @@
 .landingvideo-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
+  font-weight: 700;
+  font-size: 0.9em;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 20px; }
 
 .landingvideo-videos {
-  border: 1px solid red;
   display: block;
   padding: 0 6%; }
   @media screen and (min-width: 700px) {
     .landingvideo-videos {
-      background-color: yellow;
       padding: 0 15%; } }
   @media (min-width: 992px) {
     .landingvideo-videos {
-      display: flex;
-      padding: 0px 15%; } }
+      display: flex; } }
   .landingvideo-videos-first {
     position: relative;
     flex: 1;
-    border: 2px solid green;
     margin-bottom: 50px; }
     @media (min-width: 992px) {
       .landingvideo-videos-first {
         margin-bottom: 0px;
         margin-right: 60px; } }
+    .landingvideo-videos-first-name {
+      padding-top: 6px;
+      text-align: center;
+      font-size: 1.2em; }
+      @media screen and (min-width: 550px) {
+        .landingvideo-videos-first-name {
+          font-size: 1.6em; } }
+      @media screen and (min-width: 800px) {
+        .landingvideo-videos-first-name {
+          font-size: 1.9em; } }
+      @media (min-width: 992px) {
+        .landingvideo-videos-first-name {
+          font-size: 1.5em; } }
+      @media screen and (min-width: 1200px) {
+        .landingvideo-videos-first-name {
+          font-size: 1.9em; } }
+      @media (min-width: 1200px) {
+        .landingvideo-videos-first-name {
+          font-size: 2em; } }
   .landingvideo-videos-second {
     flex: 1;
-    border: 2px solid blue; }
+    position: relative; }
+    .landingvideo-videos-second-name {
+      padding-top: 6px;
+      text-align: center;
+      font-size: 1.2em; }
+      @media screen and (min-width: 550px) {
+        .landingvideo-videos-second-name {
+          font-size: 1.6em; } }
+      @media screen and (min-width: 800px) {
+        .landingvideo-videos-second-name {
+          font-size: 1.9em; } }
+      @media (min-width: 992px) {
+        .landingvideo-videos-second-name {
+          font-size: 1.5em; } }
+      @media screen and (min-width: 1200px) {
+        .landingvideo-videos-second-name {
+          font-size: 1.9em; } }
+      @media (min-width: 1200px) {
+        .landingvideo-videos-second-name {
+          font-size: 2em; } }
   .landingvideo-videos img {
+    cursor: pointer;
+    border: 3px solid white;
     height: auto;
     max-width: 100%; }
+    .landingvideo-videos img:hover {
+      filter: grayscale(100);
+      transition: 3s; }
+
+.fa-play {
+  opacity: 0;
+  font-size: 2em;
+  color: white;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translateY(-30px); }
+  @media screen and (min-width: 600px) {
+    .fa-play {
+      font-size: 3em; } }
+  @media screen and (min-width: 989px) {
+    .fa-play {
+      font-size: 2em; } }
+  @media (min-width: 1200px) {
+    .fa-play {
+      font-size: 3em;
+      transform: translateY(-50px); } }
+
+.landingvideo-videos-second:hover .fa-play {
+  opacity: 1; }
+
+.landingvideo-videos-first:hover .fa-play {
+  opacity: 1; }

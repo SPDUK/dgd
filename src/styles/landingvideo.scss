@@ -1,44 +1,110 @@
 @import 'variables.scss';
 .landingvideo {
-
   &-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-weight: 700;
+    font-size: 0.9em;
     text-align: center;
     width: 100%;
+    padding-bottom: 20px;
   }
   &-videos {
-    border: 1px solid red;
     display: block;
     padding: 0 6%;
     @media screen and (min-width: 700px) {
-      background-color: yellow;
       padding: 0 15%;
     }
     @include breakpoint(md){
       display: flex;
-      padding: 0px 15%;
     }
     &-first {
       position: relative;
       flex: 1;
-      border: 2px solid green;
       margin-bottom: 50px;
       @include breakpoint(md){
         margin-bottom: 0px;
         margin-right: 60px;
       }
-      img {
-
+      &-name {
+        padding-top: 6px;
+        text-align: center;
+        font-size: 1.2em;
+        @media screen and (min-width: 550px) {
+          font-size: 1.6em;
+        }
+        @media screen and (min-width: 800px) {
+          font-size: 1.9em;
+        }
+        @include breakpoint(md){
+          font-size: 1.5em;
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 1.9em;
+        }
+        @include breakpoint(lg){
+          font-size: 2em;
+        }
       }
     }
     &-second {
       flex: 1;
-      border: 2px solid blue;
+      position: relative;
+      &-name {
+        padding-top: 6px;
+        text-align: center;
+        font-size: 1.2em;
+        @media screen and (min-width: 550px) {
+          font-size: 1.6em;
+        }
+        @media screen and (min-width: 800px) {
+          font-size: 1.9em;
+        }
+        @include breakpoint(md){
+          font-size: 1.5em;
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 1.9em;
+        }
+        @include breakpoint(lg){
+          font-size: 2em;
+        }
+      }
     }
     img {
+      cursor: pointer;
+      border: 3px solid white;
       height: auto;
       max-width: 100%;
+      &:hover {
+        filter: grayscale(100);
+        transition: 3s;
+      }
     }
   }
 }
+
+
+.fa-play {
+  opacity: 0;
+  font-size: 2em;
+  color: white;
+  position: relative;
+  @include absolutecenter(both);
+  transform: translateY(-30px);
+  @media screen and (min-width:600px){
+    font-size: 3em;
+  }
+  @media screen and (min-width:989px){
+    font-size: 2em;
+  }
+  @include breakpoint(lg){
+    font-size:3em;
+    transform: translateY(-50px);
+  }
+}
+.landingvideo-videos-second:hover .fa-play {
+opacity: 1;
+}
+.landingvideo-videos-first:hover .fa-play {
+  opacity: 1;
+  }
