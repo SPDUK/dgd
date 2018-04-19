@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/landing.css';
-import dgdTitle from '../images/dgdtitle.png';
 import LandingVideos from './LandingVideos';
+import NextTour from './NextTour';
+
+import '../styles/landing.css';
+
+import dgdTitle from '../images/dgdtitle.png';
 
 class Landing extends Component {
   render() {
@@ -19,6 +22,7 @@ class Landing extends Component {
         </div>
         <div className="mobile-block" />
         <LandingVideos />
+        <NextTour />
       </div>
     );
   }

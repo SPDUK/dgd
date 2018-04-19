@@ -7,10 +7,9 @@ import '../styles/landingvideo.css';
 
 import firstVideo from '../images/first-small.jpg';
 import secondVideo from '../images/second-small.jpg';
-import play from '../images/play-circle.svg';
 
 function buttonClick() {
-  alert('clicked button');
+  console.log('clicked');
 }
 class LandingVideo extends Component {
   render() {
@@ -44,7 +43,9 @@ class LandingVideo extends Component {
         <div className="landingvideo-more">
           <h1
             onClick={buttonClick}
+            onKeyPress={buttonClick}
             role="button"
+            tabIndex="0"
             className="landingvideo-more-button"
           >
             VIEW MORE
