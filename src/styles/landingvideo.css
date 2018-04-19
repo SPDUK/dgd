@@ -1,93 +1,108 @@
-.landingvideo-title {
+.landingvideo {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 0.9em;
-  text-align: center;
-  width: 100%;
-  padding-bottom: 20px; }
-
-.landingvideo-videos {
-  display: block;
-  padding: 0 6%; }
-  @media screen and (min-width: 700px) {
-    .landingvideo-videos {
-      padding: 0 15%; } }
-  @media (min-width: 992px) {
-    .landingvideo-videos {
-      display: flex; } }
-  .landingvideo-videos-first {
-    position: relative;
-    flex: 1;
-    margin-bottom: 50px; }
-    @media (min-width: 768px) {
-      .landingvideo-videos-first {
-        transform: translateY(0px);
-        transition: ease 0.3s; } }
+  font-weight: 700; }
+  .landingvideo-title {
+    font-size: 0.9em;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px; }
+  .landingvideo-videos {
+    display: block;
+    padding: 0 6%; }
+    @media screen and (min-width: 700px) {
+      .landingvideo-videos {
+        padding: 0 15%; } }
     @media (min-width: 992px) {
-      .landingvideo-videos-first {
-        margin-bottom: 0px;
-        margin-right: 60px; } }
-    .landingvideo-videos-first:hover {
-      transform: translateY(-15px);
-      transition: ease 0.3s; }
-    .landingvideo-videos-first-name {
-      padding-top: 6px;
-      text-align: center;
-      font-size: 1.2em; }
-      @media screen and (min-width: 550px) {
-        .landingvideo-videos-first-name {
-          font-size: 1.6em; } }
-      @media screen and (min-width: 800px) {
-        .landingvideo-videos-first-name {
-          font-size: 1.9em; } }
+      .landingvideo-videos {
+        display: flex; } }
+    .landingvideo-videos-first {
+      position: relative;
+      flex: 1;
+      margin-bottom: 50px; }
+      @media (min-width: 768px) {
+        .landingvideo-videos-first {
+          transform: translateY(0px);
+          transition: ease 0.3s; } }
       @media (min-width: 992px) {
-        .landingvideo-videos-first-name {
-          font-size: 1.5em; } }
-      @media screen and (min-width: 1200px) {
-        .landingvideo-videos-first-name {
-          font-size: 1.9em; } }
-      @media (min-width: 1200px) {
-        .landingvideo-videos-first-name {
-          font-size: 2em; } }
-  .landingvideo-videos-second {
-    flex: 1;
-    position: relative; }
-    @media (min-width: 768px) {
-      .landingvideo-videos-second {
-        transform: translateY(0px);
-        transition: ease 0.3s; } }
-    @media (min-width: 768px) {
-      .landingvideo-videos-second:hover {
-        transition: ease 0.3s;
-        transform: translateY(-15px); } }
-    .landingvideo-videos-second-name {
-      padding-top: 6px;
-      text-align: center;
-      font-size: 1.2em; }
-      @media screen and (min-width: 550px) {
-        .landingvideo-videos-second-name {
-          font-size: 1.6em; } }
-      @media screen and (min-width: 800px) {
-        .landingvideo-videos-second-name {
-          font-size: 1.9em; } }
-      @media (min-width: 992px) {
-        .landingvideo-videos-second-name {
-          font-size: 1.5em; } }
-      @media screen and (min-width: 1200px) {
-        .landingvideo-videos-second-name {
-          font-size: 1.9em; } }
-      @media (min-width: 1200px) {
-        .landingvideo-videos-second-name {
-          font-size: 2em; } }
-  .landingvideo-videos img {
-    cursor: pointer;
-    height: auto;
-    max-width: 100%;
-    border-radius: 5px; }
-    .landingvideo-videos img:hover {
-      transition: 0.2s ease; }
+        .landingvideo-videos-first {
+          margin-bottom: 0px;
+          margin-right: 60px; } }
+      @media (min-width: 768px) {
+        .landingvideo-videos-first:hover {
+          transform: translateY(-15px);
+          transition: ease 0.3s; } }
+      .landingvideo-videos-first-name {
+        padding-top: 6px;
+        text-align: center;
+        font-size: 1.2em; }
+        @media screen and (min-width: 550px) {
+          .landingvideo-videos-first-name {
+            font-size: 1.6em; } }
+        @media screen and (min-width: 800px) {
+          .landingvideo-videos-first-name {
+            font-size: 1.9em; } }
+        @media (min-width: 992px) {
+          .landingvideo-videos-first-name {
+            font-size: 1.5em; } }
+        @media screen and (min-width: 1200px) {
+          .landingvideo-videos-first-name {
+            font-size: 1.9em; } }
+        @media (min-width: 1200px) {
+          .landingvideo-videos-first-name {
+            font-size: 2em; } }
+    .landingvideo-videos-second {
+      flex: 1;
+      position: relative; }
+      @media (min-width: 768px) {
+        .landingvideo-videos-second {
+          transform: translateY(0px);
+          transition: ease 0.3s; } }
+      @media (min-width: 768px) {
+        .landingvideo-videos-second:hover {
+          transition: ease 0.3s;
+          transform: translateY(-15px); } }
+      .landingvideo-videos-second-name {
+        padding-top: 6px;
+        text-align: center;
+        font-size: 1.2em; }
+        @media screen and (min-width: 550px) {
+          .landingvideo-videos-second-name {
+            font-size: 1.6em; } }
+        @media screen and (min-width: 800px) {
+          .landingvideo-videos-second-name {
+            font-size: 1.9em; } }
+        @media (min-width: 992px) {
+          .landingvideo-videos-second-name {
+            font-size: 1.5em; } }
+        @media screen and (min-width: 1200px) {
+          .landingvideo-videos-second-name {
+            font-size: 1.9em; } }
+        @media (min-width: 1200px) {
+          .landingvideo-videos-second-name {
+            font-size: 2em; } }
+    .landingvideo-videos img {
+      cursor: pointer;
+      height: auto;
+      max-width: 100%;
+      border-radius: 5px; }
+  .landingvideo-more {
+    padding-top: 30px;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: center; }
+    .landingvideo-more-button {
+      padding: 15px 25px;
+      background-color: black;
+      color: #EEEEE6;
+      border-radius: 3px; }
+      @media (min-width: 768px) {
+        .landingvideo-more-button {
+          padding: 20px 30px; } }
+      .landingvideo-more-button:hover {
+        opacity: 1; }
 
 .fa-play {
+  transition: 0.35s ease;
   opacity: 0.8;
   font-size: 2em;
   color: white;

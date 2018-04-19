@@ -38,6 +38,9 @@ class LandingVideo extends Component {
             </h2>
           </div>
         </div>
+        <div className="landingvideo-more">
+          <h1 className="landingvideo-more-button">VIEW MORE</h1>
+        </div>
       </div>
     );
   }
