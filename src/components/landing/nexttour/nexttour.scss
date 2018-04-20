@@ -44,13 +44,15 @@
         max-height: 623px;
       }
       &:hover {
-        filter: grayscale(0);
+        // filter: grayscale(0);
+        //do something on hover(?) show it's a link.////////////////////////////////////////////////////////////////////////////////////////
       }
     }
   }
   // align to center to keep in the same position when resizing the browser
   // transform to position in the top left of the image
   &-date {
+    cursor: pointer;
     text-align:left;
     position: relative;
     z-index: 2;

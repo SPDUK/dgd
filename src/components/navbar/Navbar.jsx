@@ -66,7 +66,7 @@ class Navbar extends Component {
         <div
           role="menu"
           tabIndex="0"
-          onKeyDown={toggleMenu}
+          onKeyPress={toggleMenu}
           onClick={toggleMenu}
           className="navbar-burger"
         >
