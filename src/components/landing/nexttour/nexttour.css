@@ -22,8 +22,8 @@
       filter: grayscale(100); }
       @media screen and (min-width: 400px) {
         .nexttour-image img {
-          max-width: 400px;
-          max-height: 249px; } }
+          max-width: 380px;
+          max-height: 259px; } }
       @media screen and (min-width: 600px) {
         .nexttour-image img {
           max-width: 500px;
