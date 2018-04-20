@@ -6,46 +6,53 @@ import './nexttour.css';
 
 import nexttourimg from '../../../images/nexttour.jpg';
 
-function getDate() {
-  // find each tour date piece
-  const tourDate = document.querySelector('.nexttour-date-day');
-  const tourCity = document.querySelector('.nexttour-date-city');
-  const tourCountry = document.querySelector('.nexttour-date-country');
-  // const tourClickURL = ' ';
-  // find todays date in a way to split it up and put into the url
-  let today = new Date();
-  let dd = today.getDate();
-  let mm = today.getMonth() + 1;
-  const yyyy = today.getFullYear();
-  if (dd < 10) {
-    dd = `0${dd}`;
-  }
-  if (mm < 10) {
-    mm = `0${mm}`;
-  }
-  today = `${yyyy}-${mm}-${dd}`;
-  const endDate = `${yyyy + 1}-${mm}-${dd}`;
-  // needs a date to start and end, 1 year from the current date of the request
-  const nextTourURL = `https://rest.bandsintown.com/artists/Dance%20Gavin%20Dance/events?app_id=dgdsite&date=${today}%2C${endDate}`;
-
-  axios.get(nextTourURL).then(res => {
-    // create a new date then turn it to a readable string and cut off the
-    // start and end to show just the month and date
-    const tourDateString = new Date(res.data[0].datetime)
-      .toDateString()
-      .slice(3, -4);
-    console.log(res);
-    tourDate.innerText = tourDateString;
-    tourCity.innerText = res.data[0].venue.city;
-    tourCountry.innerText = res.data[0].venue.country;
-  });
-}
+// console.log(tourDateURL);
 
 class NextTour extends Component {
-  componentDidMount() {
-    getDate();
+  constructor() {
+    super();
+    this.getDate = this.getDate.bind(this);
   }
 
+  componentDidMount() {
+    this.getDate();
+  }
+
+  getDate() {
+    // find each tour date piece
+    const tourDate = document.querySelector('.nexttour-date-day');
+    const tourCity = document.querySelector('.nexttour-date-city');
+    const tourCountry = document.querySelector('.nexttour-date-country');
+    // find todays date in a way to split it up and put into the url
+    let today = new Date();
+    let dd = today.getDate();
+    let mm = today.getMonth() + 1;
+    const yyyy = today.getFullYear();
+    if (dd < 10) {
+      dd = `0${dd}`;
+    }
+    if (mm < 10) {
+      mm = `0${mm}`;
+    }
+    today = `${yyyy}-${mm}-${dd}`;
+    const endDate = `${yyyy + 1}-${mm}-${dd}`;
+    // needs a date to start and end, 1 year from the current date of the request
+    const nextTourURL = `https://rest.bandsintown.com/artists/Dance%20Gavin%20Dance/events?app_id=dgdsite&date=${today}%2C${endDate}`;
+
+    axios.get(nextTourURL).then(res => {
+      // create a new date then turn it to a readable string and cut off the
+      // start and end to show just the month and date
+      const tourDateString = new Date(res.data[0].datetime)
+        .toDateString()
+        .slice(3, -4);
+      console.log(res);
+      tourDate.innerText = tourDateString;
+      tourCity.innerText = res.data[0].venue.city;
+      tourCountry.innerText = res.data[0].venue.country;
+    });
+    // delete me later
+    console.log(this);
+  }
   render() {
     return (
       <div className="nexttour">
