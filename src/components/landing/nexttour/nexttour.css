@@ -1,6 +1,10 @@
 .nexttour {
   margin-top: 100px;
-  padding: 0 10%; }
+  padding: 0 10%;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif; }
+  .nexttour-title {
+    text-align: center; }
   .nexttour-image {
     display: flex;
     justify-content: center; }
@@ -37,8 +41,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     position: relative;
-    font-weight: 800;
-    font-family: 'Montserrat', sans-serif;
     transform: translate(-120px, -180px); }
     @media screen and (min-width: 400px) {
       .nexttour-date {

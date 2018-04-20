@@ -2,6 +2,11 @@
 .nexttour {
   margin-top: 100px;
   padding: 0 10%;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  &-title {
+    text-align: center;
+  }
   &-image {
     display: flex;
     justify-content: center;
@@ -37,8 +42,6 @@
   &-date {
     @include absolutecenter(both);
     position: relative;
-    font-weight: 800;
-    font-family: 'Montserrat', sans-serif;
     transform: translate(-120px,-180px);
     @media screen and (min-width: 400px) {
       transform: translate(-180px,-240px);

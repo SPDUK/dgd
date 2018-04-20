@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-// 1 x 1 layout phone
-// 2 x 1 layout pc
 import './landingvideo.css';
 
 import firstVideo from '../../../images/first-small.jpg';

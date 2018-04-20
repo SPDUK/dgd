@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import './nexttour.css';
 
@@ -9,6 +9,9 @@ class NextTour extends Component {
   render() {
     return (
       <div className="nexttour">
+        <div className="nexttour-title">
+          <h1>NEXT LIVE SHOW</h1>
+        </div>
         <div className="nexttour-image">
           <img src={nexttourimg} alt="" />
         </div>
