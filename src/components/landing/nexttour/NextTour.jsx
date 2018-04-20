@@ -8,9 +8,14 @@ import nexttourimg from '../../../images/nexttour.jpg';
 
 class NextTour extends Component {
   componentDidMount() {
-    console.log('lol');
-  }
-  render() {
+    // find each tour date piece
+    const tourDate = document.querySelector('.nexttour-date-day');
+    console.log(tourDate);
+    const tourCity = document.querySelector('.nexttour-date-city');
+    console.log(tourCity);
+    const tourCountry = document.querySelector('.nexttour-date-country');
+    console.log(tourCountry);
+
     // find todays date in a way to split it up and put into the url
     let today = new Date();
     let dd = today.getDate();
@@ -27,18 +32,22 @@ class NextTour extends Component {
     // needs a date to start and end, 1 year from the current date of the request
     const nextTourURL = `https://rest.bandsintown.com/artists/Dance%20Gavin%20Dance/events?app_id=dgdsite&date=${today}%2C${endDate}`;
     axios.get(nextTourURL).then(res => {
-      console.log(res.data);
+      console.log(res);
+      tourDate.innerText = res.data[0].datetime;
+      tourCity.innerText = res.data[0].venue.city;
+      tourCountry.innerText = res.data[0].venue.country;
     });
-
+  }
+  render() {
     return (
       <div className="nexttour">
         <div className="nexttour-title">
           <h1>NEXT LIVE SHOW</h1>
         </div>
         <div className="nexttour-date">
-          <h2 className="nexttour-date-day">Jun 28</h2>
-          <h2 className="nexttour-date-city">Birmingham</h2>
-          <h2 className="nexttour-date-country">United States</h2>
+          <h2 className="nexttour-date-day" />
+          <h2 className="nexttour-date-city" />
+          <h2 className="nexttour-date-country" />
         </div>
         <div className="nexttour-image">
           <img src={nexttourimg} alt="" />
