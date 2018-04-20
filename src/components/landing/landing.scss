@@ -1,13 +1,14 @@
-@import 'variables.scss';
+@import '../../styles/variables.scss';
+
 .landing {
   height: 2300px;
   background-color: $offWhite;
   &-background {
-    background: url(../images/mobilepic.jpg)no-repeat center center;
+    background: url(../../images/mobilepic.jpg)no-repeat center center;
     background-size: cover;
     height: 500px;
     @include breakpoint(sm) {
-      background: url(../images/comp.jpg)no-repeat center center;
+      background: url(../../images/comp.jpg)no-repeat center center;
       background-size: cover;
       height: 620px;
     }

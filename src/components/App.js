@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 
-import Navbar from './Navbar';
-import Landing from './Landing';
-import HelloWorld from './HelloWorld';
+import Navbar from './navbar/Navbar';
+import Landing from './landing/Landing';
 
 import '../styles/app.css';
 
@@ -15,7 +14,6 @@ class App extends Component {
           <div>
             <Navbar />
             <Route exact path="/" component={Landing} />
-            <Route exact path="/helloworld" component={HelloWorld} />
           </div>
         </HashRouter>
       </div>

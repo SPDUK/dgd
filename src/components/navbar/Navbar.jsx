@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/navbar.css';
-import logo from '../images/dgdlogo.png';
+import './navbar.css';
+import logo from '../../images/dgdlogo.png';
 
 // toggles the menu to go from burger to X
 // loop through each link and enable visibility then add padding

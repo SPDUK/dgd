@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 // 1 x 1 layout phone
 // 2 x 1 layout pc
-import '../styles/landingvideo.css';
+import './landingvideo.css';
 
-import firstVideo from '../images/first-small.jpg';
-import secondVideo from '../images/second-small.jpg';
+import firstVideo from '../../../images/first-small.jpg';
+import secondVideo from '../../../images/second-small.jpg';
 
 function buttonClick() {
   console.log('clicked');

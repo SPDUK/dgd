@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import LandingVideos from './LandingVideos';
-import NextTour from './NextTour';
+import LandingVideos from './landingvideo/LandingVideos';
+import NextTour from './nexttour/NextTour';
 
-import '../styles/landing.css';
+import './landing.css';
 
-import dgdTitle from '../images/dgdtitle.png';
+import dgdTitle from '../../images/dgdtitle.png';
 
 class Landing extends Component {
   render() {
