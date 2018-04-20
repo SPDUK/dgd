@@ -39,13 +39,16 @@
     text-align: center;
     font-weight: 700;
     font-size: 1.2em;
+    width: 235px;
     font-family: 'Montserrat', sans-serif;
-    width: 300px;
     @include absolutecenter(x);
     margin-top: 50px;
     color: black;
     &-date {
       color: $orange
+    }
+    @media screen and (max-width: 500px) {
+      width: 120px;
     }
     @include breakpoint(sm) {
       visibility: hidden;
@@ -55,7 +58,10 @@
     @include absolutecenter(x);
     position: absolute;
     img {
-      width: 240px;
+      width: 182px;
+      @media screen and (min-width: 420px) {
+        width: 200px;
+      }
     }
     @include breakpoint(sm) {
       visibility: hidden;
