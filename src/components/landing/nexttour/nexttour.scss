@@ -1,37 +1,45 @@
 @import '../../../styles/variables.scss';
-
 .nexttour {
   margin-top: 100px;
-  display: flex;
-  justify-content: center;
   padding: 0 10%;
-  img {
-    height: auto;
-    display: block;
-    width: auto;
-    max-width: 280px;
-    max-height: 186px;
-    filter: grayscale(100);
-
-    @media screen and (min-width: 400px) {
-      max-width: 400px;
-      max-height: 249px;
+  &-image {
+    display: flex;
+    justify-content: center;
+    img {
+      height: auto;
+      display: block;
+      width: auto;
+      max-width: 280px;
+      max-height: 186px;
+      filter: grayscale(100);
+      @media screen and (min-width: 400px) {
+        max-width: 400px;
+        max-height: 249px;
+      }
+      @media screen and (min-width: 600px) {
+        max-width: 500px;
+        max-height: 311px;
+      }
+      @include breakpoint(sm) {
+        max-width: 600px;
+        max-height: 373px;
+      }
+      @include breakpoint(md) {
+        max-width: 800px;
+        max-height: 498px;
+      }
+      @include breakpoint(lg) {
+        max-width: 1000px;
+        max-height: 623px;
+      }
     }
-    @media screen and (min-width: 600px) {
-      max-width: 500px;
-      max-height: 311px;
-    }
-    @include breakpoint(sm){
-      max-width: 600px;
-      max-height: 373px;
-    }
-    @include breakpoint(md){
-      max-width: 800px;
-      max-height: 498px;
-    }
-    @include breakpoint(lg){
-      max-width: 1000px;
-      max-height: 623px;
+  }
+  &-date {
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    transform: translate(0,-180px);
+    &-day {
+      font-size: 1.7em;
     }
   }
 }

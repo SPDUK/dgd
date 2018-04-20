@@ -9,7 +9,14 @@ class NextTour extends Component {
   render() {
     return (
       <div className="nexttour">
-        <img src={nexttourimg} alt="" />
+        <div className="nexttour-image">
+          <img src={nexttourimg} alt="" />
+        </div>
+        <div className="nexttour-date">
+          <h2 className="nexttour-date-day">Jun 28</h2>
+          <h2 className="nexttour-date-city">Birmingham</h2>
+          <h2 className="nexttour-date-country">United States</h2>
+        </div>
       </div>
     );
   }
