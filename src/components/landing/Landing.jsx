@@ -7,6 +7,7 @@ import NextTour from './nexttour/NextTour';
 import './landing.css';
 
 import dgdTitle from '../../images/dgdtitle.png';
+import SocialLinks from './sociallinks/sociallinks';
 
 class Landing extends Component {
   render() {
@@ -23,6 +24,7 @@ class Landing extends Component {
         <div className="mobile-block" />
         <LandingVideos />
         <NextTour />
+        <SocialLinks />
       </div>
     );
   }
