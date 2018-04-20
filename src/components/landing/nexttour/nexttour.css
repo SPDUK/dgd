@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center; }
     .nexttour-image img {
+      cursor: pointer;
       border-radius: 5px;
       height: auto;
       display: block;
@@ -40,6 +41,8 @@
         .nexttour-image img {
           max-width: 1000px;
           max-height: 623px; } }
+      .nexttour-image img:hover {
+        filter: grayscale(0); }
   .nexttour-date {
     text-align: left;
     position: relative;

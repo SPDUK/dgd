@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     img {
+      cursor: pointer;
       border-radius: 5px;
       height: auto;
       display: block;
@@ -41,6 +42,9 @@
       @include breakpoint(lg) {
         max-width: 1000px;
         max-height: 623px;
+      }
+      &:hover {
+        filter: grayscale(0);
       }
     }
   }

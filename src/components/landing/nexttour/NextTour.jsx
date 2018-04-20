@@ -12,6 +12,9 @@ class NextTour extends Component {
   constructor() {
     super();
     this.getDate = this.getDate.bind(this);
+    this.state = {
+      currentDateURL: ' '
+    };
   }
 
   componentDidMount() {
@@ -49,11 +52,17 @@ class NextTour extends Component {
       tourDate.innerText = tourDateString;
       tourCity.innerText = res.data[0].venue.city;
       tourCountry.innerText = res.data[0].venue.country;
+      this.setState({ currentDateURL: res.data[0].url });
     });
     // delete me later
     console.log(this);
   }
+  // uses state to open the latest URL from the fetch API function
   render() {
+    const openLatestTourURL = () => {
+      window.open(this.state.currentDateURL);
+    };
+
     return (
       <div className="nexttour">
         <div className="nexttour-title">
@@ -65,7 +74,14 @@ class NextTour extends Component {
           <h2 className="nexttour-date-country">England</h2>
         </div>
         <div className="nexttour-image">
-          <img src={nexttourimg} alt="" />
+          <img
+            onKeyPress={openLatestTourURL}
+            role="link"
+            tabIndex="0"
+            onClick={openLatestTourURL}
+            src={nexttourimg}
+            alt=""
+          />
         </div>
         hello
         <div className="nexttour-buttons">
