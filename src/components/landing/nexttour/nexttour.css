@@ -32,8 +32,33 @@
           max-width: 1000px;
           max-height: 623px; } }
   .nexttour-date {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
     font-weight: 800;
     font-family: 'Montserrat', sans-serif;
-    transform: translate(0, -180px); }
+    transform: translate(-120px, -180px); }
+    @media screen and (min-width: 400px) {
+      .nexttour-date {
+        transform: translate(-180px, -240px);
+        font-size: 1.3em; } }
+    @media screen and (min-width: 600px) {
+      .nexttour-date {
+        transform: translate(-220px, -300px);
+        font-size: 1.5em; } }
+    @media (min-width: 768px) {
+      .nexttour-date {
+        transform: translate(-280px, -350px);
+        font-size: 1.9em; } }
+    @media (min-width: 992px) {
+      .nexttour-date {
+        transform: translate(-370px, -480px);
+        font-size: 2.4em; } }
+    @media (min-width: 1200px) {
+      .nexttour-date {
+        transform: translate(-470px, -600px);
+        font-size: 3.1em; } }
     .nexttour-date-day {
       font-size: 1.7em; }
