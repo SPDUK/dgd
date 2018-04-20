@@ -33,14 +33,21 @@ class NextTour extends Component {
     const nextTourURL = `https://rest.bandsintown.com/artists/Dance%20Gavin%20Dance/events?app_id=dgdsite&date=${today}%2C${endDate}`;
     axios.get(nextTourURL).then(res => {
       console.log(res);
-      tourDate.innerText = res.data[0].datetime;
+      const tourDateString = new Date(res.data[0].datetime)
+        .toDateString()
+        .slice(3, -4);
+      console.log(tourDateString);
+      tourDate.innerText = tourDateString;
       tourCity.innerText = res.data[0].venue.city;
       tourCountry.innerText = res.data[0].venue.country;
     });
   }
   render() {
+    function haha() {
+      console.log('lmnaop');
+    }
     return (
-      <div className="nexttour">
+      <div onClick={haha} className="nexttour">
         <div className="nexttour-title">
           <h1>NEXT LIVE SHOW</h1>
         </div>
