@@ -22,9 +22,9 @@ class Landing extends Component {
           <h2 className="landing-info-date">JUNE 8TH 2018</h2>
         </div>
         <div className="mobile-block" />
-        {/* <LandingVideos /> */}
-        {/* <NextTour /> */}
-        {/* <SocialLinks /> */}
+        <LandingVideos />
+        <NextTour />
+        <SocialLinks />
       </div>
     );
   }

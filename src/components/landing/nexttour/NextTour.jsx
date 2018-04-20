@@ -9,7 +9,7 @@ class NextTour extends Component {
   render() {
     return (
       <div className="nexttour">
-        {/* <div className="nexttour-title">
+        <div className="nexttour-title">
           <h1>NEXT LIVE SHOW</h1>
         </div>
         <div className="nexttour-date">
@@ -24,7 +24,7 @@ class NextTour extends Component {
         <div className="nexttour-buttons">
           <button> TICKETS</button>
           <button> ALL TOUR DATES</button>
-        </div> */}
+        </div>
       </div>
     );
   }
