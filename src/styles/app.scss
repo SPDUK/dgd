@@ -2,6 +2,9 @@
 
 * {
   // border: 1px solid red !important;
+  &:focus {
+    outline: 1px solid $orange;     
+  }
 }
 .button {
   cursor: pointer;
