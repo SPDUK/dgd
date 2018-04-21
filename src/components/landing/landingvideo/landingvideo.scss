@@ -103,20 +103,9 @@
   &-more {
     padding-top: 30px;
     display: flex;
-    font-size: 0.8em;
     justify-content: center;
     &-button {
       cursor: pointer;
-      padding: 15px 25px;
-      background-color: black;
-      color: $offWhite;
-      border-radius: 3px;
-      @include breakpoint(sm){
-        padding: 20px 30px;
-      }
-      &:hover {
-        opacity: 1;
-      }
     }
   }
 }

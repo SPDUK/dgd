@@ -1,9 +1,15 @@
 @import '../../../styles/variables.scss';
 .nexttour {
-  padding: 0px 10%;
+  padding: 150px 10%;
   background-color: $offWhite;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
+  &-hover {
+    cursor: pointer;
+    &-text {
+      visibility: hidden;
+    }
+  }
   &-title {
     font-size: 0.8em;
     text-align: center;
@@ -15,6 +21,8 @@
     display: flex;
     justify-content: center;
     img {
+      opacity: 1;
+      transition: 0.2s ease;
       cursor: pointer;
       border-radius: 5px;
       height: auto;
@@ -44,8 +52,8 @@
         max-height: 623px;
       }
       &:hover {
-        // filter: grayscale(0);
-        //do something on hover(?) show it's a link.////////////////////////////////////////////////////////////////////////////////////////
+        transition: 0.2s ease;
+        opacity: 0.85;
       }
     }
   }
@@ -81,5 +89,12 @@
     &-day {
       font-size: 1.7em;
     }
+  }
+  &-button {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }

@@ -3,10 +3,30 @@
 * {
   // border: 1px solid red !important;
 }
-button {
-  height: 40px;
+.button {
+  cursor: pointer;
   font-weight: 700;
+  color: white;
+  width: 200px;
+  font-size: 1.4em;
   font-family: 'Montserrat', sans-serif;
+  padding: 15px 25px;
+  background-color: black;
+  border-radius: 3px;
+  text-align: center;
+  transition: ease 0.3s;
+  opacity: 1;
+  @media screen and (min-width: 400px){
+    width: 300px;
+  }
+  @include breakpoint(sm){
+    padding: 20px 30px;
+    width: 300px;
+  }
+  &:hover {
+    opacity: 0.75;
+    transition: ease 0.3s;
+  }
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

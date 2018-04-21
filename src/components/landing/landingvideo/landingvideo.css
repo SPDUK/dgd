@@ -88,19 +88,9 @@
   .landingvideo-more {
     padding-top: 30px;
     display: flex;
-    font-size: 0.8em;
     justify-content: center; }
     .landingvideo-more-button {
-      cursor: pointer;
-      padding: 15px 25px;
-      background-color: black;
-      color: #EEEEE6;
-      border-radius: 3px; }
-      @media (min-width: 768px) {
-        .landingvideo-more-button {
-          padding: 20px 30px; } }
-      .landingvideo-more-button:hover {
-        opacity: 1; }
+      cursor: pointer; }
 
 .fa-play {
   transition: 0.35s ease;

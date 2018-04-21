@@ -83,10 +83,8 @@ class NextTour extends Component {
             <img src={nexttourimg} alt="" />
           </div>
         </div>
-        hello
-        <div className="nexttour-buttons">
-          <button> TICKETS</button>
-          <button> ALL TOUR DATES</button>
+        <div className="nexttour-button">
+          <h1 className="button">VIEW ALL TOUR DATES</h1>
         </div>
       </div>
     );

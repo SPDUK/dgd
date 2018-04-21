@@ -44,7 +44,7 @@ class LandingVideo extends Component {
             onKeyPress={buttonClick}
             role="button"
             tabIndex="0"
-            className="landingvideo-more-button"
+            className="landingvideo-more-button button"
           >
             VIEW MORE
           </h1>

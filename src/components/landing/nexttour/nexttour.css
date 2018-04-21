@@ -1,8 +1,12 @@
 .nexttour {
-  padding: 0px 10%;
+  padding: 150px 10%;
   background-color: #EEEEE6;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif; }
+  .nexttour-hover {
+    cursor: pointer; }
+    .nexttour-hover-text {
+      visibility: hidden; }
   .nexttour-title {
     font-size: 0.8em;
     text-align: center; }
@@ -13,6 +17,8 @@
     display: flex;
     justify-content: center; }
     .nexttour-image img {
+      opacity: 1;
+      transition: 0.2s ease;
       cursor: pointer;
       border-radius: 5px;
       height: auto;
@@ -41,6 +47,9 @@
         .nexttour-image img {
           max-width: 1000px;
           max-height: 623px; } }
+      .nexttour-image img:hover {
+        transition: 0.2s ease;
+        opacity: 0.85; }
   .nexttour-date {
     cursor: pointer;
     text-align: left;
@@ -72,3 +81,9 @@
         font-size: 3.1em; } }
     .nexttour-date-day {
       font-size: 1.7em; }
+  .nexttour-button {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
