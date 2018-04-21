@@ -87,19 +87,22 @@
     text-align: center;
     width: 100%;
     display: flex;
-    max-width: 1535px;
+    max-width: 1285px;
     flex-wrap: wrap;
     justify-content: center; }
     .nexttour-button .button {
       margin-bottom: 20px; }
-      @media (min-width: 768px) {
-        .nexttour-button .button {
-          margin-right: 10px; } }
     .nexttour-button .ticketsbutton {
       opacity: 1;
       background-color: #FFA949; }
+      @media (min-width: 768px) {
+        .nexttour-button .ticketsbutton {
+          margin-right: 10px; } }
+      @media (min-width: 992px) {
+        .nexttour-button .ticketsbutton {
+          margin-right: 0px; } }
     @media (min-width: 992px) {
       .nexttour-button {
         flex-wrap: nowrap;
         display: flex;
-        justify-content: space-evenly; } }
+        justify-content: space-around; } }

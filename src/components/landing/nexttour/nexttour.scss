@@ -96,26 +96,26 @@
     text-align: center;
     width: 100%;
     display:flex;
-    max-width: 1535px;
+    max-width: 1285px;
     flex-wrap: wrap;
     justify-content: center;
     .button {
       margin-bottom: 20px;
-      @include breakpoint(sm){
-        margin-right: 10px;
-      }
     }
     .ticketsbutton {
       opacity: 1;
       background-color: $orange;
-    }
-    @include breakpoint(sm){
-      
+      @include breakpoint(sm){
+        margin-right: 10px;
+      }
+      @include breakpoint(md){
+        margin-right: 0px;
+      }
     }
     @include breakpoint(md){
       flex-wrap: nowrap;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
     }
   }
 }
