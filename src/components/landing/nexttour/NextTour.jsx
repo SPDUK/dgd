@@ -84,7 +84,15 @@ class NextTour extends Component {
           </div>
         </div>
         <div className="nexttour-button">
-          <h1 className="button">TICKETS FOR THIS SHOW</h1>
+          <h1
+            role="link"
+            tabIndex="0"
+            onKeyPress={openLatestTourURL}
+            onClick={openLatestTourURL}
+            className="button ticketsbutton"
+          >
+            TICKETS FOR THIS SHOW
+          </h1>
           <h1 className="button">VIEW ALL TOUR DATES</h1>
         </div>
       </div>

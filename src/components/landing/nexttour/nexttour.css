@@ -93,6 +93,9 @@
       @media (min-width: 768px) {
         .nexttour-button .button {
           margin-right: 10px; } }
+    .nexttour-button .ticketsbutton {
+      opacity: 1;
+      background-color: #FFA949; }
     @media (min-width: 992px) {
       .nexttour-button {
         flex-wrap: nowrap;

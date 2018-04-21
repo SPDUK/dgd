@@ -103,6 +103,10 @@
         margin-right: 10px;
       }
     }
+    .ticketsbutton {
+      opacity: 1;
+      background-color: $orange;
+    }
     @include breakpoint(sm){
       
     }
