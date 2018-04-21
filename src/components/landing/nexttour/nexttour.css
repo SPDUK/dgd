@@ -1,5 +1,5 @@
 .nexttour {
-  padding: 150px 10%;
+  padding: 130px 10%;
   background-color: #EEEEE6;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif; }
@@ -86,4 +86,15 @@
     text-align: center;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center; }
+    .nexttour-button .button {
+      margin-bottom: 20px; }
+      @media (min-width: 768px) {
+        .nexttour-button .button {
+          margin-right: 10px; } }
+    @media (min-width: 992px) {
+      .nexttour-button {
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: space-evenly; } }

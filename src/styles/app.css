@@ -1,9 +1,10 @@
 .button {
   cursor: pointer;
+  margin: 0;
   font-weight: 700;
   color: white;
   width: 200px;
-  font-size: 1.4em;
+  font-size: 0.88em;
   font-family: 'Montserrat', sans-serif;
   padding: 15px 25px;
   background-color: black;
@@ -13,10 +14,12 @@
   opacity: 1; }
   @media screen and (min-width: 400px) {
     .button {
-      width: 300px; } }
+      width: 300px;
+      font-size: 1.2em; } }
   @media (min-width: 768px) {
     .button {
       padding: 20px 30px;
+      font-size: 1.4em;
       width: 300px; } }
   .button:hover {
     opacity: 0.75;

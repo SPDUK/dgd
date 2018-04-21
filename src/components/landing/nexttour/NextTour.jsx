@@ -80,10 +80,11 @@ class NextTour extends Component {
             <h2 className="nexttour-date-country">England</h2>
           </div>
           <div className="nexttour-image">
-            <img src={nexttourimg} alt="" />
+            <img src={nexttourimg} alt="On Tour Live " />
           </div>
         </div>
         <div className="nexttour-button">
+          <h1 className="button">TICKETS FOR THIS SHOW</h1>
           <h1 className="button">VIEW ALL TOUR DATES</h1>
         </div>
       </div>

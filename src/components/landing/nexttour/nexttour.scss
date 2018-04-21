@@ -1,6 +1,6 @@
 @import '../../../styles/variables.scss';
 .nexttour {
-  padding: 150px 10%;
+  padding: 130px 10%;
   background-color: $offWhite;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
@@ -94,7 +94,22 @@
     margin-top: 50px;
     text-align: center;
     width: 100%;
-    display: flex;
+    display:flex;
+    flex-wrap: wrap;
     justify-content: center;
+    .button {
+      margin-bottom: 20px;
+      @include breakpoint(sm){
+        margin-right: 10px;
+      }
+    }
+    @include breakpoint(sm){
+      
+    }
+    @include breakpoint(md){
+      flex-wrap: nowrap;
+      display: flex;
+      justify-content: space-evenly;
+    }
   }
 }
