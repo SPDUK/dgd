@@ -82,10 +82,12 @@
     .nexttour-date-day {
       font-size: 1.7em; }
   .nexttour-button {
+    margin: 0 auto;
     margin-top: 50px;
     text-align: center;
     width: 100%;
     display: flex;
+    max-width: 1535px;
     flex-wrap: wrap;
     justify-content: center; }
     .nexttour-button .button {
