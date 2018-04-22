@@ -3,12 +3,30 @@
 .albums {
   height: 600px;
   background-color: $darkGray;
-  padding-top: 100px;
+  padding: 100px 5%;
   &-title {
     text-align: center;
     font-weight: 700;
     font-size: 1em;
     color: white;
     font-family: 'Montserrat', sans-serif;
+  }
+  &-grid {
+    display: grid;
+    // grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    &-first {
+      display: grid;
+
+    }
+    .square-image{
+
+      height: 50px;
+      width: 50px;
+    }
+    .wide-image {
+      height: 50px;
+      width: 50px;
+    }
   }
 }

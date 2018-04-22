@@ -1,10 +1,21 @@
 .albums {
   height: 600px;
   background-color: #191716;
-  padding-top: 100px; }
+  padding: 100px 5%; }
   .albums-title {
     text-align: center;
     font-weight: 700;
     font-size: 1em;
     color: white;
     font-family: 'Montserrat', sans-serif; }
+  .albums-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr; }
+    .albums-grid-first {
+      display: grid; }
+    .albums-grid .square-image {
+      height: 50px;
+      width: 50px; }
+    .albums-grid .wide-image {
+      height: 50px;
+      width: 50px; }
