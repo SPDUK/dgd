@@ -21,7 +21,7 @@ const Albums = () => (
     </div>
     <div
       className="grid js-masonry"
-      data-masonry-options="{ &quot;itemSelector&quot;: &quot;.grid-item&quot;, &quot;columnWidth&quot;: 150 }"
+      data-masonry="{ &quot;itemSelector&quot;: &quot;.grid-item&quot;, &quot;columnWidth&quot;: 150 }"
     >
       <div className="grid-item grid-item--width2">
         <img src={wide1} alt="" />
@@ -41,11 +41,11 @@ const Albums = () => (
       <div className="grid-item">
         <img src={square6} alt="" />
       </div>
-      <div className="grid-item">
-        <img src={square3} alt="" />
-      </div>
       <div className="grid-item grid-item--width2">
         <img src={wide3} alt="" />
+      </div>
+      <div className="grid-item">
+        <img src={square3} alt="" />
       </div>
       <div className="grid-item">
         <img src={square4} alt="" />
