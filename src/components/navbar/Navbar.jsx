@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import _ from 'lodash';
+
 import './navbar.css';
 import logo from '../../images/dgdlogo.png';
 
@@ -17,18 +19,19 @@ function toggleMenu() {
 
 // moves navbar from center to the sides and changes from transparent
 // to white & black
-function handleScroll() {
-  const myNav = document.getElementById('navbar');
 
-  window.onscroll = function navScrollFunc() {
-    if (window.scrollY >= 135) {
-      myNav.classList.add('nav-scrolled');
-    }
-    if (window.scrollY <= 134) {
-      myNav.classList.remove('nav-scrolled');
-    }
-  };
-}
+const handleScroll = _.throttle(() => {
+  const myNav = document.getElementById('navbar');
+  // handleScroll();
+  if (window.scrollY >= 135) {
+    myNav.classList.add('nav-scrolled');
+    console.log('down');
+  }
+  if (window.scrollY <= 134) {
+    myNav.classList.remove('nav-scrolled');
+    console.log('up');
+  }
+}, 250);
 
 class Navbar extends Component {
   componentDidMount() {
