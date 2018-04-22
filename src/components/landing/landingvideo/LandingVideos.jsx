@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LazyLoad from 'react-lazyload';
 // import { Link } from 'react-router-dom';
 
 import './landingvideo.css';
@@ -19,7 +20,9 @@ class LandingVideo extends Component {
         <div className="landingvideo-videos">
           <div className="landingvideo-videos-first">
             <div>
-              <img src={firstVideo} alt="" />
+              <LazyLoad height={300} offset={100} once>
+                <img src={firstVideo} alt="" />
+              </LazyLoad>
               <a href="/">
                 <i className="fa fa-play" />
               </a>
@@ -28,7 +31,9 @@ class LandingVideo extends Component {
           </div>
           <div className="landingvideo-videos-second">
             <div>
-              <img src={secondVideo} alt="" />
+              <LazyLoad height={300} offset={100} once>
+                <img src={secondVideo} alt="" />
+              </LazyLoad>
               <a href="/">
                 <i className="fa fa-play" />
               </a>

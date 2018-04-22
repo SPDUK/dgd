@@ -23,7 +23,8 @@ function handleScroll() {
   window.onscroll = function navScrollFunc() {
     if (window.scrollY >= 135) {
       myNav.classList.add('nav-scrolled');
-    } else {
+    }
+    if (window.scrollY <= 134) {
       myNav.classList.remove('nav-scrolled');
     }
   };

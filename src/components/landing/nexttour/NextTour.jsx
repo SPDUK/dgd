@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import LazyLoad from 'react-lazyload';
 // import { Link } from 'react-router-dom';
 
 import './nexttour.css';
@@ -81,14 +82,16 @@ class NextTour extends Component {
             <h2 className="nexttour-date-country">England</h2>
           </div>
           <div className="nexttour-image">
-            <img
-              onKeyPress={openLatestTourURL}
-              role="link"
-              tabIndex="0"
-              onClick={openLatestTourURL}
-              src={nexttourimg}
-              alt="On Tour Live "
-            />
+            <LazyLoad height={300} offset={100} once>
+              <img
+                onKeyPress={openLatestTourURL}
+                role="link"
+                tabIndex="0"
+                onClick={openLatestTourURL}
+                src={nexttourimg}
+                alt="On Tour Live "
+              />
+            </LazyLoad>
           </div>
         </div>
         <div className="nexttour-button">
