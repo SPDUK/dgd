@@ -1,5 +1,4 @@
 .albums {
-  height: 1000px;
   background-color: #191716;
   padding: 100px 8%; }
   .albums-title {
@@ -18,7 +17,14 @@
       width: 300px; } }
   .grid-item img {
     width: 140px;
-    height: 140px; }
+    height: 140px;
+    opacity: 0.8;
+    transition: 0.1s ease-in;
+    cursor: pointer; }
+    .grid-item img:hover {
+      transition: 0.1s ease-in;
+      opacity: 1;
+      transform: scale(1.025); }
     @media (min-width: 1200px) {
       .grid-item img {
         height: 290px;

@@ -1,6 +1,6 @@
 @import '../../../styles/variables.scss';
 .albums {
-  height: 1000px;
+  // height: 1600px;
   background-color: $darkGray;
   padding: 100px 8%;
   &-title {
@@ -22,6 +22,14 @@
   img {
     width: 140px;
     height: 140px;
+    opacity: 0.8;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+    &:hover {
+      transition: 0.1s ease-in;
+      opacity: 1;
+      transform: scale(1.025);
+    }
     @include breakpoint(lg){
       height: 290px;
       width: 290px;
