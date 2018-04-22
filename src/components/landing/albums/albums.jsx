@@ -19,25 +19,42 @@ const Albums = () => (
     <div className="albums-title">
       <h1>ALBUMS</h1>
     </div>
-    <div className="albums-grid">
-      <div className="albums-grid-first">
-        <img className="wide-image" src={wide1} alt="" />
-        <img className="square-image" src={square1} alt="" />
+    <div
+      className="grid js-masonry"
+      data-masonry-options="{ &quot;itemSelector&quot;: &quot;.grid-item&quot;, &quot;columnWidth&quot;: 150 }"
+    >
+      <div className="grid-item grid-item--width2">
+        <img src={wide1} alt="" />
       </div>
-      <div className="albums-grid-second">
-        <img className="square-image" src={square2} alt="" />
-        <img className="wide-image" src={wide2} alt="" />
+      <div className="grid-item">
+        <img src={square1} alt="" />
       </div>
-      <div className="albums-grid-third">
-        <img className="wide-image" src={wide3} alt="" />
-        <img className="square-image" src={square3} alt="" />
+      <div className="grid-item">
+        <img src={square2} alt="" />
       </div>
-      <div className="albums-grid-fourth">
-        <img className="square-image" src={square4} alt="" />
-        <img className="square-image" src={square5} alt="" />
-        <img className="square-image" src={square6} alt="" />
-        <img className="square-image" src={square7} alt="" />
-        <img className="square-image" src={square8} alt="" />
+      <div className="grid-item grid-item--width2">
+        <img src={wide2} alt="" />
+      </div>
+      <div className="grid-item">
+        <img src={square5} alt="" />
+      </div>
+      <div className="grid-item">
+        <img src={square6} alt="" />
+      </div>
+      <div className="grid-item">
+        <img src={square3} alt="" />
+      </div>
+      <div className="grid-item grid-item--width2">
+        <img src={wide3} alt="" />
+      </div>
+      <div className="grid-item">
+        <img src={square4} alt="" />
+      </div>
+      <div className="grid-item">
+        <img src={square7} alt="" />
+      </div>
+      <div className="grid-item">
+        <img src={square8} alt="" />
       </div>
     </div>
   </div>

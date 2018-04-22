@@ -1,7 +1,7 @@
 .albums {
-  height: 600px;
+  height: 1000px;
   background-color: #191716;
-  padding: 100px 5%; }
+  padding: 100px 8%; }
   .albums-title {
     text-align: center;
     font-weight: 700;
@@ -9,13 +9,18 @@
     color: white;
     font-family: 'Montserrat', sans-serif; }
   .albums-grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr; }
-    .albums-grid-first {
-      display: grid; }
-    .albums-grid .square-image {
-      height: 50px;
-      width: 50px; }
-    .albums-grid .wide-image {
-      height: 50px;
-      width: 50px; }
+    height: 2000px; }
+
+.grid-item {
+  width: 150px;
+  height: 150px; }
+  .grid-item img {
+    width: 140px;
+    height: 140px; }
+
+.grid-item--width2 {
+  width: 300px;
+  height: 153px; }
+  .grid-item--width2 img {
+    width: 290px;
+    height: 143px; }

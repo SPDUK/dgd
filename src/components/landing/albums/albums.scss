@@ -1,9 +1,8 @@
 @import '../../../styles/variables.scss';
-
 .albums {
-  height: 600px;
+  height: 1000px;
   background-color: $darkGray;
-  padding: 100px 5%;
+  padding: 100px 8%;
   &-title {
     text-align: center;
     font-weight: 700;
@@ -12,21 +11,24 @@
     font-family: 'Montserrat', sans-serif;
   }
   &-grid {
-    display: grid;
-    // grid-template-columns:  1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    &-first {
-      display: grid;
+    height: 2000px;
+  }
+}
 
-    }
-    .square-image{
+.grid-item {
+  width: 150px;
+  height: 150px;
+  img {
+    width: 140px;
+    height: 140px;
+  }
+}
 
-      height: 50px;
-      width: 50px;
-    }
-    .wide-image {
-      height: 50px;
-      width: 50px;
-    }
+.grid-item--width2 {
+  width: 300px;
+  height: 153px;
+  img {
+    width: 290px;
+    height: 143px;
   }
 }
