@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import LazyLoad from 'react-lazyload';
 
 import './albums.css';
 
@@ -14,50 +15,81 @@ import wide1 from '../../../images/artificial-selection.jpg';
 import wide2 from '../../../images/mothership.jpg';
 import wide3 from '../../../images/treecity-sessions.jpg';
 
-const Albums = () => (
-  <div className="albums">
-    <div className="albums-title">
-      <h1>ALBUMS</h1>
-    </div>
-    <div
-      className="grid js-masonry"
-      data-masonry="{ &quot;itemSelector&quot;: &quot;.grid-item&quot;, &quot;columnWidth&quot;: 150 }"
-    >
-      <div className="grid-item grid-item--width2">
-        <img src={wide1} alt="" />
+class Albums extends Component {
+  // constructor() {
+  //   super();
+  //   this.albumScroll = this.albumScroll.bind(this);
+  // }
+
+  render() {
+    return (
+      <div className="albums">
+        <div className="albums-title">
+          <h1>ALBUMS</h1>
+        </div>
+        <div
+          className="grid js-masonry"
+          data-masonry="{ &quot;itemSelector&quot;: &quot;.grid-item&quot;, &quot;columnWidth&quot;: 150 }"
+        >
+          <div className="grid-item grid-item--width2">
+            <LazyLoad height={300} offset={100} once>
+              <img src={wide1} alt="" />
+            </LazyLoad>
+          </div>
+          <div className="grid-item">
+            <LazyLoad height={300} offset={100} once>
+              <img src={square1} alt="" />
+            </LazyLoad>
+          </div>
+          <div className="grid-item">
+            <LazyLoad height={300} offset={100} once>
+              <img src={square2} alt="" />
+            </LazyLoad>
+          </div>
+          <div className="grid-item grid-item--width2">
+            <LazyLoad height={300} offset={100} once>
+              <img src={wide2} alt="" />
+            </LazyLoad>
+          </div>
+          <div className="grid-item">
+            <LazyLoad height={300} offset={100} once>
+              <img src={square5} alt="" />
+            </LazyLoad>
+          </div>
+          <div className="grid-item">
+            <LazyLoad height={300} offset={100} once>
+              <img src={square6} alt="" />
+            </LazyLoad>
+          </div>
+          <div className="grid-item grid-item--width2">
+            <LazyLoad height={300} offset={100} once>
+              <img src={wide3} alt="" />
+            </LazyLoad>
+          </div>
+          <div className="grid-item">
+            <LazyLoad height={300} offset={100} once>
+              <img src={square3} alt="" />
+            </LazyLoad>
+          </div>
+          <div className="grid-item">
+            <LazyLoad height={300} offset={100} once>
+              <img src={square4} alt="" />
+            </LazyLoad>
+          </div>
+          <div className="grid-item">
+            <LazyLoad height={300} offset={100} once>
+              <img src={square7} alt="" />
+            </LazyLoad>
+          </div>
+          <div className="grid-item">
+            <LazyLoad height={300} offset={100} once>
+              <img src={square8} alt="" />
+            </LazyLoad>
+          </div>
+        </div>
       </div>
-      <div className="grid-item">
-        <img src={square1} alt="" />
-      </div>
-      <div className="grid-item">
-        <img src={square2} alt="" />
-      </div>
-      <div className="grid-item grid-item--width2">
-        <img src={wide2} alt="" />
-      </div>
-      <div className="grid-item">
-        <img src={square5} alt="" />
-      </div>
-      <div className="grid-item">
-        <img src={square6} alt="" />
-      </div>
-      <div className="grid-item grid-item--width2">
-        <img src={wide3} alt="" />
-      </div>
-      <div className="grid-item">
-        <img src={square3} alt="" />
-      </div>
-      <div className="grid-item">
-        <img src={square4} alt="" />
-      </div>
-      <div className="grid-item">
-        <img src={square7} alt="" />
-      </div>
-      <div className="grid-item">
-        <img src={square8} alt="" />
-      </div>
-    </div>
-  </div>
-);
+    );
+  }
+}
 
 export default Albums;
