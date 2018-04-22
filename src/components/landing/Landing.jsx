@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import LandingVideos from './landingvideo/LandingVideos';
 import NextTour from './nexttour/NextTour';
+import Albums from './albums/albums';
 
 import './landing.css';
 
@@ -25,6 +26,7 @@ class Landing extends Component {
         <LandingVideos />
         <NextTour />
         <SocialLinks />
+        <Albums />
       </div>
     );
   }

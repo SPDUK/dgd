@@ -68,19 +68,27 @@ class NextTour extends Component {
         <div className="nexttour-title">
           <h1>NEXT LIVE SHOW</h1>
         </div>
-        <div
-          onKeyPress={openLatestTourURL}
-          role="link"
-          tabIndex="0"
-          onClick={openLatestTourURL}
-        >
-          <div className="nexttour-date">
+        <div>
+          <div
+            onKeyPress={openLatestTourURL}
+            role="link"
+            tabIndex="0"
+            onClick={openLatestTourURL}
+            className="nexttour-date"
+          >
             <h2 className="nexttour-date-day">Jan 1</h2>
             <h2 className="nexttour-date-city">London</h2>
             <h2 className="nexttour-date-country">England</h2>
           </div>
           <div className="nexttour-image">
-            <img src={nexttourimg} alt="On Tour Live " />
+            <img
+              onKeyPress={openLatestTourURL}
+              role="link"
+              tabIndex="0"
+              onClick={openLatestTourURL}
+              src={nexttourimg}
+              alt="On Tour Live "
+            />
           </div>
         </div>
         <div className="nexttour-button">

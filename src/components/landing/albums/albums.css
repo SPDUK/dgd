@@ -1,0 +1,10 @@
+.albums {
+  height: 600px;
+  background-color: #191716;
+  padding-top: 100px; }
+  .albums-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+    color: white;
+    font-family: 'Montserrat', sans-serif; }

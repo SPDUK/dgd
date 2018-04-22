@@ -1,0 +1,14 @@
+@import '../../../styles/variables.scss';
+
+.albums {
+  height: 600px;
+  background-color: $darkGray;
+  padding-top: 100px;
+  &-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
