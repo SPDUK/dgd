@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import _ from 'lodash';
 
 import './navbar.css';
+
 import logo from '../../images/dgdlogo.png';
 
 // toggles the menu to go from burger to X
@@ -19,7 +19,7 @@ function toggleMenu() {
 
 // moves navbar from center to the sides and changes from transparent
 // to white & black
-
+// throttled to 250ms with lodash
 const handleScroll = _.throttle(() => {
   const myNav = document.getElementById('navbar');
   // handleScroll();
