@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
 
+import SelectedAlbum from './selectedalbum/selectedalbum';
+
 import './albums.css';
 
 import square1 from '../../../images/acceptance-speech.jpg';
@@ -16,17 +18,29 @@ import wide2 from '../../../images/mothership.jpg';
 import wide3 from '../../../images/treecity-sessions.jpg';
 
 class Albums extends Component {
-  // constructor() {
-  //   super();
-  //   this.albumScroll = this.albumScroll.bind(this);
-  // }
+  constructor() {
+    super();
+    this.state = {
+      showAlbum: false
+    };
+    this.showAlbumClick = this.showAlbumClick.bind(this);
+  }
+
+  showAlbumClick() {
+    this.setState(prevState => ({
+      showAlbum: !prevState.showAlbum
+    }));
+  }
 
   render() {
     return (
-      <div className="albums">
+      <div onClick={this.showAlbumClick} className="albums">
         <div className="albums-title">
           <h1>ALBUMS</h1>
         </div>
+        {this.state.showAlbum ? (
+          <SelectedAlbum showAlbumClick={this.showAlbumClick} image={wide1} />
+        ) : null}
         <div
           className="grid js-masonry"
           data-masonry="{ &quot;itemSelector&quot;: &quot;.grid-item&quot;, &quot;columnWidth&quot;: 150 }"
