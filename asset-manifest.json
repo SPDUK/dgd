@@ -1,12 +1,23 @@
 {
-  "main.css": "static/css/main.74bae45f.css",
-  "main.css.map": "static/css/main.74bae45f.css.map",
-  "main.js": "static/js/main.c5f9e63a.js",
-  "main.js.map": "static/js/main.c5f9e63a.js.map",
+  "main.css": "static/css/main.6091395d.css",
+  "main.css.map": "static/css/main.6091395d.css.map",
+  "main.js": "static/js/main.b06a7907.js",
+  "main.js.map": "static/js/main.b06a7907.js.map",
+  "static\\media\\acceptance-speech.jpg": "static/media/acceptance-speech.21b1da7b.jpg",
+  "static\\media\\artificial-selection.jpg": "static/media/artificial-selection.12a88a66.jpg",
   "static\\media\\comp.jpg": "static/media/comp.ca4cefe4.jpg",
+  "static\\media\\dancedgavindance.jpg": "static/media/dancedgavindance.6cc57a97.jpg",
   "static\\media\\dgdtitle.png": "static/media/dgdtitle.d6096cde.png",
+  "static\\media\\downtown-battle-mtn-ii.jpg": "static/media/downtown-battle-mtn-ii.90595a05.jpg",
+  "static\\media\\downtown-battle-mtn.jpg": "static/media/downtown-battle-mtn.f51a1dce.jpg",
   "static\\media\\first-small.jpg": "static/media/first-small.85ccf313.jpg",
+  "static\\media\\happiness.jpg": "static/media/happiness.fa6944c2.jpg",
+  "static\\media\\instant-gratification.jpg": "static/media/instant-gratification.bfd39a82.jpg",
   "static\\media\\mobilepic.jpg": "static/media/mobilepic.e781af11.jpg",
+  "static\\media\\mothership.jpg": "static/media/mothership.3044d922.jpg",
   "static\\media\\nexttour.jpg": "static/media/nexttour.4fd41806.jpg",
-  "static\\media\\second-small.jpg": "static/media/second-small.52eea4e4.jpg"
+  "static\\media\\second-small.jpg": "static/media/second-small.52eea4e4.jpg",
+  "static\\media\\summertime-gladness.jpg": "static/media/summertime-gladness.17936266.jpg",
+  "static\\media\\treecity-sessions.jpg": "static/media/treecity-sessions.29cbd55f.jpg",
+  "static\\media\\whatever-i-say-is-royal-ocean.jpg": "static/media/whatever-i-say-is-royal-ocean.ff496681.jpg"
 }
