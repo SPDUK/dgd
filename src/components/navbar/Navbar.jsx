@@ -23,10 +23,10 @@ function toggleMenu() {
 const handleScroll = _.throttle(() => {
   const myNav = document.getElementById('navbar');
   // handleScroll();
-  if (window.scrollY >= 135) {
+  if (window.scrollY >= 95) {
     myNav.classList.add('nav-scrolled');
   }
-  if (window.scrollY <= 134) {
+  if (window.scrollY <= 95) {
     myNav.classList.remove('nav-scrolled');
   }
 }, 250);

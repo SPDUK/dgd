@@ -7,7 +7,7 @@
       padding: 100px 3%; } }
   @media screen and (min-width: 340px) {
     .albums {
-      padding: 100px 8%; } }
+      padding: 100px 5%; } }
   @media screen and (min-width: 380px) {
     .albums {
       padding: 100px 8%; } }
@@ -19,7 +19,7 @@
       padding: 100px 20%; } }
   @media screen and (min-width: 580px) {
     .albums {
-      padding: 100px 25%; } }
+      padding: 100px 20%; } }
   @media screen and (min-width: 630px) {
     .albums {
       padding: 100px 2%; } }

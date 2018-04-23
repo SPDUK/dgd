@@ -1,15 +1,46 @@
 @import '../../../../styles/variables.scss';
 
-.lol {
-  height: 2000px;
+.clickedalbum {
+  height: 1000px;
   width: 100%;
   background-color: $darkGray;
-  padding: 100px 25%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 150px;
+  &-gutters {
+    padding: 0 3%;
+  }
   h1 {
+    text-align:center;
+    font-size: 1em;
     color: white;
+    font-weight: 700;
+    width: 235px;
+    font-family: 'Montserrat', sans-serif;
   }
-  img {
-    @include absolutecenter(x);
-    max-width: 50%;
+  &-image {
+    // width: 100%;
+    img {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      @include breakpoint(sm){
+        height:436.8px;
+      }
+    }
+    &-nav {
+      width:  100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &-button {
+        width: 49%;
+        height: 50px;
+        margin-top: 8px;
+        background-color: white;
+      }
+    }
   }
+
 }
