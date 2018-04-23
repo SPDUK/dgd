@@ -1,16 +1,20 @@
 @import '../../styles/variables.scss';
 
 //stops white screen flashbang when routing around
+// attemps to stop lazyloading looking terrible on refresh
 @keyframes fade-in {
   0% { opacity: 0; }
-  10% {opacity: 0.3;}
+  10% {opacity: 0.35;}
   100% { opacity: 1; }
+}
+.landing .isscrolled {
+  
 }
 .landing {
   height: 2300px;
   background-color: $offWhite;
   animation: fade-in;
-  animation-duration: 0.3s;
+  animation-duration: 0.9s;
   &-background {
     background: url(../../images/mobilepic.jpg)no-repeat center center;
     background-size: cover;
@@ -79,6 +83,7 @@
 
 // spacing for the mobile only title beneath background
 .mobile-block {
+  background-color: $offWhite;
   height: 180px;
 }
 

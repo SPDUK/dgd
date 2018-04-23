@@ -2,7 +2,7 @@
   0% {
     opacity: 0; }
   10% {
-    opacity: 0.3; }
+    opacity: 0.35; }
   100% {
     opacity: 1; } }
 
@@ -10,7 +10,7 @@
   height: 2300px;
   background-color: #EEEEE6;
   animation: fade-in;
-  animation-duration: 0.3s; }
+  animation-duration: 0.9s; }
   .landing-background {
     background: url(../../images/mobilepic.jpg) no-repeat center center;
     background-size: cover;
@@ -76,4 +76,5 @@
         visibility: hidden; } }
 
 .mobile-block {
+  background-color: #EEEEE6;
   height: 180px; }

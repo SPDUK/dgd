@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+//  eslint-disable-next-line
 import { animateScroll as scroll, scroller } from 'react-scroll';
 
 // need props for title of album & date?
@@ -24,10 +25,11 @@ class ClickedAlbum extends Component {
           duration: 0,
           offset: -100
         });
-      }, 0);
+      }, 50);
     }
   }
 
+  // goes back to home and scrolls to the album component when clicking back
   albumClickBack = () => {
     this.props.history.push('/');
     setTimeout(() => {
@@ -73,6 +75,14 @@ class ClickedAlbum extends Component {
                     </p>
                   </a>
                 </div>
+              </div>
+              <div className="clickedalbum-desc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque eget lectus ultricies, cursus nulla ut, iaculis
+                  mi. Etiam nisi felis, interdum vitae massa ut, finibus
+                  vestibulum turpis.
+                </p>
               </div>
             </div>
           </div>

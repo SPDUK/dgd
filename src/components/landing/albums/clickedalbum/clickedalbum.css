@@ -1,11 +1,11 @@
 .clickedalbum {
-  height: 1000px;
+  height: 2200px;
   width: 100%;
   display: flex;
   background-color: #191716;
   align-content: center;
   justify-content: center;
-  padding-top: 100px; }
+  padding-top: 0px; }
   .clickedalbum-gutters {
     padding: 0 3%; }
     @media (min-width: 768px) {
@@ -64,6 +64,9 @@
         @media (min-width: 768px) {
           .clickedalbum-image-nav-button p {
             font-size: 1.1em; } }
+        @media (min-width: 1200px) {
+          .clickedalbum-image-nav-button p {
+            font-size: 1.2em; } }
         .clickedalbum-image-nav-button p:hover {
           transition: 0.2s ease;
           opacity: 1;
@@ -72,3 +75,24 @@
     text-align: right; }
   .clickedalbum .left {
     text-align: left; }
+  .clickedalbum-desc {
+    padding-top: 20px;
+    width: 280px;
+    color: white;
+    position: absolute; }
+    @media screen and (min-width: 400px) {
+      .clickedalbum-desc {
+        width: 380px;
+        font-size: 1.1em; } }
+    @media screen and (min-width: 600px) {
+      .clickedalbum-desc {
+        width: 580px;
+        font-size: 1.1em; } }
+    @media (min-width: 992px) {
+      .clickedalbum-desc {
+        width: 650px;
+        font-size: 1.4em; } }
+    @media (min-width: 1200px) {
+      .clickedalbum-desc {
+        width: 830px;
+        font-size: 1.6em; } }
