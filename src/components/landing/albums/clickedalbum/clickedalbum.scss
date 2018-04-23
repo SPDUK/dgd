@@ -4,12 +4,12 @@
   height: 2000px;
   width: 100%;
   background-color: $darkGray;
-  padding-top: 100px;
+  padding: 100px 25%;
   h1 {
     color: white;
   }
   img {
-    height: 600px;
-    width: 600px;
+    @include absolutecenter(x);
+    max-width: 50%;
   }
 }

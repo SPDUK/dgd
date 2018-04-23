@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import _ from 'lodash';
 
 // need props for title of album & date?
 import './clickedalbum.css';

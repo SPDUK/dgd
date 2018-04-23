@@ -2,21 +2,18 @@ import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
 
-import ClickedAlbum from './clickedalbum/clickedalbum';
-
 import './albums.css';
-import square3 from '../../../images/dancedgavindance.jpg';
-import square6 from '../../../images/happiness.jpg';
-import square8 from '../../../images/summertime-gladness.jpg';
-import wide1 from '../../../images/artificial-selection.jpg';
-import wide2 from '../../../images/mothership.jpg';
-import wide3 from '../../../images/treecity-sessions.jpg';
 
+const artificialSelection = 'https://i.imgur.com/ewuyVXX.jpg';
+const mothership = 'https://i.imgur.com/8ooI9PG.jpg';
+const treecitySessions = 'https://i.imgur.com/afKreWO.jpg';
 const instantGratification = 'https://i.imgur.com/iTWpoPV.jpg';
 const acceptanceSpeech = 'https://i.imgur.com/J6UgPMN.jpg';
-const downtownBattleMountain = 'https://i.imgur.com/u0Slvb2.jpg';
 const downtownBattleMountainII = 'https://i.imgur.com/hBf4w1H.jpg';
-const whateverISayIsRoyalOcean = 'https://i.imgur.com/c0pqxFX.jpg'; // last
+const happiness = 'https://i.imgur.com/93mPJ3o.jpg';
+const dancedgavindance = 'https://i.imgur.com/jl6mwj7.jpg';
+const downtownBattleMountain = 'https://i.imgur.com/u0Slvb2.jpg';
+const whateverISayIsRoyalOcean = 'https://i.imgur.com/c0pqxFX.jpg';
 
 class Albums extends Component {
   componentDidMount() {
@@ -29,37 +26,72 @@ class Albums extends Component {
   }
 
   render() {
-    const downtownBattleMountainIILink = {
-      pathname: '/album/downtownbattlemountain-ii',
-      albumname: 'Downtown Battle Mountain II',
-      image: downtownBattleMountainII,
+    const artificialSelectionLink = {
+      pathname: '/album/artificialSelection',
+      albumname: 'Artificial Selection',
+      image: artificialSelection,
       date: '2018'
     };
+
+    const mothershipLink = {
+      pathname: '/album/mothership',
+      albumname: 'Mothership',
+      image: mothership,
+      date: '2016'
+    };
+    const treecitySessionsLink = {
+      pathname: '/album/treecitysessions',
+      albumname: 'Tree City Sessions',
+      image: treecitySessions,
+      date: '2016'
+    };
+
     const instantGratificationLink = {
       pathname: '/album/instantgratification',
       albumname: 'Instant Gratification',
       image: instantGratification,
-      date: '2018'
+      date: '2015'
     };
 
     const acceptanceSpeechLink = {
       pathname: '/album/acceptancespeech',
       albumname: 'Acceptance Speech',
       image: acceptanceSpeech,
-      date: '2018'
+      date: '2013'
     };
-    const whateverISayIsRoyalOceanLink = {
-      pathname: '/album/whateverISayIsRoyalOcean',
-      albumname: 'Whatever I Say Is Royal Ocean',
-      image: whateverISayIsRoyalOcean,
-      date: '2006'
+    const downtownBattleMountainIILink = {
+      pathname: '/album/downtownbattlemountain-ii',
+      albumname: 'Downtown Battle Mountain II',
+      image: downtownBattleMountainII,
+      date: '2011'
+    };
+
+    const happinessLink = {
+      pathname: '/album/happiness',
+      albumname: 'Happiness',
+      image: happiness,
+      date: '2009'
+    };
+
+    const dancedgavindanceLink = {
+      pathname: '/album/dancedgavindance',
+      albumname: 'Dance Gavin Dance (self-titled)',
+      image: dancedgavindance,
+      date: '2008'
     };
 
     const downtownBattleMountainLink = {
       pathname: '/album/downtownbattlemountain',
       albumname: 'Downtown Battle Mountain',
       image: downtownBattleMountain,
-      date: '2017'
+      date: '2007'
+    };
+
+    const whateverISayIsRoyalOceanLink = {
+      pathname: '/album/whateverISayIsRoyalOcean',
+      albumname: 'Whatever I Say Is Royal Ocean',
+      image: whateverISayIsRoyalOcean,
+      date: '2006'
     };
 
     return (
@@ -70,47 +102,8 @@ class Albums extends Component {
         <div className="grid">
           <div className="grid-item grid-item--width2">
             <LazyLoad height={300} offset={100} once>
-              <img src={wide1} alt="" />
-            </LazyLoad>
-          </div>
-          <div className="grid-item">
-            <LazyLoad height={300} offset={100} once>
-              <Link to={acceptanceSpeechLink}>
-                <img src={acceptanceSpeech} alt="" />
-              </Link>
-            </LazyLoad>
-          </div>
-          <div className="grid-item grid-item--width2">
-            <LazyLoad height={300} offset={100} once>
-              <img src={wide2} alt="" />
-            </LazyLoad>
-          </div>
-          <div className="grid-item">
-            <LazyLoad height={300} offset={100} once>
-              <Link to={downtownBattleMountainLink}>
-                <img src={downtownBattleMountain} alt="" />
-              </Link>
-            </LazyLoad>
-          </div>
-          <div className="grid-item">
-            <LazyLoad height={300} offset={100} once>
-              <img src={square6} alt="" />
-            </LazyLoad>
-          </div>
-          <div className="grid-item grid-item--width2">
-            <LazyLoad height={300} offset={100} once>
-              <img src={wide3} alt="" />
-            </LazyLoad>
-          </div>
-          <div className="grid-item">
-            <LazyLoad height={300} offset={100} once>
-              <img src={square3} alt="" />
-            </LazyLoad>
-          </div>
-          <div className="grid-item">
-            <LazyLoad height={300} offset={100} once>
-              <Link to={downtownBattleMountainIILink}>
-                <img src={downtownBattleMountainII} alt="" />
+              <Link to={artificialSelectionLink}>
+                <img src={artificialSelection} alt="" />
               </Link>
             </LazyLoad>
           </div>
@@ -123,7 +116,51 @@ class Albums extends Component {
           </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
-              <img src={square8} alt="" />
+              <Link to={acceptanceSpeechLink}>
+                <img src={acceptanceSpeech} alt="" />
+              </Link>
+            </LazyLoad>
+          </div>
+          <div className="grid-item grid-item--width2">
+            <LazyLoad height={300} offset={100} once>
+              <Link to={treecitySessionsLink}>
+                <img src={treecitySessions} alt="" />
+              </Link>
+            </LazyLoad>
+          </div>
+          <div className="grid-item">
+            <LazyLoad height={300} offset={100} once>
+              <Link to={downtownBattleMountainIILink}>
+                <img src={downtownBattleMountainII} alt="" />
+              </Link>
+            </LazyLoad>
+          </div>
+          <div className="grid-item">
+            <LazyLoad height={300} offset={100} once>
+              <Link to={happinessLink}>
+                <img src={happiness} alt="" />
+              </Link>
+            </LazyLoad>
+          </div>
+          <div className="grid-item grid-item--width2">
+            <LazyLoad height={300} offset={100} once>
+              <Link to={mothershipLink}>
+                <img src={mothership} alt="" />
+              </Link>
+            </LazyLoad>
+          </div>
+          <div className="grid-item">
+            <LazyLoad height={300} offset={100} once>
+              <Link to={downtownBattleMountainLink}>
+                <img src={downtownBattleMountain} alt="" />
+              </Link>
+            </LazyLoad>
+          </div>
+          <div className="grid-item">
+            <LazyLoad height={300} offset={100} once>
+              <Link to={dancedgavindanceLink}>
+                <img src={dancedgavindance} alt="" />
+              </Link>
             </LazyLoad>
           </div>
           <div className="grid-item">
