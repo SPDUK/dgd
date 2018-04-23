@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
 
-import SelectedAlbum from './selectedalbum/selectedalbum';
-import Test from './selectedalbum/newtest';
+import ClickedAlbum from './clickedalbum/clickedalbum';
 
 import './albums.css';
-
-import square1 from '../../../images/acceptance-speech.jpg';
 import square2 from '../../../images/whatever-i-say-is-royal-ocean.jpg';
 import square3 from '../../../images/dancedgavindance.jpg';
 import square4 from '../../../images/downtown-battle-mtn-ii.jpg';
@@ -18,6 +15,8 @@ import square8 from '../../../images/summertime-gladness.jpg';
 import wide1 from '../../../images/artificial-selection.jpg';
 import wide2 from '../../../images/mothership.jpg';
 import wide3 from '../../../images/treecity-sessions.jpg';
+
+const acceptanceSpeech = 'https://i.imgur.com/J6UgPMN.jpg';
 
 class Albums extends Component {
   constructor() {
@@ -36,9 +35,10 @@ class Albums extends Component {
 
   render() {
     const newLink = {
-      pathname: '/test',
-      albumName: 'ArtificalSelection',
-      image: { wide1 }
+      pathname: '/album/acceptancespeech',
+      albumname: 'Acceptance Speech',
+      image: acceptanceSpeech,
+      date: '2018'
     };
 
     return (
@@ -49,9 +49,6 @@ class Albums extends Component {
           </Link>
           <h1>ALBUMS</h1>
         </div>
-        {this.state.showAlbum ? (
-          <SelectedAlbum showAlbumClick={this.showAlbumClick} image={wide1} />
-        ) : null}
         <div
           className="grid js-masonry"
           data-masonry="{ &quot;itemSelector&quot;: &quot;.grid-item&quot;, &quot;columnWidth&quot;: 150 }"
@@ -63,7 +60,7 @@ class Albums extends Component {
           </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
-              <img src={square1} alt="" />
+              <img src="https://i.imgur.com/J6UgPMN.jpg" alt="" />
             </LazyLoad>
           </div>
           <div className="grid-item">
