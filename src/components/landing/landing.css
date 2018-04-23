@@ -1,6 +1,16 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0.3; }
+  100% {
+    opacity: 1; } }
+
 .landing {
   height: 2300px;
-  background-color: #EEEEE6; }
+  background-color: #EEEEE6;
+  animation: fade-in;
+  animation-duration: 0.6s; }
   .landing-background {
     background: url(../../images/mobilepic.jpg) no-repeat center center;
     background-size: cover;

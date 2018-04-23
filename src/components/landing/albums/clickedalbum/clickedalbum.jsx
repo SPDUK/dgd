@@ -21,11 +21,10 @@ class ClickedAlbum extends Component {
       this.props.history.push('/');
       setTimeout(() => {
         scroller.scrollTo('albumtitle', {
-          duration: 800,
-          offset: -100,
-          smooth: 'easeInOutQuad'
+          duration: 0,
+          offset: -100
         });
-      }, 300);
+      }, 0);
     }
   }
 
@@ -33,11 +32,11 @@ class ClickedAlbum extends Component {
     this.props.history.push('/');
     setTimeout(() => {
       scroller.scrollTo('albumtitle', {
-        duration: 800,
+        duration: 0,
         offset: -80,
         smooth: 'easeInOutQuad'
       });
-    }, 300);
+    }, 0);
   };
 
   render() {
