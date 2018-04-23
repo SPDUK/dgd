@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-// import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
+import _ from 'lodash';
 
 // need props for title of album & date?
+import './clickedalbum.css';
 
 class ClickedAlbum extends Component {
-  render(props) {
-    // console.log(this.props.location.image);
-    // console.log(this.props.location.albumname);
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 
-    // const
-    // console.log(albumImage);
+  render() {
     console.log(this.props.location);
     return (
       <div className="lol">

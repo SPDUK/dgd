@@ -8,7 +8,6 @@ import './albums.css';
 import square2 from '../../../images/whatever-i-say-is-royal-ocean.jpg';
 import square3 from '../../../images/dancedgavindance.jpg';
 import square4 from '../../../images/downtown-battle-mtn-ii.jpg';
-import square5 from '../../../images/downtown-battle-mtn.jpg';
 import square6 from '../../../images/happiness.jpg';
 import square7 from '../../../images/instant-gratification.jpg';
 import square8 from '../../../images/summertime-gladness.jpg';
@@ -17,6 +16,8 @@ import wide2 from '../../../images/mothership.jpg';
 import wide3 from '../../../images/treecity-sessions.jpg';
 
 const acceptanceSpeech = 'https://i.imgur.com/J6UgPMN.jpg';
+const downtownBattleMountain = 'https://i.imgur.com/u0Slvb2.jpg';
+const whateverISayIsRoyalOcean = 'https://i.imgur.com/c0pqxFX.jpg';
 
 class Albums extends Component {
   constructor() {
@@ -36,12 +37,6 @@ class Albums extends Component {
     });
   }
 
-  // showAlbumClick() {
-  //   this.setState(prevState => ({
-  //     showAlbum: !prevState.showAlbum
-  //   }));
-  // }
-
   render() {
     const acceptanceSpeechLink = {
       pathname: '/album/acceptancespeech',
@@ -49,16 +44,26 @@ class Albums extends Component {
       image: acceptanceSpeech,
       date: '2018'
     };
+    const whateverISayIsRoyalOceanLink = {
+      pathname: '/album/whateverISayIsRoyalOcean',
+      albumname: 'whatever I Say Is Royal Ocean',
+      image: whateverISayIsRoyalOcean,
+      date: '2006'
+    };
+
+    const downtownBattleMountainLink = {
+      pathname: '/album/downtownbattlemountain',
+      albumname: 'downtown Battle Mountain',
+      image: downtownBattleMountain,
+      date: '2017'
+    };
 
     return (
       <div className="albums">
         <div className="albums-title">
           <h1>ALBUMS</h1>
         </div>
-        <div
-          className="grid"
-          // data-masonry="{ &quot;itemSelector&quot;: &quot;.grid-item&quot;, &quot;columnWidth&quot;: 150 }"
-        >
+        <div className="grid">
           <div className="grid-item grid-item--width2">
             <LazyLoad height={300} offset={100} once>
               <img src={wide1} alt="" />
@@ -71,11 +76,6 @@ class Albums extends Component {
               </Link>
             </LazyLoad>
           </div>
-          <div className="grid-item">
-            <LazyLoad height={300} offset={100} once>
-              <img src={square2} alt="" />
-            </LazyLoad>
-          </div>
           <div className="grid-item grid-item--width2">
             <LazyLoad height={300} offset={100} once>
               <img src={wide2} alt="" />
@@ -83,7 +83,9 @@ class Albums extends Component {
           </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
-              <img src={square5} alt="" />
+              <Link to={downtownBattleMountainLink}>
+                <img src={downtownBattleMountain} alt="" />
+              </Link>
             </LazyLoad>
           </div>
           <div className="grid-item">
@@ -114,6 +116,16 @@ class Albums extends Component {
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
               <img src={square8} alt="" />
+            </LazyLoad>
+          </div>
+          <div className="grid-item">
+            <LazyLoad height={300} offset={100} once>
+              <Link to={whateverISayIsRoyalOceanLink}>
+                <img
+                  src={whateverISayIsRoyalOcean}
+                  alt="Whatevr I say Is Royal Ocean Album Art"
+                />
+              </Link>
             </LazyLoad>
           </div>
         </div>

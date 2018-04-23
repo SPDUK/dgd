@@ -32,6 +32,9 @@
   @media screen and (min-width: 1290px) {
     .albums {
       padding: 100px 3%; } }
+  @media screen and (min-width: 1400px) {
+    .albums {
+      padding: 100px 7%; } }
   @media screen and (min-width: 1500px) {
     .albums {
       padding: 100px 10%; } }

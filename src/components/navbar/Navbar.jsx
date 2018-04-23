@@ -25,11 +25,9 @@ const handleScroll = _.throttle(() => {
   // handleScroll();
   if (window.scrollY >= 135) {
     myNav.classList.add('nav-scrolled');
-    console.log('down');
   }
   if (window.scrollY <= 134) {
     myNav.classList.remove('nav-scrolled');
-    console.log('up');
   }
 }, 250);
 
