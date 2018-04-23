@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+
+import { animateScroll as scroll, scroller } from 'react-scroll';
 
 // need props for title of album & date?
 import './clickedalbum.css';
 
 class ClickedAlbum extends Component {
-  constructor() {
-    super();
-    this.state = {
-      redirect: false
-    };
-  }
   // if the data for the component is not loaded it will simply
   // redirect back to home
 
@@ -21,10 +16,29 @@ class ClickedAlbum extends Component {
 
   checkLoaded() {
     if (!this.props.location.loaded) {
-      // maybe make this scroll to albums component?
-      window.location = 'http://localhost:3000/#/';
+      // scrolls to album component if you went back to it after leaving
+      // If I had infinite time I'd make 11 different components instead
+      this.props.history.push('/');
+      setTimeout(() => {
+        scroller.scrollTo('albumtitle', {
+          duration: 800,
+          offset: -100,
+          smooth: 'easeInOutQuad'
+        });
+      }, 300);
     }
   }
+
+  albumClickBack = () => {
+    this.props.history.push('/');
+    setTimeout(() => {
+      scroller.scrollTo('albumtitle', {
+        duration: 800,
+        offset: -80,
+        smooth: 'easeInOutQuad'
+      });
+    }, 300);
+  };
 
   render() {
     if (this.props.location.loaded) {
@@ -42,11 +56,16 @@ class ClickedAlbum extends Component {
               <img src={this.props.location.image} alt="" />
               <div className="clickedalbum-image-nav">
                 <div className="clickedalbum-image-nav-button left">
-                  <Link to="/">
+                  <div
+                    onKeyPress={this.albumClickBack}
+                    tabIndex="0"
+                    role="button"
+                    onClick={this.albumClickBack}
+                  >
                     <p id="albumBack">
                       <i className="fa fa-arrow-left" /> Back
                     </p>
-                  </Link>
+                  </div>
                 </div>
                 <div className="clickedalbum-image-nav-button right">
                   <a href={this.props.location.youtube}>

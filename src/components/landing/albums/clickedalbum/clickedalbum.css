@@ -53,6 +53,7 @@
       margin-top: 8px;
       line-height: 50px; }
       .clickedalbum-image-nav-button p {
+        cursor: pointer;
         height: 100%;
         width: 100%;
         line-height: 50px;

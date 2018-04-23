@@ -126,7 +126,7 @@ class Albums extends Component {
 
     return (
       <div className="albums">
-        <div className="albums-title">
+        <div name="albumtitle" className="albums-title">
           <h1>ALBUMS</h1>
         </div>
         <div className="grid">
