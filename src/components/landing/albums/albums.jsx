@@ -24,17 +24,26 @@ class Albums extends Component {
     this.state = {
       showAlbum: false
     };
-    this.showAlbumClick = this.showAlbumClick.bind(this);
+    // this.showAlbumClick = this.showAlbumClick.bind(this);
   }
 
-  showAlbumClick() {
-    this.setState(prevState => ({
-      showAlbum: !prevState.showAlbum
-    }));
+  componentDidMount() {
+    const Masonry = require('masonry-layout');
+    const msnry = new Masonry('.grid', {
+      itemSelector: '.grid-item',
+      columnWidth: 150,
+      isFitWidth: true
+    });
   }
+
+  // showAlbumClick() {
+  //   this.setState(prevState => ({
+  //     showAlbum: !prevState.showAlbum
+  //   }));
+  // }
 
   render() {
-    const newLink = {
+    const acceptanceSpeechLink = {
       pathname: '/album/acceptancespeech',
       albumname: 'Acceptance Speech',
       image: acceptanceSpeech,
@@ -44,14 +53,11 @@ class Albums extends Component {
     return (
       <div className="albums">
         <div className="albums-title">
-          <Link to={newLink}>
-            <button />
-          </Link>
           <h1>ALBUMS</h1>
         </div>
         <div
-          className="grid js-masonry"
-          data-masonry="{ &quot;itemSelector&quot;: &quot;.grid-item&quot;, &quot;columnWidth&quot;: 150 }"
+          className="grid"
+          // data-masonry="{ &quot;itemSelector&quot;: &quot;.grid-item&quot;, &quot;columnWidth&quot;: 150 }"
         >
           <div className="grid-item grid-item--width2">
             <LazyLoad height={300} offset={100} once>
@@ -60,7 +66,9 @@ class Albums extends Component {
           </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
-              <img src="https://i.imgur.com/J6UgPMN.jpg" alt="" />
+              <Link to={acceptanceSpeechLink}>
+                <img src={acceptanceSpeech} alt="" />
+              </Link>
             </LazyLoad>
           </div>
           <div className="grid-item">

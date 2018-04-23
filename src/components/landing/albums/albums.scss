@@ -2,9 +2,30 @@
 .albums {
   height: 1500px;
   background-color: $darkGray;
-  padding: 100px 3%;
+  padding: 100px 0%;
+  @media screen and (min-width: 320px){
+    padding: 100px 3%;
+  }
+  @media screen and (min-width: 340px){
+    padding: 100px 8%;
+  }
+  @media screen and (min-width: 380px){
+    padding: 100px 8%;
+  }
   @media screen and (min-width: 390px){
-    padding: 100px 12%;
+    padding: 100px 10%;
+  }
+  @media screen and (min-width: 480px){
+    padding: 100px 20%;
+  }
+  @media screen and (min-width: 580px){
+    padding: 100px 25%;
+  }
+  @media screen and (min-width: 630px){
+    padding: 100px 2%;
+  }
+  @media screen and (min-width: 680px){
+    padding: 100px 5%;
   }
   @include breakpoint(lg){
     padding: 100px 10%;
