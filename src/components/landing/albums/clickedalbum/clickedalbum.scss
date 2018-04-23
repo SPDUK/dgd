@@ -3,31 +3,50 @@
 .clickedalbum {
   height: 1000px;
   width: 100%;
-  background-color: $darkGray;
   display: flex;
+  background-color: $darkGray;
   align-content: center;
   justify-content: center;
-  padding-top: 150px;
+  padding-top: 100px;
   &-gutters {
     padding: 0 3%;
+    @include breakpoint(sm){
+      padding: 150px 15%;
+    }
   }
   h1 {
-    text-align:center;
-    font-size: 1em;
+    text-align:left;
+    font-size: 1.1em;
     color: white;
     font-weight: 700;
-    width: 235px;
     font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+    opacity: 0.85;
+    @media screen and (min-width: 480px){
+      font-size: 1.6em;
+    }
+    @media screen and (min-width: 580px){
+      font-size: 1.8em;
+    }
+    @include breakpoint(sm){
+      font-size: 1.8em;
+      position: absolute;
+      transform: translate(-85px, -55px);
+    }
+    @include breakpoint(md){
+      font-size: 2em;
+    }
+    @include breakpoint(lg){
+      font-size: 2.5em;
+      position: absolute;
+      transform: translate(-120px, -80px);
+    }
   }
   &-image {
-    // width: 100%;
     img {
       display: block;
       width: 100%;
       margin: 0 auto;
-      @include breakpoint(sm){
-        height:436.8px;
-      }
     }
     &-nav {
       width:  100%;
@@ -35,7 +54,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       &-button {
-        width: 49%;
+        width: 30%;
         height: 50px;
         margin-top: 8px;
         background-color: white;

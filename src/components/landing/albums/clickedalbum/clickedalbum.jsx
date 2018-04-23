@@ -9,6 +9,8 @@ class ClickedAlbum extends Component {
     window.scrollTo(0, 0);
   }
 
+  // set a default thing, if no props arrive show that,
+  // if props arrive load normally
   render() {
     console.log(this.props.location);
     return (
@@ -16,7 +18,9 @@ class ClickedAlbum extends Component {
         <div className="clickedalbum-gutters">
           <div className="clickedalbum-title">
             <h1>
-              {this.props.location.albumname}, {this.props.location.date}
+              {this.props.location.albumname}
+              <br />
+              {this.props.location.date}
             </h1>
           </div>
           <div className="clickedalbum-image">
