@@ -52,14 +52,36 @@
       width:  100%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-evenly;
       &-button {
-        width: 30%;
+        width: 48%;
         height: 50px;
         margin-top: 8px;
-        background-color: white;
+        line-height: 50px;
+         p{
+          height: 100%;
+          width: 100%;
+          line-height: 50px;
+          color: white;
+          font-size: 0.9em;
+          opacity: 0.8;
+          transition: 0.2s ease;
+          @include breakpoint(sm){
+            font-size: 1.1em;
+          }
+          &:hover {
+            transition: 0.2s ease;
+            opacity: 1;
+            color: $orange;
+          }
+         }
       }
     }
   }
-
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
 }

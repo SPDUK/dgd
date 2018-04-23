@@ -46,9 +46,28 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-evenly; }
     .clickedalbum-image-nav-button {
-      width: 30%;
+      width: 48%;
       height: 50px;
       margin-top: 8px;
-      background-color: white; }
+      line-height: 50px; }
+      .clickedalbum-image-nav-button p {
+        height: 100%;
+        width: 100%;
+        line-height: 50px;
+        color: white;
+        font-size: 0.9em;
+        opacity: 0.8;
+        transition: 0.2s ease; }
+        @media (min-width: 768px) {
+          .clickedalbum-image-nav-button p {
+            font-size: 1.1em; } }
+        .clickedalbum-image-nav-button p:hover {
+          transition: 0.2s ease;
+          opacity: 1;
+          color: #FFA949; }
+  .clickedalbum .right {
+    text-align: right; }
+  .clickedalbum .left {
+    text-align: left; }

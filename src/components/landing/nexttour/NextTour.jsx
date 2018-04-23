@@ -7,8 +7,6 @@ import './nexttour.css';
 
 import nexttourimg from '../../../images/nexttour.jpg';
 
-// console.log(tourDateURL);
-
 class NextTour extends Component {
   constructor() {
     super();
@@ -49,14 +47,11 @@ class NextTour extends Component {
       const tourDateString = new Date(res.data[0].datetime)
         .toDateString()
         .slice(3, -4);
-      console.log(res);
       tourDate.innerText = tourDateString;
       tourCity.innerText = res.data[0].venue.city;
       tourCountry.innerText = res.data[0].venue.country;
       this.setState({ currentDateURL: res.data[0].url });
     });
-    // delete me later
-    console.log(this);
   }
   // uses state to open the latest URL from the fetch API function
   render() {
