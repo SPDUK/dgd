@@ -14,6 +14,8 @@ class ClickedAlbum extends Component {
     console.log(this.props.location);
     return (
       <div className="lol">
+        <h1>{this.props.location.albumname}</h1>
+        <h1>{this.props.location.date}</h1>
         <img src={this.props.location.image} alt="" />
       </div>
     );

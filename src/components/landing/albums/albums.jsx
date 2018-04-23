@@ -5,29 +5,20 @@ import { Link } from 'react-router-dom';
 import ClickedAlbum from './clickedalbum/clickedalbum';
 
 import './albums.css';
-import square2 from '../../../images/whatever-i-say-is-royal-ocean.jpg';
 import square3 from '../../../images/dancedgavindance.jpg';
-import square4 from '../../../images/downtown-battle-mtn-ii.jpg';
 import square6 from '../../../images/happiness.jpg';
-import square7 from '../../../images/instant-gratification.jpg';
 import square8 from '../../../images/summertime-gladness.jpg';
 import wide1 from '../../../images/artificial-selection.jpg';
 import wide2 from '../../../images/mothership.jpg';
 import wide3 from '../../../images/treecity-sessions.jpg';
 
+const instantGratification = 'https://i.imgur.com/iTWpoPV.jpg';
 const acceptanceSpeech = 'https://i.imgur.com/J6UgPMN.jpg';
 const downtownBattleMountain = 'https://i.imgur.com/u0Slvb2.jpg';
-const whateverISayIsRoyalOcean = 'https://i.imgur.com/c0pqxFX.jpg';
+const downtownBattleMountainII = 'https://i.imgur.com/hBf4w1H.jpg';
+const whateverISayIsRoyalOcean = 'https://i.imgur.com/c0pqxFX.jpg'; // last
 
 class Albums extends Component {
-  constructor() {
-    super();
-    this.state = {
-      showAlbum: false
-    };
-    // this.showAlbumClick = this.showAlbumClick.bind(this);
-  }
-
   componentDidMount() {
     const Masonry = require('masonry-layout');
     const msnry = new Masonry('.grid', {
@@ -38,6 +29,19 @@ class Albums extends Component {
   }
 
   render() {
+    const downtownBattleMountainIILink = {
+      pathname: '/album/downtownbattlemountain-ii',
+      albumname: 'Downtown Battle Mountain II',
+      image: downtownBattleMountainII,
+      date: '2018'
+    };
+    const instantGratificationLink = {
+      pathname: '/album/instantgratification',
+      albumname: 'Instant Gratification',
+      image: instantGratification,
+      date: '2018'
+    };
+
     const acceptanceSpeechLink = {
       pathname: '/album/acceptancespeech',
       albumname: 'Acceptance Speech',
@@ -46,14 +50,14 @@ class Albums extends Component {
     };
     const whateverISayIsRoyalOceanLink = {
       pathname: '/album/whateverISayIsRoyalOcean',
-      albumname: 'whatever I Say Is Royal Ocean',
+      albumname: 'Whatever I Say Is Royal Ocean',
       image: whateverISayIsRoyalOcean,
       date: '2006'
     };
 
     const downtownBattleMountainLink = {
       pathname: '/album/downtownbattlemountain',
-      albumname: 'downtown Battle Mountain',
+      albumname: 'Downtown Battle Mountain',
       image: downtownBattleMountain,
       date: '2017'
     };
@@ -105,12 +109,16 @@ class Albums extends Component {
           </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
-              <img src={square4} alt="" />
+              <Link to={downtownBattleMountainIILink}>
+                <img src={downtownBattleMountainII} alt="" />
+              </Link>
             </LazyLoad>
           </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
-              <img src={square7} alt="" />
+              <Link to={instantGratificationLink}>
+                <img src={instantGratification} alt="" />
+              </Link>
             </LazyLoad>
           </div>
           <div className="grid-item">
