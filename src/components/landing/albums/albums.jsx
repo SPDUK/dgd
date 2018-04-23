@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
+import { Link } from 'react-router-dom';
 
 import SelectedAlbum from './selectedalbum/selectedalbum';
+import Test from './selectedalbum/newtest';
 
 import './albums.css';
 
@@ -33,9 +35,18 @@ class Albums extends Component {
   }
 
   render() {
+    const newLink = {
+      pathname: '/test',
+      albumName: 'ArtificalSelection',
+      image: { wide1 }
+    };
+
     return (
-      <div onClick={this.showAlbumClick} className="albums">
+      <div className="albums">
         <div className="albums-title">
+          <Link to={newLink}>
+            <button />
+          </Link>
           <h1>ALBUMS</h1>
         </div>
         {this.state.showAlbum ? (

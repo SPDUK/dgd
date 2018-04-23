@@ -1,4 +1,5 @@
 .albums {
+  height: 1500px;
   background-color: #191716;
   padding: 100px 3%; }
   @media screen and (min-width: 390px) {

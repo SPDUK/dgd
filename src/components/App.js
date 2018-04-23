@@ -5,6 +5,7 @@ import Navbar from './navbar/Navbar';
 import Landing from './landing/Landing';
 
 import '../styles/app.css';
+import Test from '../components/landing/albums/selectedalbum/newtest';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <div>
             <Navbar />
             <Route exact path="/" component={Landing} />
+            <Route path="/test" component={Test} />
           </div>
         </HashRouter>
       </div>

@@ -15,25 +15,40 @@
     width: 20px;
     height: 20px;
     opacity: 1;
-    position: absolute;
-    left: 25%;
-    right: 25%;
+    position: relative;
+    left: 90%;
+    right: 0%;
     top: 25%;
     bottom: 25%;
-    margin: auto;
     background: white;
   }
   img {
     opacity: 1;
-    width: 65%;
-    position: absolute;
     @include absolutecenter(both);
     background: white;
-    @include breakpoint(sm){
-      width: 80%;
+    width: 15%;
+    // @include breakpoint(sm){
+    //   width: 80%;
+    // }
+    // @include breakpoint(md){
+    //   width: 70%;
+    // }
+
+    @media screen and (orientation: landscape) and (max-height:350px) and (max-width:570px) {
+      width: 50%;
     }
-    @include breakpoint(md){
-      width: 70%;
-    }
-  }
+    // @media screen and (orientation: landscape) and (max-height:400px) and (max-width:700px){
+    //   width: 45%;
+    // }
+    // @media screen and (orientation: landscape) and (max-height:300px) and (min-width:400px) {
+    //   width: 30%;
+    // }
+    // @media screen and (orientation: landscape) and (min-height:300px) and (min-width: 700px) {
+    //   width: 35%;
+    // }
+    // @media screen and (orientation: landscape) and (min-height:300px) and (min-width: 700px) {
+    //   width: 50%;
+    // }
+
+}
 }
