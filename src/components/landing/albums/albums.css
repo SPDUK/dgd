@@ -31,10 +31,13 @@
       padding: 100px 10%; } }
   @media screen and (min-width: 1290px) {
     .albums {
-      padding: 100px 15%; } }
+      padding: 100px 3%; } }
   @media screen and (min-width: 1500px) {
     .albums {
-      padding: 100px 15%; } }
+      padding: 100px 10%; } }
+  @media screen and (min-width: 1650px) {
+    .albums {
+      padding: 100px 13%; } }
   @media screen and (min-width: 1840px) {
     .albums {
       padding: 100px 10%; } }
