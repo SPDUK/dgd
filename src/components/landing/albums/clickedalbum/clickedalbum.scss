@@ -89,25 +89,24 @@
   }
   &-desc {
     padding-top: 20px;
-    width:280px;
+    width: 280px;
     color: white;
     position: absolute;
-    @media screen and (min-width: 400px){
+    @media screen and (min-width: 400px) {
       width: 380px;
       font-size: 1.1em;
     }
-    @media screen and (min-width: 600px){
+    @media screen and (min-width: 600px) {
       width: 580px;
       font-size: 1.1em;
     }
-    @include breakpoint(md){
+    @include breakpoint(md) {
       width: 650px;
       font-size: 1.4em;
     }
-    @include breakpoint(lg){
+    @include breakpoint(lg) {
       width: 830px;
       font-size: 1.6em;
     }
-
   }
 }
