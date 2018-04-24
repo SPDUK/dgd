@@ -52,6 +52,11 @@
     color: white;
     font-family: 'Montserrat', sans-serif;
   }
+  &-selected {
+    // height: 300px;
+    // display: none;
+    opacity: 1;
+  }
 }
 
 .grid-item {

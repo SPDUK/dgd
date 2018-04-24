@@ -34,12 +34,22 @@ class Albums extends Component {
       isFitWidth: true
     });
   }
-  renderAlbum = e => {
-    const selectedAlbumId = e.target.id;
-    console.log(selectedAlbumId);
+
+  closeAlbum = () => {
+    this.setState({
+      showAlbum: false,
+      selectedAlbum: ''
+    });
+  };
+
+  // renderAlbumClick = (
+  //   this.renderAlbum(artificialSelectionInfo);
+  // )
+  renderAlbum = (e, inf) => {
     this.setState({
       showAlbum: true,
-      selectedAlbum: selectedAlbumId
+      selectedAlbum: e,
+      info: inf
     });
   };
 
@@ -137,7 +147,6 @@ class Albums extends Component {
       desc:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lectus ultricies, cursus nulla ut, iaculis mi. Etiam nisi felis, interdum vitae massa ut, finibus vestibulum turpis.'
     };
-
     const downtownBattleMountainInfo = {
       pathname: '/album/downtownbattlemountain',
       albumname: 'Downtown Battle Mountain',
@@ -162,21 +171,59 @@ class Albums extends Component {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lectus ultricies, cursus nulla ut, iaculis mi. Etiam nisi felis, interdum vitae massa ut, finibus vestibulum turpis.'
     };
 
+    const renderAlbumClick = e => {
+      const selectedAlbumId = e.target.id;
+      console.log(selectedAlbumId);
+      if (selectedAlbumId === 'artificialSelection') {
+        var selectedAlbumInfo = artificialSelectionInfo;
+      }
+      if (selectedAlbumId === 'instantGratification') {
+        var selectedAlbumInfo = instantGratificationInfo;
+      }
+      if (selectedAlbumId === 'downtownBattleMountainII') {
+        var selectedAlbumInfo = downtownBattleMountainIIInfo;
+      }
+      if (selectedAlbumId === 'treecitySessions') {
+        var selectedAlbumInfo = treecitySessionsInfo;
+      }
+      if (selectedAlbumId === 'happiness') {
+        var selectedAlbumInfo = happinessInfo;
+      }
+      if (selectedAlbumId === 'mothership') {
+        var selectedAlbumInfo = mothershipInfo;
+      }
+      if (selectedAlbumId === 'downtownBattleMountain') {
+        var selectedAlbumInfo = downtownBattleMountainInfo;
+      }
+      if (selectedAlbumId === 'dancedGavinDance') {
+        var selectedAlbumInfo = dancedgavindanceInfo;
+      }
+      if (selectedAlbumId === 'acceptanceSpeech') {
+        var selectedAlbumInfo = acceptanceSpeechInfo;
+      }
+      if (selectedAlbumId === 'whateverISayIsRoyalOcean') {
+        var selectedAlbumInfo = whateverISayIsRoyalOceanInfo;
+      }
+
+      this.renderAlbum(selectedAlbumId, selectedAlbumInfo);
+    };
     return (
       <div className="albums">
         <div name="albumtitle" className="albums-title">
           <h1>ALBUMS</h1>
         </div>
-        {this.state.selectedAlbum === 'artificialSelection' &&
-        this.state.showAlbum ? (
-          <ClickedAlbum info={artificialSelectionInfo} />
-        ) : null}
+        <div className="albums-selected">
+          {this.state.showAlbum ? (
+            <ClickedAlbum closeAlbum={this.closeAlbum} info={this.state.info} />
+          ) : null}
+        </div>
+
         <div className="grid">
           <div className="grid-item grid-item--width2">
             <LazyLoad height={300} offset={100} once>
               <img
                 id="artificialSelection"
-                onClick={this.renderAlbum}
+                onClick={renderAlbumClick}
                 src={artificialSelection}
                 alt=""
               />
@@ -186,7 +233,7 @@ class Albums extends Component {
             <LazyLoad height={300} offset={100} once>
               <img
                 id="instantGratification"
-                onClick={this.renderAlbum}
+                onClick={renderAlbumClick}
                 src={instantGratification}
                 alt=""
               />
@@ -196,7 +243,7 @@ class Albums extends Component {
             <LazyLoad height={300} offset={100} once>
               <img
                 id="acceptanceSpeech"
-                onClick={this.renderAlbum}
+                onClick={renderAlbumClick}
                 src={acceptanceSpeech}
                 alt=""
               />
@@ -206,7 +253,7 @@ class Albums extends Component {
             <LazyLoad height={300} offset={100} once>
               <img
                 id="treecitySessions"
-                onClick={this.renderAlbum}
+                onClick={renderAlbumClick}
                 src={treecitySessions}
                 alt=""
               />
@@ -216,7 +263,7 @@ class Albums extends Component {
             <LazyLoad height={300} offset={100} once>
               <img
                 id="downtownBattleMountainII"
-                onClick={this.renderAlbum}
+                onClick={renderAlbumClick}
                 src={downtownBattleMountainII}
                 alt=""
               />
@@ -226,7 +273,7 @@ class Albums extends Component {
             <LazyLoad height={300} offset={100} once>
               <img
                 id="happiness"
-                onClick={this.renderAlbum}
+                onClick={renderAlbumClick}
                 src={happiness}
                 alt=""
               />
@@ -235,8 +282,8 @@ class Albums extends Component {
           <div className="grid-item grid-item--width2">
             <LazyLoad height={300} offset={100} once>
               <img
-                id="instantGratification"
-                onClick={this.renderAlbum}
+                id="mothership"
+                onClick={renderAlbumClick}
                 src={mothership}
                 alt=""
               />
@@ -246,7 +293,7 @@ class Albums extends Component {
             <LazyLoad height={300} offset={100} once>
               <img
                 id="downtownBattleMountain"
-                onClick={this.renderAlbum}
+                onClick={renderAlbumClick}
                 src={downtownBattleMountain}
                 alt=""
               />
@@ -256,7 +303,7 @@ class Albums extends Component {
             <LazyLoad height={300} offset={100} once>
               <img
                 id="dancedGavinDance"
-                onClick={this.renderAlbum}
+                onClick={renderAlbumClick}
                 src={dancedgavindance}
                 alt=""
               />
@@ -266,7 +313,7 @@ class Albums extends Component {
             <LazyLoad height={300} offset={100} once>
               <img
                 id="whateverISayIsRoyalOcean"
-                onClick={this.renderAlbum}
+                onClick={renderAlbumClick}
                 src={whateverISayIsRoyalOcean}
                 alt="Whatevr I say Is Royal Ocean Album Art"
               />

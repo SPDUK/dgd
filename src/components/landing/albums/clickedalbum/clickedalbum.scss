@@ -6,10 +6,11 @@
   align-content: center;
   justify-content: center;
   padding-top: 0px;
+  // display: none;
   &-gutters {
-    padding: 0 3%;
+    padding: 10px 3%;
     @include breakpoint(sm) {
-      padding: 150px 15%;
+      padding: 10px 15%;
     }
   }
   h1 {

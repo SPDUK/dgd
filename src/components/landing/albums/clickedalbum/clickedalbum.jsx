@@ -7,40 +7,6 @@ import { animateScroll as scroll, scroller } from 'react-scroll';
 import './clickedalbum.css';
 
 class ClickedAlbum extends Component {
-  // if the data for the component is not loaded it will simply
-  // redirect back to home
-
-  // componentDidMount() {
-  //   window.scrollTo(0, 0);
-  //   // this.checkLoaded();
-  // }
-
-  // checkLoaded() {
-  //   if (!this.props.te.loaded) {
-  //     // scrolls to album component if you went back to it after leaving
-  //     // If I had infinite time I'd make 11 different components instead
-  //     this.props.history.push('/');
-  //     setTimeout(() => {
-  //       scroller.scrollTo('albumtitle', {
-  //         duration: 0,
-  //         offset: -100
-  //       });
-  //     }, 50);
-  //   }
-  // }
-
-  // goes back to home and scrolls to the album component when clicking back
-  // albumClickBack = () => {
-  //   this.props.history.push('/');
-  //   setTimeout(() => {
-  //     scroller.scrollTo('albumtitle', {
-  //       duration: 0,
-  //       offset: -80,
-  //       smooth: 'easeInOutQuad'
-  //     });
-  //   }, 0);
-  // };
-
   render() {
     return (
       <div className="clickedalbum-container">
@@ -58,13 +24,13 @@ class ClickedAlbum extends Component {
               <div className="clickedalbum-image-nav">
                 <div className="clickedalbum-image-nav-button left">
                   <div
-                    onKeyPress={this.albumClickBack}
+                    onKeyPress={this.props.closeAlbum}
                     tabIndex="0"
                     role="button"
-                    onClick={this.albumClickBack}
+                    onClick={this.props.closeAlbum}
                   >
                     <p id="albumBack">
-                      <i className="fa fa-arrow-left" /> Back
+                      <i className="fa fa-arrow-left" /> Close
                     </p>
                   </div>
                 </div>
@@ -75,14 +41,6 @@ class ClickedAlbum extends Component {
                     </p>
                   </a>
                 </div>
-              </div>
-              <div className="clickedalbum-desc">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque eget lectus ultricies, cursus nulla ut, iaculis
-                  mi. Etiam nisi felis, interdum vitae massa ut, finibus
-                  vestibulum turpis.
-                </p>
               </div>
             </div>
           </div>

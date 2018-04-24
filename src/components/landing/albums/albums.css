@@ -50,6 +50,8 @@
     font-size: 1em;
     color: white;
     font-family: 'Montserrat', sans-serif; }
+  .albums-selected {
+    opacity: 1; }
 
 .grid-item {
   height: 150px;

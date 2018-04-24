@@ -6,10 +6,10 @@
   justify-content: center;
   padding-top: 0px; }
   .clickedalbum-gutters {
-    padding: 0 3%; }
+    padding: 10px 3%; }
     @media (min-width: 768px) {
       .clickedalbum-gutters {
-        padding: 150px 15%; } }
+        padding: 10px 15%; } }
   .clickedalbum h1 {
     text-align: left;
     font-size: 1.1em;
