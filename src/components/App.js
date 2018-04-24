@@ -15,7 +15,6 @@ class App extends Component {
           <div>
             <Navbar />
             <Route exact path="/" component={Landing} />
-            <Route path="/album/:id" component={ClickedAlbum} />
           </div>
         </HashRouter>
       </div>

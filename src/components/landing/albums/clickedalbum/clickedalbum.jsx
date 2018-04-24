@@ -10,51 +10,51 @@ class ClickedAlbum extends Component {
   // if the data for the component is not loaded it will simply
   // redirect back to home
 
-  componentDidMount() {
-    window.scrollTo(0, 0);
-    this.checkLoaded();
-  }
+  // componentDidMount() {
+  //   window.scrollTo(0, 0);
+  //   // this.checkLoaded();
+  // }
 
-  checkLoaded() {
-    if (!this.props.location.loaded) {
-      // scrolls to album component if you went back to it after leaving
-      // If I had infinite time I'd make 11 different components instead
-      this.props.history.push('/');
-      setTimeout(() => {
-        scroller.scrollTo('albumtitle', {
-          duration: 0,
-          offset: -100
-        });
-      }, 50);
-    }
-  }
+  // checkLoaded() {
+  //   if (!this.props.te.loaded) {
+  //     // scrolls to album component if you went back to it after leaving
+  //     // If I had infinite time I'd make 11 different components instead
+  //     this.props.history.push('/');
+  //     setTimeout(() => {
+  //       scroller.scrollTo('albumtitle', {
+  //         duration: 0,
+  //         offset: -100
+  //       });
+  //     }, 50);
+  //   }
+  // }
 
   // goes back to home and scrolls to the album component when clicking back
-  albumClickBack = () => {
-    this.props.history.push('/');
-    setTimeout(() => {
-      scroller.scrollTo('albumtitle', {
-        duration: 0,
-        offset: -80,
-        smooth: 'easeInOutQuad'
-      });
-    }, 0);
-  };
+  // albumClickBack = () => {
+  //   this.props.history.push('/');
+  //   setTimeout(() => {
+  //     scroller.scrollTo('albumtitle', {
+  //       duration: 0,
+  //       offset: -80,
+  //       smooth: 'easeInOutQuad'
+  //     });
+  //   }, 0);
+  // };
 
   render() {
-    if (this.props.location.loaded) {
-      return (
+    return (
+      <div className="clickedalbum-container">
         <div className="clickedalbum">
           <div className="clickedalbum-gutters">
             <div className="clickedalbum-title">
               <h1>
-                {this.props.location.albumname}
+                {this.props.info.albumname}
                 <br />
-                {this.props.location.date}
+                {this.props.info.date}
               </h1>
             </div>
             <div className="clickedalbum-image">
-              <img src={this.props.location.image} alt="" />
+              <img src={this.props.info.image} alt="" />
               <div className="clickedalbum-image-nav">
                 <div className="clickedalbum-image-nav-button left">
                   <div
@@ -69,7 +69,7 @@ class ClickedAlbum extends Component {
                   </div>
                 </div>
                 <div className="clickedalbum-image-nav-button right">
-                  <a href={this.props.location.youtube}>
+                  <a href={this.props.info.youtube}>
                     <p>
                       Listen on Youtube <i className="fa fa-arrow-right" />
                     </p>
@@ -87,9 +87,9 @@ class ClickedAlbum extends Component {
             </div>
           </div>
         </div>
-      );
-    }
-    return <div>error 404, you should not see this message.</div>;
+      </div>
+    );
+    // return <div>error 404, you should not see this message
   }
 }
 

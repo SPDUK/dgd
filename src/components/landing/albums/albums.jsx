@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 
 import './albums.css';
 
+import Test from './clickedalbum/test';
+import ClickedAlbum from './clickedalbum/clickedalbum';
+
 const artificialSelection = 'https://i.imgur.com/ewuyVXX.jpg';
 const mothership = 'https://i.imgur.com/8ooI9PG.jpg';
 const treecitySessions = 'https://i.imgur.com/afKreWO.jpg';
@@ -16,6 +19,13 @@ const downtownBattleMountain = 'https://i.imgur.com/u0Slvb2.jpg';
 const whateverISayIsRoyalOcean = 'https://i.imgur.com/c0pqxFX.jpg';
 
 class Albums extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showAlbum: false,
+      selectedAlbum: ''
+    };
+  }
   componentDidMount() {
     const Masonry = require('masonry-layout');
     const msnry = new Masonry('.grid', {
@@ -24,10 +34,18 @@ class Albums extends Component {
       isFitWidth: true
     });
   }
+  renderAlbum = e => {
+    const selectedAlbumId = e.target.id;
+    console.log(selectedAlbumId);
+    this.setState({
+      showAlbum: true,
+      selectedAlbum: selectedAlbumId
+    });
+  };
 
   // component objects
   render() {
-    const artificialSelectionLink = {
+    const artificialSelectionInfo = {
       pathname: '/album/artificialSelection',
       albumname: 'Artificial Selection',
       image: artificialSelection,
@@ -38,7 +56,7 @@ class Albums extends Component {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lectus ultricies, cursus nulla ut, iaculis mi. Etiam nisi felis, interdum vitae massa ut, finibus vestibulum turpis.'
     };
 
-    const mothershipLink = {
+    const mothershipInfo = {
       pathname: '/album/mothership',
       albumname: 'Mothership',
       image: mothership,
@@ -49,7 +67,7 @@ class Albums extends Component {
       desc:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lectus ultricies, cursus nulla ut, iaculis mi. Etiam nisi felis, interdum vitae massa ut, finibus vestibulum turpis.'
     };
-    const treecitySessionsLink = {
+    const treecitySessionsInfo = {
       pathname: '/album/treecitysessions',
       albumname: 'Tree City Sessions',
       image: treecitySessions,
@@ -61,7 +79,7 @@ class Albums extends Component {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lectus ultricies, cursus nulla ut, iaculis mi. Etiam nisi felis, interdum vitae massa ut, finibus vestibulum turpis.'
     };
 
-    const instantGratificationLink = {
+    const instantGratificationInfo = {
       pathname: '/album/instantgratification',
       albumname: 'Instant Gratification',
       image: instantGratification,
@@ -73,7 +91,7 @@ class Albums extends Component {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lectus ultricies, cursus nulla ut, iaculis mi. Etiam nisi felis, interdum vitae massa ut, finibus vestibulum turpis.'
     };
 
-    const acceptanceSpeechLink = {
+    const acceptanceSpeechInfo = {
       pathname: '/album/acceptancespeech',
       albumname: 'Acceptance Speech',
       image: acceptanceSpeech,
@@ -84,7 +102,7 @@ class Albums extends Component {
       desc:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lectus ultricies, cursus nulla ut, iaculis mi. Etiam nisi felis, interdum vitae massa ut, finibus vestibulum turpis.'
     };
-    const downtownBattleMountainIILink = {
+    const downtownBattleMountainIIInfo = {
       pathname: '/album/downtownbattlemountain-ii',
       albumname: 'Downtown Battle Mountain II',
       image: downtownBattleMountainII,
@@ -96,7 +114,7 @@ class Albums extends Component {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lectus ultricies, cursus nulla ut, iaculis mi. Etiam nisi felis, interdum vitae massa ut, finibus vestibulum turpis.'
     };
 
-    const happinessLink = {
+    const happinessInfo = {
       pathname: '/album/happiness',
       albumname: 'Happiness',
       image: happiness,
@@ -108,7 +126,7 @@ class Albums extends Component {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lectus ultricies, cursus nulla ut, iaculis mi. Etiam nisi felis, interdum vitae massa ut, finibus vestibulum turpis.'
     };
 
-    const dancedgavindanceLink = {
+    const dancedgavindanceInfo = {
       pathname: '/album/dancedgavindance',
       albumname: 'Dance Gavin Dance (self-titled)',
       image: dancedgavindance,
@@ -120,7 +138,7 @@ class Albums extends Component {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lectus ultricies, cursus nulla ut, iaculis mi. Etiam nisi felis, interdum vitae massa ut, finibus vestibulum turpis.'
     };
 
-    const downtownBattleMountainLink = {
+    const downtownBattleMountainInfo = {
       pathname: '/album/downtownbattlemountain',
       albumname: 'Downtown Battle Mountain',
       image: downtownBattleMountain,
@@ -132,7 +150,7 @@ class Albums extends Component {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lectus ultricies, cursus nulla ut, iaculis mi. Etiam nisi felis, interdum vitae massa ut, finibus vestibulum turpis.'
     };
 
-    const whateverISayIsRoyalOceanLink = {
+    const whateverISayIsRoyalOceanInfo = {
       pathname: '/album/whateverISayIsRoyalOcean',
       albumname: 'Whatever I Say Is Royal Ocean',
       image: whateverISayIsRoyalOcean,
@@ -149,78 +167,109 @@ class Albums extends Component {
         <div name="albumtitle" className="albums-title">
           <h1>ALBUMS</h1>
         </div>
+        {this.state.selectedAlbum === 'artificialSelection' &&
+        this.state.showAlbum ? (
+          <ClickedAlbum info={artificialSelectionInfo} />
+        ) : null}
         <div className="grid">
           <div className="grid-item grid-item--width2">
             <LazyLoad height={300} offset={100} once>
-              <Link to={artificialSelectionLink}>
-                <img src={artificialSelection} alt="" />
-              </Link>
+              <img
+                id="artificialSelection"
+                onClick={this.renderAlbum}
+                src={artificialSelection}
+                alt=""
+              />
             </LazyLoad>
           </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
-              <Link to={instantGratificationLink}>
-                <img src={instantGratification} alt="" />
-              </Link>
+              <img
+                id="instantGratification"
+                onClick={this.renderAlbum}
+                src={instantGratification}
+                alt=""
+              />
             </LazyLoad>
           </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
-              <Link to={acceptanceSpeechLink}>
-                <img src={acceptanceSpeech} alt="" />
-              </Link>
+              <img
+                id="acceptanceSpeech"
+                onClick={this.renderAlbum}
+                src={acceptanceSpeech}
+                alt=""
+              />
             </LazyLoad>
           </div>
           <div className="grid-item grid-item--width2">
             <LazyLoad height={300} offset={100} once>
-              <Link to={treecitySessionsLink}>
-                <img src={treecitySessions} alt="" />
-              </Link>
+              <img
+                id="treecitySessions"
+                onClick={this.renderAlbum}
+                src={treecitySessions}
+                alt=""
+              />
             </LazyLoad>
           </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
-              <Link to={downtownBattleMountainIILink}>
-                <img src={downtownBattleMountainII} alt="" />
-              </Link>
+              <img
+                id="downtownBattleMountainII"
+                onClick={this.renderAlbum}
+                src={downtownBattleMountainII}
+                alt=""
+              />
             </LazyLoad>
           </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
-              <Link to={happinessLink}>
-                <img src={happiness} alt="" />
-              </Link>
+              <img
+                id="happiness"
+                onClick={this.renderAlbum}
+                src={happiness}
+                alt=""
+              />
             </LazyLoad>
           </div>
           <div className="grid-item grid-item--width2">
             <LazyLoad height={300} offset={100} once>
-              <Link to={mothershipLink}>
-                <img src={mothership} alt="" />
-              </Link>
+              <img
+                id="instantGratification"
+                onClick={this.renderAlbum}
+                src={mothership}
+                alt=""
+              />
             </LazyLoad>
           </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
-              <Link to={downtownBattleMountainLink}>
-                <img src={downtownBattleMountain} alt="" />
-              </Link>
+              <img
+                id="downtownBattleMountain"
+                onClick={this.renderAlbum}
+                src={downtownBattleMountain}
+                alt=""
+              />
             </LazyLoad>
           </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
-              <Link to={dancedgavindanceLink}>
-                <img src={dancedgavindance} alt="" />
-              </Link>
+              <img
+                id="dancedGavinDance"
+                onClick={this.renderAlbum}
+                src={dancedgavindance}
+                alt=""
+              />
             </LazyLoad>
           </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
-              <Link to={whateverISayIsRoyalOceanLink}>
-                <img
-                  src={whateverISayIsRoyalOcean}
-                  alt="Whatevr I say Is Royal Ocean Album Art"
-                />
-              </Link>
+              <img
+                id="whateverISayIsRoyalOcean"
+                onClick={this.renderAlbum}
+                src={whateverISayIsRoyalOcean}
+                alt="Whatevr I say Is Royal Ocean Album Art"
+              />
             </LazyLoad>
           </div>
         </div>

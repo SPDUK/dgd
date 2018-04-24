@@ -1,5 +1,4 @@
 .clickedalbum {
-  height: 2200px;
   width: 100%;
   display: flex;
   background-color: #191716;
@@ -94,5 +93,5 @@
         font-size: 1.4em; } }
     @media (min-width: 1200px) {
       .clickedalbum-desc {
-        width: 830px;
+        width: 630px;
         font-size: 1.6em; } }
