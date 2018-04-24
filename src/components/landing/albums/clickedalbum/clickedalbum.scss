@@ -7,8 +7,8 @@
   }
   100% {
     opacity: 1;
-    transform: scale(1);
-    max-height: 864px; 
+    // transform: scale(1);
+    // max-height: 864px; 
   }
 }
 
@@ -45,7 +45,7 @@
     @include breakpoint(sm) {
       font-size: 1.8em;
       position: absolute;
-      transform: translate(-85px, -55px);
+      transform: translate(-95px, -55px);
     }
     @include breakpoint(md) {
       font-size: 2em;
@@ -57,20 +57,44 @@
     }
   }
   &-image {
+    width: 100%;
     img {
       display: block;
       max-width: 100%;
       margin: 0 auto;
-      max-height: 300px;
-      max-width: 400px;
-      height: 170px;
-      // @media screen and (min-width: 4)
+      max-height: 163px;
+      max-width: 290px;
+      @media screen and (min-width: 400px){
+        max-height: 219px;
+        max-width: 390px;
     }
+    @media screen and (min-width: 550px){
+      max-height: 293px;
+      max-width: 530px;
+  }
+  @include breakpoint(sm){
+    max-height: 330px;
+    max-width: 750px;
+  }
+  @media screen and (min-width: 900px){
+    max-height: 390px;
+    max-width: 800px;
+}
+@media screen and (min-width: 1200px){
+  max-height: 506px;
+  max-width: 900px;
+}
+@media screen and (min-width: 1800px){
+  max-height: 600px;
+  max-width: 1100px;
+}
+
+  }
     &-nav {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      // justify-content: space-evenly;
+      justify-content: space-evenly;
       &-button {
         width: 48%;
         height: 50px;
@@ -105,7 +129,7 @@
     span {
       display: none;
       @media screen and (min-width: 520px){
-      display: block
+      display: inline-block;
     }
     }
   }

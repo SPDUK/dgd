@@ -3,9 +3,7 @@
     opacity: 0;
     max-height: 0px; }
   100% {
-    opacity: 1;
-    transform: scale(1);
-    max-height: 864px; } }
+    opacity: 1; } }
 
 .clickedalbum {
   width: 100%;
@@ -40,7 +38,7 @@
       .clickedalbum h1 {
         font-size: 1.8em;
         position: absolute;
-        transform: translate(-85px, -55px); } }
+        transform: translate(-95px, -55px); } }
     @media (min-width: 992px) {
       .clickedalbum h1 {
         font-size: 2em; } }
@@ -49,48 +47,74 @@
         font-size: 2.5em;
         position: absolute;
         transform: translate(-120px, -80px); } }
-  .clickedalbum-image img {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-    max-height: 300px;
-    max-width: 400px;
-    height: 170px; }
-  .clickedalbum-image-nav {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap; }
-    .clickedalbum-image-nav-button {
-      width: 48%;
-      height: 50px;
-      margin-top: 8px;
-      line-height: 50px; }
-      .clickedalbum-image-nav-button p {
-        cursor: pointer;
-        height: 100%;
-        width: 100%;
-        line-height: 50px;
-        color: white;
-        font-size: 0.9em;
-        opacity: 0.8;
-        transition: 0.2s ease; }
-        @media (min-width: 768px) {
-          .clickedalbum-image-nav-button p {
-            font-size: 1.1em; } }
-        @media (min-width: 1200px) {
-          .clickedalbum-image-nav-button p {
-            font-size: 1.2em; } }
-        .clickedalbum-image-nav-button p:hover {
-          transition: 0.2s ease;
-          opacity: 1;
-          color: #FFA949; }
+  .clickedalbum-image {
+    width: 100%; }
+    .clickedalbum-image img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+      max-height: 163px;
+      max-width: 290px; }
+      @media screen and (min-width: 400px) {
+        .clickedalbum-image img {
+          max-height: 219px;
+          max-width: 390px; } }
+      @media screen and (min-width: 550px) {
+        .clickedalbum-image img {
+          max-height: 293px;
+          max-width: 530px; } }
+      @media (min-width: 768px) {
+        .clickedalbum-image img {
+          max-height: 330px;
+          max-width: 750px; } }
+      @media screen and (min-width: 900px) {
+        .clickedalbum-image img {
+          max-height: 390px;
+          max-width: 800px; } }
+      @media screen and (min-width: 1200px) {
+        .clickedalbum-image img {
+          max-height: 506px;
+          max-width: 900px; } }
+      @media screen and (min-width: 1800px) {
+        .clickedalbum-image img {
+          max-height: 600px;
+          max-width: 1100px; } }
+    .clickedalbum-image-nav {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      .clickedalbum-image-nav-button {
+        width: 48%;
+        height: 50px;
+        margin-top: 8px;
+        line-height: 50px; }
+        .clickedalbum-image-nav-button p {
+          cursor: pointer;
+          height: 100%;
+          width: 100%;
+          line-height: 50px;
+          color: white;
+          font-size: 0.9em;
+          opacity: 0.8;
+          transition: 0.2s ease; }
+          @media (min-width: 768px) {
+            .clickedalbum-image-nav-button p {
+              font-size: 1.1em; } }
+          @media (min-width: 1200px) {
+            .clickedalbum-image-nav-button p {
+              font-size: 1.2em; } }
+          .clickedalbum-image-nav-button p:hover {
+            transition: 0.2s ease;
+            opacity: 1;
+            color: #FFA949; }
   .clickedalbum .right {
     text-align: right; }
     .clickedalbum .right span {
       display: none; }
       @media screen and (min-width: 520px) {
         .clickedalbum .right span {
-          display: block; } }
+          display: inline-block; } }
   .clickedalbum .left {
     text-align: left; }
   .clickedalbum-desc {
