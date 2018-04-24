@@ -5,7 +5,6 @@ import Navbar from './navbar/Navbar';
 import Landing from './landing/Landing';
 
 import '../styles/app.css';
-import ClickedAlbum from '../components/landing/albums/clickedalbum/clickedalbum';
 
 class App extends Component {
   render() {

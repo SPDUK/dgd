@@ -1,12 +1,12 @@
 @import '../../../../styles/variables.scss';
 .clickedalbum {
   width: 100%;
+
   display: flex;
   background-color: $darkGray;
   align-content: center;
   justify-content: center;
-  padding-top: 0px;
-  // display: none;
+  padding-top: 30px;
   &-gutters {
     padding: 10px 3%;
     @include breakpoint(sm) {

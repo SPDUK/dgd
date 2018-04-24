@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
-import { Link } from 'react-router-dom';
 
 import './albums.css';
 
-import Test from './clickedalbum/test';
 import ClickedAlbum from './clickedalbum/clickedalbum';
 
 const artificialSelection = 'https://i.imgur.com/ewuyVXX.jpg';
@@ -42,9 +40,6 @@ class Albums extends Component {
     });
   };
 
-  // renderAlbumClick = (
-  //   this.renderAlbum(artificialSelectionInfo);
-  // )
   renderAlbum = (e, inf) => {
     this.setState({
       showAlbum: true,
@@ -171,40 +166,42 @@ class Albums extends Component {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lectus ultricies, cursus nulla ut, iaculis mi. Etiam nisi felis, interdum vitae massa ut, finibus vestibulum turpis.'
     };
 
+    // could maybe be done by setting info = selectedAlbumId + Info but I don't know
+    // gets the ID on click and then changes the info to send to the component based on the click
+    // calls renderAlbum and inserts those pieces of info into the function, rendering the correct image etc
     const renderAlbumClick = e => {
       const selectedAlbumId = e.target.id;
-      console.log(selectedAlbumId);
+      let selectedAlbumInfo = '';
       if (selectedAlbumId === 'artificialSelection') {
-        var selectedAlbumInfo = artificialSelectionInfo;
+        selectedAlbumInfo = artificialSelectionInfo;
       }
       if (selectedAlbumId === 'instantGratification') {
-        var selectedAlbumInfo = instantGratificationInfo;
+        selectedAlbumInfo = instantGratificationInfo;
       }
       if (selectedAlbumId === 'downtownBattleMountainII') {
-        var selectedAlbumInfo = downtownBattleMountainIIInfo;
+        selectedAlbumInfo = downtownBattleMountainIIInfo;
       }
       if (selectedAlbumId === 'treecitySessions') {
-        var selectedAlbumInfo = treecitySessionsInfo;
+        selectedAlbumInfo = treecitySessionsInfo;
       }
       if (selectedAlbumId === 'happiness') {
-        var selectedAlbumInfo = happinessInfo;
+        selectedAlbumInfo = happinessInfo;
       }
       if (selectedAlbumId === 'mothership') {
-        var selectedAlbumInfo = mothershipInfo;
+        selectedAlbumInfo = mothershipInfo;
       }
       if (selectedAlbumId === 'downtownBattleMountain') {
-        var selectedAlbumInfo = downtownBattleMountainInfo;
+        selectedAlbumInfo = downtownBattleMountainInfo;
       }
       if (selectedAlbumId === 'dancedGavinDance') {
-        var selectedAlbumInfo = dancedgavindanceInfo;
+        selectedAlbumInfo = dancedgavindanceInfo;
       }
       if (selectedAlbumId === 'acceptanceSpeech') {
-        var selectedAlbumInfo = acceptanceSpeechInfo;
+        selectedAlbumInfo = acceptanceSpeechInfo;
       }
       if (selectedAlbumId === 'whateverISayIsRoyalOcean') {
-        var selectedAlbumInfo = whateverISayIsRoyalOceanInfo;
+        selectedAlbumInfo = whateverISayIsRoyalOceanInfo;
       }
-
       this.renderAlbum(selectedAlbumId, selectedAlbumInfo);
     };
     return (
@@ -225,6 +222,9 @@ class Albums extends Component {
                 id="artificialSelection"
                 onClick={renderAlbumClick}
                 src={artificialSelection}
+                onKeyPress={renderAlbumClick}
+                tabIndex="0"
+                role="button"
                 alt=""
               />
             </LazyLoad>
@@ -235,6 +235,9 @@ class Albums extends Component {
                 id="instantGratification"
                 onClick={renderAlbumClick}
                 src={instantGratification}
+                onKeyPress={renderAlbumClick}
+                tabIndex="0"
+                role="button"
                 alt=""
               />
             </LazyLoad>
@@ -245,6 +248,9 @@ class Albums extends Component {
                 id="acceptanceSpeech"
                 onClick={renderAlbumClick}
                 src={acceptanceSpeech}
+                onKeyPress={renderAlbumClick}
+                tabIndex="0"
+                role="button"
                 alt=""
               />
             </LazyLoad>
@@ -255,6 +261,9 @@ class Albums extends Component {
                 id="treecitySessions"
                 onClick={renderAlbumClick}
                 src={treecitySessions}
+                onKeyPress={renderAlbumClick}
+                tabIndex="0"
+                role="button"
                 alt=""
               />
             </LazyLoad>
@@ -265,6 +274,9 @@ class Albums extends Component {
                 id="downtownBattleMountainII"
                 onClick={renderAlbumClick}
                 src={downtownBattleMountainII}
+                onKeyPress={renderAlbumClick}
+                tabIndex="0"
+                role="button"
                 alt=""
               />
             </LazyLoad>
@@ -275,6 +287,9 @@ class Albums extends Component {
                 id="happiness"
                 onClick={renderAlbumClick}
                 src={happiness}
+                onKeyPress={renderAlbumClick}
+                tabIndex="0"
+                role="button"
                 alt=""
               />
             </LazyLoad>
@@ -285,6 +300,9 @@ class Albums extends Component {
                 id="mothership"
                 onClick={renderAlbumClick}
                 src={mothership}
+                onKeyPress={renderAlbumClick}
+                tabIndex="0"
+                role="button"
                 alt=""
               />
             </LazyLoad>
@@ -295,6 +313,9 @@ class Albums extends Component {
                 id="downtownBattleMountain"
                 onClick={renderAlbumClick}
                 src={downtownBattleMountain}
+                onKeyPress={renderAlbumClick}
+                tabIndex="0"
+                role="button"
                 alt=""
               />
             </LazyLoad>
@@ -305,6 +326,9 @@ class Albums extends Component {
                 id="dancedGavinDance"
                 onClick={renderAlbumClick}
                 src={dancedgavindance}
+                onKeyPress={renderAlbumClick}
+                tabIndex="0"
+                role="button"
                 alt=""
               />
             </LazyLoad>
@@ -315,6 +339,9 @@ class Albums extends Component {
                 id="whateverISayIsRoyalOcean"
                 onClick={renderAlbumClick}
                 src={whateverISayIsRoyalOcean}
+                onKeyPress={renderAlbumClick}
+                tabIndex="0"
+                role="button"
                 alt="Whatevr I say Is Royal Ocean Album Art"
               />
             </LazyLoad>
