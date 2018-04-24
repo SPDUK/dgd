@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
 
+import { animateScroll as scroll, scroller } from 'react-scroll';
+
 import './albums.css';
 
 import ClickedAlbum from './clickedalbum/clickedalbum';
@@ -65,6 +67,11 @@ class Albums extends Component {
       itemSelector: '.grid-item',
       columnWidth: 80,
       isFitWidth: true
+    });
+    scroller.scrollTo('albums-title', {
+      duration: 200,
+      smooth: true,
+      offset: -70
     });
   };
 

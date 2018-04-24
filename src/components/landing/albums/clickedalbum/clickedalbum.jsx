@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 
-//  eslint-disable-next-line
-import { animateScroll as scroll, scroller } from 'react-scroll';
-
 // need props for title of album & date?
 import './clickedalbum.css';
 

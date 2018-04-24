@@ -11,11 +11,6 @@
     color: white;
     font-family: 'Montserrat', sans-serif;
   }
-  &-selected {
-    // height: 300px;
-    // display: none;
-    opacity: 1;
-  }
 }
 
 .grid {
@@ -28,6 +23,7 @@
     height: 300px;
     width: 300px;
   }
+
   img {
     width: 140px;
     height: 140px;
@@ -92,6 +88,6 @@
 
   img {
     height: 75px;
-    width: 150px;
+    width: 155px;
   }
 }

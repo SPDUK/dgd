@@ -9,8 +9,6 @@
     font-size: 1em;
     color: white;
     font-family: 'Montserrat', sans-serif; }
-  .albums-selected {
-    opacity: 1; }
 
 .grid {
   margin: 0 auto; }
@@ -71,4 +69,4 @@
   width: 160px; }
   .grid-item--width2.grid-small img {
     height: 75px;
-    width: 150px; }
+    width: 155px; }
