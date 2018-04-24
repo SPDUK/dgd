@@ -1,49 +1,8 @@
 .albums {
   height: 1500px;
   background-color: #191716;
-  padding: 30px 0%; }
-  @media screen and (min-width: 320px) {
-    .albums {
-      padding: 30px 3%; } }
-  @media screen and (min-width: 340px) {
-    .albums {
-      padding: 30px 5%; } }
-  @media screen and (min-width: 380px) {
-    .albums {
-      padding: 30px 8%; } }
-  @media screen and (min-width: 390px) {
-    .albums {
-      padding: 30px 10%; } }
-  @media screen and (min-width: 480px) {
-    .albums {
-      padding: 30px 18%; } }
-  @media screen and (min-width: 580px) {
-    .albums {
-      padding: 30px 20%; } }
-  @media screen and (min-width: 630px) {
-    .albums {
-      padding: 30px 2%; } }
-  @media screen and (min-width: 680px) {
-    .albums {
-      padding: 50px 5%; } }
-  @media (min-width: 1200px) {
-    .albums {
-      padding: 80px 10%; } }
-  @media screen and (min-width: 1290px) {
-    .albums {
-      padding: 80px 3%; } }
-  @media screen and (min-width: 1400px) {
-    .albums {
-      padding: 80px 7%; } }
-  @media screen and (min-width: 1500px) {
-    .albums {
-      padding: 100px 10%; } }
-  @media screen and (min-width: 1650px) {
-    .albums {
-      padding: 100px 13%; } }
-  @media screen and (min-width: 1840px) {
-    .albums {
-      padding: 100px 10%; } }
+  padding: 30px 0%;
+  transition: 2s ease; }
   .albums-title {
     text-align: center;
     font-weight: 700;
@@ -52,6 +11,9 @@
     font-family: 'Montserrat', sans-serif; }
   .albums-selected {
     opacity: 1; }
+
+.grid {
+  margin: 0 auto; }
 
 .grid-item {
   height: 150px;
@@ -72,12 +34,12 @@
       transform: scale(1.025); }
     @media (min-width: 1200px) {
       .grid-item img {
-        height: 290px;
-        width: 290px; } }
+        height: 300px;
+        width: 300px; } }
 
 .grid-item--width2 {
-  width: 300px;
-  height: 150px; }
+  height: 150px;
+  width: 300px; }
   @media (min-width: 1200px) {
     .grid-item--width2 {
       height: 300px;
@@ -89,3 +51,28 @@
       .grid-item--width2 img {
         height: 290px;
         width: 590px; } }
+
+.grid-item.grid-small {
+  height: 80px;
+  width: 80px; }
+  @media (min-width: 1200px) {
+    .grid-item.grid-small {
+      height: 100px;
+      width: 100px; } }
+  .grid-item.grid-small img {
+    height: 75px;
+    width: 75px;
+    opacity: 0.8;
+    transition: 0.1s ease-in;
+    cursor: pointer; }
+    .grid-item.grid-small img:hover {
+      transition: 0.1s ease-in;
+      opacity: 1;
+      transform: scale(1.025); }
+
+.grid-item--width2.grid-small {
+  height: 80px;
+  width: 160px; }
+  .grid-item--width2.grid-small img {
+    height: 75px;
+    width: 155px; }

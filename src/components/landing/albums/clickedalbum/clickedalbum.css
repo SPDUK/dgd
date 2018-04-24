@@ -1,10 +1,22 @@
+@keyframes openAlbum {
+  0% {
+    opacity: 0;
+    max-height: 0px; }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    max-height: 864px; } }
+
 .clickedalbum {
   width: 100%;
+  transition: 0.8s ease;
   display: flex;
   background-color: #191716;
   align-content: center;
   justify-content: center;
-  padding-top: 30px; }
+  padding-top: 30px;
+  animation-name: openAlbum;
+  animation-duration: 0.8s; }
   .clickedalbum-gutters {
     padding: 10px 3%; }
     @media (min-width: 768px) {
@@ -39,13 +51,15 @@
         transform: translate(-120px, -80px); } }
   .clickedalbum-image img {
     display: block;
-    width: 100%;
-    margin: 0 auto; }
+    max-width: 100%;
+    margin: 0 auto;
+    max-height: 300px;
+    max-width: 400px;
+    height: 170px; }
   .clickedalbum-image-nav {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; }
+    flex-wrap: wrap; }
     .clickedalbum-image-nav-button {
       width: 48%;
       height: 50px;
@@ -72,6 +86,11 @@
           color: #FFA949; }
   .clickedalbum .right {
     text-align: right; }
+    .clickedalbum .right span {
+      display: none; }
+      @media screen and (min-width: 520px) {
+        .clickedalbum .right span {
+          display: block; } }
   .clickedalbum .left {
     text-align: left; }
   .clickedalbum-desc {

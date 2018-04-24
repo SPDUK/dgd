@@ -1,12 +1,27 @@
 @import '../../../../styles/variables.scss';
+
+@keyframes openAlbum {
+  0% {
+    opacity: 0;
+    max-height: 0px;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    max-height: 864px; 
+  }
+}
+
 .clickedalbum {
   width: 100%;
-
+  transition: 0.8s ease;
   display: flex;
   background-color: $darkGray;
   align-content: center;
   justify-content: center;
   padding-top: 30px;
+  animation-name: openAlbum;
+  animation-duration: 0.8s;
   &-gutters {
     padding: 10px 3%;
     @include breakpoint(sm) {
@@ -44,14 +59,18 @@
   &-image {
     img {
       display: block;
-      width: 100%;
+      max-width: 100%;
       margin: 0 auto;
+      max-height: 300px;
+      max-width: 400px;
+      height: 170px;
+      // @media screen and (min-width: 4)
     }
     &-nav {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      // justify-content: space-evenly;
       &-button {
         width: 48%;
         height: 50px;
@@ -83,6 +102,12 @@
   }
   .right {
     text-align: right;
+    span {
+      display: none;
+      @media screen and (min-width: 520px){
+      display: block
+    }
+    }
   }
   .left {
     text-align: left;

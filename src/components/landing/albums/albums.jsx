@@ -38,6 +38,16 @@ class Albums extends Component {
       showAlbum: false,
       selectedAlbum: ''
     });
+    const gridItems = document.querySelectorAll('.grid-item');
+    for (let i = 0; i < gridItems.length; i += 1) {
+      gridItems[i].classList.remove('grid-small');
+    }
+    const Masonry = require('masonry-layout');
+    const msnry = new Masonry('.grid', {
+      itemSelector: '.grid-item',
+      columnWidth: 150,
+      isFitWidth: true
+    });
   };
 
   renderAlbum = (e, inf) => {
@@ -45,6 +55,16 @@ class Albums extends Component {
       showAlbum: true,
       selectedAlbum: e,
       info: inf
+    });
+    const gridItems = document.querySelectorAll('.grid-item');
+    for (let i = 0; i < gridItems.length; i += 1) {
+      gridItems[i].classList.add('grid-small');
+    }
+    const Masonry = require('masonry-layout');
+    const msnry = new Masonry('.grid', {
+      itemSelector: '.grid-item',
+      columnWidth: 80,
+      isFitWidth: true
     });
   };
 
