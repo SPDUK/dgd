@@ -30,11 +30,12 @@ class Albums extends Component {
     const Masonry = require('masonry-layout');
     const msnry = new Masonry('.grid', {
       itemSelector: '.grid-item',
-      columnWidth: 150,
       isFitWidth: true
     });
+    console.log('hello!');
   }
 
+  // closes the current large image and returns the grid back to the right sizings
   closeAlbum = () => {
     this.setState({
       showAlbum: false,
@@ -47,11 +48,13 @@ class Albums extends Component {
     const Masonry = require('masonry-layout');
     const msnry = new Masonry('.grid', {
       itemSelector: '.grid-item',
-      columnWidth: 150,
       isFitWidth: true
     });
   };
 
+  //  makes the correct image display using renderAlbum func
+  // makes all albums small and resizes grid to correct size
+  // scrolls to the correct title height to display everything
   renderAlbum = (e, inf) => {
     this.setState({
       showAlbum: true,
@@ -65,9 +68,10 @@ class Albums extends Component {
     const Masonry = require('masonry-layout');
     const msnry = new Masonry('.grid', {
       itemSelector: '.grid-item',
-      columnWidth: 80,
-      isFitWidth: true
+      isFitWidth: true,
+      originLeft: true
     });
+
     scroller.scrollTo('albums-title', {
       duration: 200,
       smooth: true,
@@ -243,19 +247,6 @@ class Albums extends Component {
         </div>
 
         <div className="grid">
-          <div className="grid-item grid-item--width2">
-            <LazyLoad height={300} offset={100} once>
-              <img
-                id="artificialSelection"
-                onClick={renderAlbumClick}
-                src={artificialSelection}
-                onKeyPress={renderAlbumClick}
-                tabIndex="0"
-                role="button"
-                alt=""
-              />
-            </LazyLoad>
-          </div>
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
               <img
@@ -285,9 +276,9 @@ class Albums extends Component {
           <div className="grid-item grid-item--width2">
             <LazyLoad height={300} offset={100} once>
               <img
-                id="treecitySessions"
+                id="artificialSelection"
                 onClick={renderAlbumClick}
-                src={treecitySessions}
+                src={artificialSelection}
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"
@@ -353,6 +344,19 @@ class Albums extends Component {
                 id="dancedGavinDance"
                 onClick={renderAlbumClick}
                 src={dancedgavindance}
+                onKeyPress={renderAlbumClick}
+                tabIndex="0"
+                role="button"
+                alt=""
+              />
+            </LazyLoad>
+          </div>
+          <div className="grid-item grid-item--width2">
+            <LazyLoad height={300} offset={100} once>
+              <img
+                id="treecitySessions"
+                onClick={renderAlbumClick}
+                src={treecitySessions}
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"

@@ -16,6 +16,7 @@
 .grid {
   margin: 0 auto;
 }
+
 .grid-item {
   height: 150px;
   width: 150px;
@@ -23,7 +24,6 @@
     height: 300px;
     width: 300px;
   }
-
   img {
     width: 140px;
     height: 140px;
@@ -59,11 +59,7 @@
   }
 }
 
-
-
-
 // after one album is selected
-
 .grid-item.grid-small {
   height: 80px;
   width: 80px;
@@ -81,11 +77,9 @@
   }
 }
 
-
 .grid-item--width2.grid-small {
   height: 80px;
   width: 160px;
-
   img {
     height: 75px;
     width: 155px;
