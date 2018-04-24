@@ -61,6 +61,8 @@
 
 // after one album is selected
 .grid-item.grid-small {
+  animation-name: gridAnimation;
+  animation-duration: 0.8s;
   height: 80px;
   width: 80px;
   img {
@@ -83,5 +85,25 @@
   img {
     height: 75px;
     width: 155px;
+  }
+}
+
+
+
+
+
+@keyframes gridAnimation {
+  0% { 
+    opacity: 0;
+    transform: scale(0);
+  }
+    25% {
+      transform: translateY(0px);
+      opacity: 0;
+    }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    transform: scale(1);
   }
 }

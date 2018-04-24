@@ -51,6 +51,8 @@
         width: 590px; } }
 
 .grid-item.grid-small {
+  animation-name: gridAnimation;
+  animation-duration: 0.8s;
   height: 80px;
   width: 80px; }
   .grid-item.grid-small img {
@@ -70,3 +72,15 @@
   .grid-item--width2.grid-small img {
     height: 75px;
     width: 155px; }
+
+@keyframes gridAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  25% {
+    transform: translateY(0px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    transform: scale(1); } }
