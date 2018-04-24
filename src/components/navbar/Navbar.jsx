@@ -22,7 +22,6 @@ function toggleMenu() {
 // throttled to 250ms with lodash
 const handleScroll = _.throttle(() => {
   const myNav = document.getElementById('navbar');
-  // handleScroll();
   if (window.scrollY >= 95) {
     myNav.classList.add('nav-scrolled');
   }

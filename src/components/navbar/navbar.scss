@@ -180,14 +180,14 @@
     transform: translate(0px, -100px);
     justify-content: space-between;
   }
-
   100% {
-  opacity: 1;
-   transform: translate(0px, 0px);
+    opacity: 1;
+    transform: translate(0px, 0px);
   }
 }
+
 @keyframes navAnim2 {
-  0% { 
+  0% {
     transform: translateY(-20px);
     justify-content: center;
     align-items: center;
@@ -195,8 +195,7 @@
   10% {
     background-color: rgba(255, 255, 255, 0);
   }
-
-  100% {  
+  100% {
     transform: translateY(0px);
   }
 }

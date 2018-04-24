@@ -13,7 +13,7 @@
   &-title {
     font-size: 0.8em;
     text-align: center;
-    @include breakpoint(sm){
+    @include breakpoint(sm) {
       font-size: 1em;
     }
   }
@@ -56,34 +56,33 @@
         opacity: 0.85;
       }
     }
-  }
-  // align to center to keep in the same position when resizing the browser
+  } // align to center to keep in the same position when resizing the browser
   // transform to position in the top left of the image
   &-date {
     cursor: pointer;
-    text-align:left;
+    text-align: left;
     position: relative;
     z-index: 2;
     @include absolutecenter(x);
     transform: translate(-120px, 0px);
     @media screen and (min-width: 400px) {
-      transform: translate(-170px,0px);
+      transform: translate(-170px, 0px);
       font-size: 1.3em;
     }
     @media screen and (min-width: 600px) {
-      transform: translate(-220px,0px);
+      transform: translate(-220px, 0px);
       font-size: 1.6em;
     }
     @include breakpoint(sm) {
-      transform: translate(-270px,-0px);
+      transform: translate(-270px, -0px);
       font-size: 1.9em;
     }
     @include breakpoint(md) {
-      transform: translate(-370px,-0px);
+      transform: translate(-370px, -0px);
       font-size: 2.4em;
     }
     @include breakpoint(lg) {
-      transform: translate(-470px,-0px);
+      transform: translate(-470px, -0px);
       font-size: 3.1em;
     }
     &-day {
@@ -95,7 +94,7 @@
     margin-top: 50px;
     text-align: center;
     width: 100%;
-    display:flex;
+    display: flex;
     max-width: 1285px;
     flex-wrap: wrap;
     justify-content: center;
@@ -105,14 +104,14 @@
     .ticketsbutton {
       opacity: 1;
       background-color: $orange;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         margin-right: 10px;
       }
-      @include breakpoint(md){
+      @include breakpoint(md) {
         margin-right: 0px;
       }
     }
-    @include breakpoint(md){
+    @include breakpoint(md) {
       flex-wrap: nowrap;
       display: flex;
       justify-content: space-around;

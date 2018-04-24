@@ -1,5 +1,4 @@
 @import '../../../styles/variables.scss';
-
 .sociallinks {
   height: 90px;
   background-color: $darkGray;
@@ -9,7 +8,7 @@
     i {
       transition: 0.2s ease;
       cursor: pointer;
-      padding:20px;
+      padding: 20px;
       color: white;
       font-size: 2em;
       opacity: 0.8;
@@ -23,7 +22,7 @@
         opacity: 1;
         border-bottom: 2px solid $orange;
       }
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         font-size: 2.5em;
       }
     }
