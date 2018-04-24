@@ -34,8 +34,8 @@
       transform: scale(1.025); }
     @media (min-width: 1200px) {
       .grid-item img {
-        height: 300px;
-        width: 300px; } }
+        height: 290px;
+        width: 290px; } }
 
 .grid-item--width2 {
   height: 150px;
@@ -55,10 +55,6 @@
 .grid-item.grid-small {
   height: 80px;
   width: 80px; }
-  @media (min-width: 1200px) {
-    .grid-item.grid-small {
-      height: 100px;
-      width: 100px; } }
   .grid-item.grid-small img {
     height: 75px;
     width: 75px;
@@ -75,4 +71,4 @@
   width: 160px; }
   .grid-item--width2.grid-small img {
     height: 75px;
-    width: 155px; }
+    width: 150px; }
