@@ -26,18 +26,16 @@
       position: relative;
       flex: 1;
       margin-bottom: 50px;
-      @include breakpoint(sm) {
-        transform: translateY(0px);
-        transition: ease 0.3s;
-      }
+      transform: scale(1);
+      transition: 3s ease;
       @include breakpoint(md) {
         margin-bottom: 0px;
         margin-right: 60px;
       }
       &:hover {
+        transition: 0.3s ease;
         @include breakpoint(sm) {
-          transform: translateY(-15px);
-          transition: ease 0.3s;
+          transition: ease 3s;
         }
       }
       &-name {
@@ -65,13 +63,11 @@
       flex: 1;
       position: relative;
       @include breakpoint(sm) {
-        transform: translateY(0px);
         transition: ease 0.3s;
       }
       &:hover {
         @include breakpoint(sm) {
           transition: ease 0.3s;
-          transform: translateY(-15px);
         }
       }
       &-name {
@@ -134,8 +130,10 @@
 
 .landingvideo-videos-second:hover .fa-play {
   opacity: 1;
+  color: $orange;
 }
 
 .landingvideo-videos-first:hover .fa-play {
   opacity: 1;
+  color: $orange;
 }

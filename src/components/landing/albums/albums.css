@@ -63,7 +63,7 @@
     .grid-item.grid-small img:hover {
       transition: 0.1s ease-in;
       opacity: 1;
-      transform: scale(1.025); }
+      transform: scale(1.08); }
 
 .grid-item--width2.grid-small {
   height: 80px;

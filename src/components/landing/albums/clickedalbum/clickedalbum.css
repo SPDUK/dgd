@@ -107,7 +107,7 @@
           .clickedalbum-image-nav-button p:hover {
             transition: 0.2s ease;
             opacity: 1;
-            color: #FFA949; }
+            transform: scale(1.2); }
   .clickedalbum .right {
     text-align: right; }
     .clickedalbum .right span {
