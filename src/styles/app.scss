@@ -10,18 +10,15 @@
   cursor: pointer;
   margin: 0;
   font-weight: 700;
-  color: white;
   width: 200px;
   font-size: 0.88em;
-  padding: 15px 25px;
-  background-color: black;
   border-radius: 3px;
   text-align: center;
   transition: ease 0.3s;
   opacity: 1;
+  color: black;
   @media screen and (min-width: 400px){
-    width: 300px;
-    font-size: 1.2em;
+    font-size:1em;
   }
   @include breakpoint(sm){
     padding: 20px 30px;
@@ -31,6 +28,7 @@
   &:hover {
     opacity: 0.75;
     transition: ease 0.3s;
+    transform: scale(1.2);
   }
 }
 //removes white flashbang when moving through components

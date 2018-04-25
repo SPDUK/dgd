@@ -51,7 +51,7 @@ class LandingVideo extends Component {
             tabIndex="0"
             className="landingvideo-more-button button"
           >
-            VIEW MORE
+            VIEW MORE <i className="fa fa-arrow-right" />
           </h1>
         </div>
       </div>

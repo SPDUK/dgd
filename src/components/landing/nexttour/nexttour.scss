@@ -90,30 +90,52 @@
   }
   &-button {
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
     width: 100%;
     display: flex;
-    max-width: 1285px;
+    max-width: 1175px;
     flex-wrap: wrap;
     justify-content: center;
+    @include breakpoint(sm){
+      justify-content: space-around;
+    }
     .button {
-      margin-bottom: 20px;
+      margin-bottom: 5px;
+      font-size: 0.8em;
+      padding: 10px 5px;
+      width: 43%;
+      text-align: right;
+      @include breakpoint(sm){
+        width: 35%;
+      }
+      @include breakpoint(md){
+        width: 35%;
+        text-align: right;
+        font-size: 0.9em;
+      }
+      @include breakpoint(md){
+        width: 35%;
+        font-size: 1em;
+      }
     }
     .ticketsbutton {
       opacity: 1;
-      background-color: $orange;
+      text-align: left;
       @include breakpoint(sm) {
         margin-right: 10px;
+        flex-wrap: nowrap; 
+        
       }
       @include breakpoint(md) {
         margin-right: 0px;
       }
     }
-    @include breakpoint(md) {
-      flex-wrap: nowrap;
-      display: flex;
-      justify-content: space-around;
+    span {
+      display: none;
+      @include breakpoint(sm){
+        display: inline-block;
+      }
     }
   }
 }

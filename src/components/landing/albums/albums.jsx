@@ -32,7 +32,6 @@ class Albums extends Component {
       itemSelector: '.grid-item',
       isFitWidth: true
     });
-    console.log('hello!');
   }
 
   // closes the current large image and returns the grid back to the right sizings

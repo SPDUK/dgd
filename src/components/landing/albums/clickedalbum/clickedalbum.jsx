@@ -34,7 +34,7 @@ class ClickedAlbum extends Component {
                 <div className="clickedalbum-image-nav-button right">
                   <a href={this.props.info.youtube}>
                     <p>
-                      <span>Listen on</span> Youtube{' '}
+                      <span>Listen On</span> Youtube{' '}
                       <i className="fa fa-arrow-right" />
                     </p>
                   </a>

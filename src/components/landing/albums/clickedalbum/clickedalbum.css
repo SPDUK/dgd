@@ -114,7 +114,7 @@
       display: none; }
       @media screen and (min-width: 520px) {
         .clickedalbum .right span {
-          display: inline-block; } }
+          display: none; } }
       @media screen and (min-width: 763px) {
         .clickedalbum .right span {
           display: none; } }

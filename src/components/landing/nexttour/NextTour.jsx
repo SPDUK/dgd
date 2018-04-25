@@ -97,9 +97,12 @@ class NextTour extends Component {
             onClick={openLatestTourURL}
             className="button ticketsbutton"
           >
-            TICKETS FOR THIS SHOW
+            <i className="fa fa-arrow-left" /> TICKETS{' '}
+            <span>FOR THIS SHOW</span>
           </h1>
-          <h1 className="button">VIEW ALL TOUR DATES</h1>
+          <h1 className="button">
+            <span>VIEW ALL</span> TOUR DATES <i className="fa fa-arrow-right" />
+          </h1>
         </div>
       </div>
     );
