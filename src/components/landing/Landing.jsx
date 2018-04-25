@@ -4,10 +4,10 @@ import React, { Component } from 'react';
 import LandingVideos from './landingvideo/LandingVideos';
 import NextTour from './nexttour/NextTour';
 import Albums from './albums/albums';
+import Footer from '../footer/footer';
 
 import './landing.css';
 
-import dgdTitle from '../../images/dgdtitle.png';
 import SocialLinks from './sociallinks/sociallinks';
 
 class Landing extends Component {
@@ -16,7 +16,10 @@ class Landing extends Component {
       <div className="landing">
         <div className="landing-background" />
         <div className="landing-title">
-          <img alt="Dance Gavin Dance Logo" src={dgdTitle} />
+          <img
+            alt="Dance Gavin Dance Logo"
+            src="http://res.cloudinary.com/dmjolhdaq/image/upload/q_auto/a_0/v1524694781/dgdtitle.png"
+          />
         </div>
         <div className="landing-info">
           <h2 className="landing-info-album">ARTIFICIAL SELECTION</h2>
@@ -27,6 +30,7 @@ class Landing extends Component {
         <NextTour />
         <SocialLinks />
         <Albums />
+        <Footer />
       </div>
     );
   }

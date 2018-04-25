@@ -24,8 +24,7 @@
       display: block;
       width: auto;
       max-width: 280px;
-      max-height: 186px;
-      filter: grayscale(100); }
+      max-height: 186px; }
       @media screen and (min-width: 400px) {
         .nexttour-image img {
           max-width: 380px;

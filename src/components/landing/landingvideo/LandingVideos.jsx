@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
-// import { Link } from 'react-router-dom';
+import { animateScroll as scroll, scroller } from 'react-scroll';
 
 import './landingvideo.css';
 
-import firstVideo from '../../../images/first-small.jpg';
-import secondVideo from '../../../images/second-small.jpg';
-
-function buttonClick() {
-  console.log('clicked');
+function firstVideoClick() {
+  window.open('https://www.youtube.com/watch?v=0dbXnfl8ZcM');
 }
+function secondVideoClick() {
+  window.open('https://www.youtube.com/watch?v=Z-aQrBZ4Duw');
+}
+function viewMoreClick() {
+  scroller.scrollTo('albums-title', {
+    duration: 400,
+    smooth: true,
+    offset: -70
+  });
+}
+
+// ADD GIF / WEBM ON HOVER INSTEAD??
+
 class LandingVideo extends Component {
   render() {
     return (
@@ -18,10 +28,13 @@ class LandingVideo extends Component {
           <h1>VIDEOS</h1>
         </div>
         <div className="landingvideo-videos">
-          <div className="landingvideo-videos-first">
+          <div onClick={firstVideoClick} className="landingvideo-videos-first">
             <div>
               <LazyLoad height={300} offset={100} once>
-                <img src={firstVideo} alt="" />
+                <img
+                  src="http://res.cloudinary.com/dmjolhdaq/image/upload/v1524696026/robots.jpg"
+                  alt=""
+                />
               </LazyLoad>
               <a href="/">
                 <i className="fa fa-play" />
@@ -29,10 +42,16 @@ class LandingVideo extends Component {
             </div>
             <h2 className="landingvideo-videos-first-name">MIDNIGHT CRUSADE</h2>
           </div>
-          <div className="landingvideo-videos-second">
+          <div
+            onClick={secondVideoClick}
+            className="landingvideo-videos-second"
+          >
             <div>
               <LazyLoad height={300} offset={100} once>
-                <img src={secondVideo} alt="" />
+                <img
+                  src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694780/second-small.jpg"
+                  alt=""
+                />
               </LazyLoad>
               <a href="/">
                 <i className="fa fa-play" />
@@ -45,8 +64,8 @@ class LandingVideo extends Component {
         </div>
         <div className="landingvideo-more">
           <h1
-            onClick={buttonClick}
-            onKeyPress={buttonClick}
+            onClick={viewMoreClick}
+            onKeyPress={viewMoreClick}
             role="button"
             tabIndex="0"
             className="landingvideo-more-button button"

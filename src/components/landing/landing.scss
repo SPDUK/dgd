@@ -19,11 +19,11 @@
   animation: fade-in;
   animation-duration: 0.9s;
   &-background {
-    background: url(../../images/mobilepic.jpg)no-repeat center center;
+    background: url(http://res.cloudinary.com/dmjolhdaq/image/upload/q_auto/v1524694781/mobilepic.jpg)no-repeat center center;
     background-size: cover;
     height: 500px;
     @include breakpoint(sm) {
-      background: url(../../images/comp.jpg)no-repeat center center;
+      background: url(http://res.cloudinary.com/dmjolhdaq/image/upload/q_auto/v1524694782/comp.jpg)no-repeat center center;
       background-size: cover;
       height: 620px;
     }

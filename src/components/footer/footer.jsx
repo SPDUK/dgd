@@ -7,8 +7,8 @@ import './footer.css';
 class Footer extends Component {
   render() {
     return (
-      <div>
-        <p>hello footer</p>
+      <div className="footer">
+          <p>hi</p>
       </div>
     );
   }

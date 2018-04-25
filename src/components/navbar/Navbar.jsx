@@ -4,8 +4,6 @@ import _ from 'lodash';
 
 import './navbar.css';
 
-import logo from '../../images/dgdlogo.png';
-
 // toggles the menu to go from burger to X
 // loop through each link and enable visibility then add padding
 function toggleMenu() {
@@ -43,7 +41,10 @@ class Navbar extends Component {
     return (
       <nav id="navbar" className="navbar">
         <div className="navbar-icon">
-          <img src={logo} alt="Dance Gavin Dance Logo" />
+          <img
+            src="http://res.cloudinary.com/dmjolhdaq/image/upload/v1524694780/dgdlogo.png"
+            alt="Dance Gavin Dance Logo"
+          />
         </div>
         <ul className="navbar-menu">
           <Link to="/">

@@ -5,8 +5,6 @@ import LazyLoad from 'react-lazyload';
 
 import './nexttour.css';
 
-import nexttourimg from '../../../images/nexttour.jpg';
-
 class NextTour extends Component {
   constructor() {
     super();
@@ -83,7 +81,7 @@ class NextTour extends Component {
                 role="link"
                 tabIndex="0"
                 onClick={openLatestTourURL}
-                src={nexttourimg}
+                src="http://res.cloudinary.com/dmjolhdaq/image/upload/e_grayscale,q_auto/v1524694781/nexttour.jpg"
                 alt="On Tour Live "
               />
             </LazyLoad>

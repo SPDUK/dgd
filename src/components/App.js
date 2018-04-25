@@ -3,7 +3,6 @@ import { HashRouter, Route } from 'react-router-dom';
 
 import Navbar from './navbar/Navbar';
 import Landing from './landing/Landing';
-
 import '../styles/app.css';
 
 class App extends Component {
