@@ -13,7 +13,6 @@
   color: white;
   width: 200px;
   font-size: 0.88em;
-  font-family: 'Montserrat', sans-serif;
   padding: 15px 25px;
   background-color: black;
   border-radius: 3px;
@@ -55,9 +54,9 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
   border: 0;
-	font-family: inherit;
 	font-size: 100%;
   vertical-align: baseline;
+  font-family: 'Montserrat', sans-serif;
 
 }
 /* HTML5 display-role reset for older browsers */

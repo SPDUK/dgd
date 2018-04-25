@@ -245,7 +245,6 @@ class Albums extends Component {
             <ClickedAlbum closeAlbum={this.closeAlbum} info={this.state.info} />
           ) : null}
         </div>
-
         <div className="grid">
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>

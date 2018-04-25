@@ -5,8 +5,8 @@
     max-height: 0px;
   }
   100% {
-    opacity: 1; // transform: scale(1);
-    // max-height: 864px; 
+    opacity: 1; 
+
   }
 }
 
@@ -14,7 +14,6 @@
   width: 100%;
   transition: 0.8s ease;
   display: flex;
-  background-color: $darkGray;
   align-content: center;
   justify-content: center;
   padding-top: 30px;
@@ -31,7 +30,6 @@
     font-size: 1.1em;
     color: white;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
     padding-left: 10px;
     opacity: 0.85;
     @media screen and (min-width: 480px) {
@@ -92,6 +90,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
       &-button {
         width: 48%;
         height: 50px;
@@ -107,10 +107,10 @@
           opacity: 0.8;
           transition: 0.2s ease;
           @include breakpoint(sm) {
-            font-size: 1.1em;
+            font-size: 1em;
           }
           @include breakpoint(lg) {
-            font-size: 1.2em;
+            font-size: 1.1em;
           }
           &:hover {
             transition: 0.2s ease;
@@ -126,6 +126,12 @@
     span {
       display: none;
       @media screen and (min-width: 520px) {
+        display: inline-block;
+      }
+      @media screen and (min-width: 763px) {
+        display: none;
+      }
+      @media screen and (min-width: 900px) {
         display: inline-block;
       }
     }

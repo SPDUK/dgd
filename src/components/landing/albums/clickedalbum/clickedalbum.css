@@ -9,7 +9,6 @@
   width: 100%;
   transition: 0.8s ease;
   display: flex;
-  background-color: #191716;
   align-content: center;
   justify-content: center;
   padding-top: 30px;
@@ -25,7 +24,6 @@
     font-size: 1.1em;
     color: white;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
     padding-left: 10px;
     opacity: 0.85; }
     @media screen and (min-width: 480px) {
@@ -83,7 +81,9 @@
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif; }
       .clickedalbum-image-nav-button {
         width: 48%;
         height: 50px;
@@ -100,10 +100,10 @@
           transition: 0.2s ease; }
           @media (min-width: 768px) {
             .clickedalbum-image-nav-button p {
-              font-size: 1.1em; } }
+              font-size: 1em; } }
           @media (min-width: 1200px) {
             .clickedalbum-image-nav-button p {
-              font-size: 1.2em; } }
+              font-size: 1.1em; } }
           .clickedalbum-image-nav-button p:hover {
             transition: 0.2s ease;
             opacity: 1;
@@ -113,6 +113,12 @@
     .clickedalbum .right span {
       display: none; }
       @media screen and (min-width: 520px) {
+        .clickedalbum .right span {
+          display: inline-block; } }
+      @media screen and (min-width: 763px) {
+        .clickedalbum .right span {
+          display: none; } }
+      @media screen and (min-width: 900px) {
         .clickedalbum .right span {
           display: inline-block; } }
   .clickedalbum .left {

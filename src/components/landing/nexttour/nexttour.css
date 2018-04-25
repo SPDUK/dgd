@@ -1,8 +1,7 @@
 .nexttour {
   padding: 80px 10%;
   background-color: #EEEEE6;
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif; }
+  font-weight: 700; }
   .nexttour-hover {
     cursor: pointer; }
     .nexttour-hover-text {
