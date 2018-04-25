@@ -18,8 +18,6 @@ function viewMoreClick() {
   });
 }
 
-// ADD GIF / WEBM ON HOVER INSTEAD??
-
 class LandingVideo extends Component {
   render() {
     return (
@@ -62,6 +60,7 @@ class LandingVideo extends Component {
             </h2>
           </div>
         </div>
+
         <div className="landingvideo-more">
           <h1
             onClick={viewMoreClick}

@@ -7,16 +7,26 @@ import './albums.css';
 
 import ClickedAlbum from './clickedalbum/clickedalbum';
 
-const artificialSelection = 'https://i.imgur.com/ewuyVXX.jpg';
-const mothership = 'https://i.imgur.com/8ooI9PG.jpg';
-const treecitySessions = 'https://i.imgur.com/afKreWO.jpg';
-const instantGratification = 'https://i.imgur.com/iTWpoPV.jpg';
-const acceptanceSpeech = 'https://i.imgur.com/J6UgPMN.jpg';
-const downtownBattleMountainII = 'https://i.imgur.com/hBf4w1H.jpg';
-const happiness = 'https://i.imgur.com/93mPJ3o.jpg';
-const dancedgavindance = 'https://i.imgur.com/jl6mwj7.jpg';
-const downtownBattleMountain = 'https://i.imgur.com/u0Slvb2.jpg';
-const whateverISayIsRoyalOcean = 'https://i.imgur.com/c0pqxFX.jpg';
+const artificialSelection =
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694737/artificial-selection.jpg';
+const mothership =
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694738/mothership.jpg';
+const treecitySessions =
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694738/treecity-sessions.jpg';
+const instantGratification =
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/instant-gratification.jpg';
+const acceptanceSpeech =
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/acceptance-speech.jpg';
+const downtownBattleMountainII =
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/downtown-battle-mtn-ii.jpg';
+const happiness =
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/happiness.jpg';
+const dancedgavindance =
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/dancedgavindance.jpg';
+const downtownBattleMountain =
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/downtown-battle-mtn.jpg';
+const whateverISayIsRoyalOcean =
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/whatever-i-say-is-royal-ocean.jpg';
 
 class Albums extends Component {
   constructor() {
