@@ -26,28 +26,28 @@ class SocialLinks extends Component {
             onKeyPress={facebookLink}
             onClick={facebookLink}
             tabIndex="0"
-            className="fa fa-facebook"
+            className="fab fa-facebook"
           />
           <i
             role="link"
             onKeyPress={twitterLink}
             onClick={twitterLink}
             tabIndex="0"
-            className="fa fa-twitter"
+            className="fab fa-twitter-square"
           />
           <i
             role="link"
             onKeyPress={instagramLink}
             onClick={instagramLink}
             tabIndex="0"
-            className="fa fa-instagram"
+            className="fab fa-instagram"
           />
           <i
             role="link"
             onKeyPress={youtubeLink}
             onClick={youtubeLink}
             tabIndex="0"
-            className="fa fa-youtube"
+            className="fab fa-youtube"
           />
         </div>
       </div>
