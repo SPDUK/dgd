@@ -26,6 +26,10 @@
         .footer-top-logo {
           width: 380px;
           flex-basis: 24.5%; } }
+      @media screen and (min-width: 1200px) {
+        .footer-top-logo {
+          width: 520px;
+          flex-basis: 30.5%; } }
       .footer-top-logo img {
         height: 32px; }
         @media screen and (min-width: 400px) {
@@ -40,19 +44,26 @@
         @media screen and (min-width: 700px) {
           .footer-top-logo img {
             height: 60px; } }
+        @media (min-width: 768px) {
+          .footer-top-logo img {
+            height: 41px; } }
         @media screen and (min-width: 850px) {
           .footer-top-logo img {
             height: 48px; } }
         @media screen and (min-width: 950px) {
           .footer-top-logo img {
             height: 50px; } }
+        @media screen and (min-width: 1200px) {
+          .footer-top-logo img {
+            height: 72px; } }
     .footer-top-icons {
       display: inline-block; }
       .footer-top-icons i {
         padding: 7px 17px;
         font-size: 1.2em;
         color: white;
-        transition: ease 0.2s; }
+        transition: ease 0.2s;
+        opacity: 0.8; }
         @media screen and (min-width: 400px) {
           .footer-top-icons i {
             font-size: 1.4em; } }
@@ -72,19 +83,37 @@
           .footer-top-icons i {
             font-size: 1.6em; } }
         .footer-top-icons i:hover {
-          transform: scale(1.2); }
+          transform: scale(1.2);
+          opacity: 1; }
   .footer-middle {
     margin-top: 20px;
     text-align: center;
-    font-size: 0.5em; }
-    @media screen and (min-width: 520px) {
+    font-size: 0.45em; }
+    @media screen and (min-width: 330px) {
+      .footer-middle {
+        font-size: 0.5em; } }
+    @media screen and (min-width: 410px) {
       .footer-middle {
         font-size: 0.6em; } }
+    @media screen and (min-width: 500px) {
+      .footer-middle {
+        font-size: 0.7em; } }
+    @media screen and (min-width: 680px) {
+      .footer-middle {
+        font-size: 0.8em; } }
+    @media (min-width: 768px) {
+      .footer-middle {
+        font-size: 1em; } }
     .footer-middle a {
       color: white;
-      padding: 10px; }
+      padding: 10px;
+      border-bottom: 1px solid #191716;
+      transition: ease 0.2s; }
       .footer-middle a:visited {
         color: white; }
+      .footer-middle a:hover {
+        transition: ease 0.2s;
+        border-bottom: 1px solid #FFA949; }
   .footer-bottom {
     color: gray;
     font-size: 0.6em;

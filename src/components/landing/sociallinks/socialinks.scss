@@ -12,7 +12,6 @@
       color: white;
       font-size: 2em;
       opacity: 0.8;
-      border-bottom: 2px solid $darkGray;
       &:focus {
         outline: 1px solid $orange;
       }
@@ -20,7 +19,6 @@
         transition: 0.2s ease;
         transform: scale(1.1);
         opacity: 1;
-        border-bottom: 2px solid $orange;
       }
       @include breakpoint(sm) {
         font-size: 2.5em;
