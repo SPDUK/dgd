@@ -18,8 +18,12 @@
       padding: 15px 0px; }
       @media (min-width: 768px) {
         .footer-top-logo {
-          width: 40%;
-          flex-basis: 40%; } }
+          width: 35%;
+          flex-basis: 35%; } }
+      @media screen and (min-width: 950px) {
+        .footer-top-logo {
+          width: 380px;
+          flex-basis: 24.5%; } }
       .footer-top-logo img {
         height: 32px; }
         @media screen and (min-width: 400px) {
@@ -28,6 +32,12 @@
         @media screen and (min-width: 520px) {
           .footer-top-logo img {
             height: 42px; } }
+        @media screen and (min-width: 850px) {
+          .footer-top-logo img {
+            height: 48px; } }
+        @media screen and (min-width: 950px) {
+          .footer-top-logo img {
+            height: 50px; } }
     .footer-top-icons {
       display: inline-block; }
       .footer-top-icons i {
@@ -42,6 +52,15 @@
           .footer-top-icons i {
             font-size: 1.4em; } }
         @media screen and (min-width: 520px) {
+          .footer-top-icons i {
+            font-size: 1.6em; } }
+        @media (min-width: 768px) {
+          .footer-top-icons i {
+            font-size: 1.22em; } }
+        @media screen and (min-width: 850px) {
+          .footer-top-icons i {
+            font-size: 1.4em; } }
+        @media screen and (min-width: 950px) {
           .footer-top-icons i {
             font-size: 1.6em; } }
         .footer-top-icons i:hover {
