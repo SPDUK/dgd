@@ -2,3 +2,19 @@
   color: white;
   font-size: 20px;
   height: 300px; }
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .footer-top-logo {
+      flex-basis: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0px; }
+      .footer-top-logo img {
+        height: 32px; }
+    .footer-top-icons i {
+      padding: 7px 12px;
+      font-size: 1.2em; }

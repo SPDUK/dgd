@@ -1,6 +1,30 @@
+@import '../../styles/variables.scss';
+
 .footer {
   color: white;
   font-size: 20px;
   height: 300px;
-  // background-color: 
+  &-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    &-logo {
+      flex-basis: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0px;
+      img {
+        height: 32px;
+      }
+    }
+    &-icons {
+      i {
+        padding: 7px 12px;
+        font-size: 1.2em;
+      }
+    }
+  }
+
 }
