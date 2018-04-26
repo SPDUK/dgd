@@ -4,11 +4,13 @@
   color: white;
   font-size: 20px;
   height: 300px;
+  font-weight: 800;
   &-top {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
     @include breakpoint(sm){
       flex-wrap: nowrap;
     }
@@ -29,10 +31,16 @@
       img {
         height: 32px;
         @media screen and (min-width: 400px){
-          height: 38px;
+          height: 42px;
         }
         @media screen and (min-width: 520px){
-          height: 42px;
+          height: 48px;
+        }
+        @media screen and (min-width: 600px){
+          height: 55px;
+        }
+        @media screen and (min-width: 700px){
+          height: 60px;
         }
         @media screen and (min-width: 850px){
           height: 48px;
@@ -73,5 +81,30 @@
       }
     }
   }
-
+  &-middle {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.5em;
+    @media screen and (min-width: 520px){
+      font-size: 0.6em;
+    }
+    a {
+      color: white;
+      padding: 10px;
+    &:visited{
+      color:white
+    }
+    }
+  }
+  &-bottom {
+    color: gray;
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: 20px;
+    a {
+      &:visited{
+        color: grey;
+      }
+    }
+  }
 }

@@ -1,12 +1,14 @@
 .footer {
   color: white;
   font-size: 20px;
-  height: 300px; }
+  height: 300px;
+  font-weight: 800; }
   .footer-top {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 10px; }
     @media (min-width: 768px) {
       .footer-top {
         flex-wrap: nowrap; } }
@@ -28,10 +30,16 @@
         height: 32px; }
         @media screen and (min-width: 400px) {
           .footer-top-logo img {
-            height: 38px; } }
+            height: 42px; } }
         @media screen and (min-width: 520px) {
           .footer-top-logo img {
-            height: 42px; } }
+            height: 48px; } }
+        @media screen and (min-width: 600px) {
+          .footer-top-logo img {
+            height: 55px; } }
+        @media screen and (min-width: 700px) {
+          .footer-top-logo img {
+            height: 60px; } }
         @media screen and (min-width: 850px) {
           .footer-top-logo img {
             height: 48px; } }
@@ -65,3 +73,22 @@
             font-size: 1.6em; } }
         .footer-top-icons i:hover {
           transform: scale(1.2); }
+  .footer-middle {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.5em; }
+    @media screen and (min-width: 520px) {
+      .footer-middle {
+        font-size: 0.6em; } }
+    .footer-middle a {
+      color: white;
+      padding: 10px; }
+      .footer-middle a:visited {
+        color: white; }
+  .footer-bottom {
+    color: gray;
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: 20px; }
+    .footer-bottom a:visited {
+      color: grey; }
