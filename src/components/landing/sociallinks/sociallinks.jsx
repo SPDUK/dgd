@@ -2,19 +2,20 @@ import React, { Component } from 'react';
 
 import './socialinks.css';
 // keeps the website open while linking to social media
-function facebookLink() {
-  window.open('https://www.facebook.com/DanceGavinDance/');
+function spotifyLink() {
+  window.open('https://open.spotify.com/artist/6guC9FqvlVboSKTI77NG2k');
 }
-function twitterLink() {
-  window.open('https://twitter.com/DGDtheband');
+
+function soundcloudLink() {
+  window.open('https://soundcloud.com/dance-gavin-dance');
 }
-function instagramLink() {
-  window.open('https://www.instagram.com/dancegavindance/');
-}
-function youtubeLink() {
+function googleplayLink() {
   window.open(
-    'https://www.youtube.com/watch?v=Vl2Rmw5hsao&list=PLV8pJK07hP1gSr0XG1-0iE5VR1zsjKtCL&index=1'
+    'https://play.google.com/store/music/artist/Dance_Gavin_Dance?id=Ag5rz3fpujs2wstmazhnssgabjy&hl=en_GB'
   );
+}
+function itunesLink() {
+  window.open('https://itunes.apple.com/gb/artist/dance-gavin-dance/204782507');
 }
 class SocialLinks extends Component {
   render() {
@@ -23,31 +24,32 @@ class SocialLinks extends Component {
         <div className="sociallinks-bar">
           <i
             role="link"
-            onKeyPress={facebookLink}
-            onClick={facebookLink}
+            onKeyPress={spotifyLink}
+            onClick={spotifyLink}
             tabIndex="0"
-            className="fab fa-facebook"
+            className="fab fa-spotify"
           />
           <i
             role="link"
-            onKeyPress={twitterLink}
-            onClick={twitterLink}
+            onKeyPress={soundcloudLink}
+            onClick={soundcloudLink}
             tabIndex="0"
-            className="fab fa-twitter-square"
+            className="fab fa-soundcloud"
           />
           <i
             role="link"
-            onKeyPress={instagramLink}
-            onClick={instagramLink}
+            googleplay
+            onKeyPress={googleplayLink}
+            onClick={googleplayLink}
             tabIndex="0"
-            className="fab fa-instagram"
+            className="fab fa-google-play"
           />
           <i
             role="link"
-            onKeyPress={youtubeLink}
-            onClick={youtubeLink}
+            onKeyPress={itunesLink}
+            onClick={itunesLink}
             tabIndex="0"
-            className="fab fa-youtube"
+            className="fab fa-itunes-note"
           />
         </div>
       </div>
