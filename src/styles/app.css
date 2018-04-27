@@ -23,7 +23,7 @@
   .button:hover {
     opacity: 0.75;
     transition: ease 0.3s;
-    transform: scale(1.2); }
+    transform: scale(1.1); }
 
 html {
   background-color: #191716; }
