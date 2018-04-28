@@ -140,11 +140,11 @@
     }
   }
   &-bottom {
-    color: gray;
     font-size: 0.6em;
     text-align: center;
     margin-top: 20px;
     a {
+      color: gray;
       &:visited {
         color: grey !important;
       }

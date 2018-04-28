@@ -125,12 +125,13 @@
         transition: ease 0.2s;
         border-bottom: 1px solid #FFA949; }
   .footer-bottom {
-    color: gray;
     font-size: 0.6em;
     text-align: center;
     margin-top: 20px; }
-    .footer-bottom a:visited {
-      color: grey !important; }
+    .footer-bottom a {
+      color: gray; }
+      .footer-bottom a:visited {
+        color: grey !important; }
 
 .moved-footer {
   animation-name: moveFooter;

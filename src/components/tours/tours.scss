@@ -1,5 +1,14 @@
 .tours {
-  padding-top: 70px;
+  padding-top: 100px;
   height: 1200px;
   color: white;
+  width: 100%;
+  &-title {
+    flex-basis: 100%;
+    width:100%;
+    text-align: center;
+  }
+  &-dates {
+    display: flex;
+  }
 }
