@@ -8,11 +8,12 @@ import './navbar.css';
 // loop through each link and enable visibility then add padding
 function toggleMenu() {
   const burger = document.querySelector('.navbar-burger');
+  console.log(burger);
   const mobileMenu = document.getElementsByClassName('navbar-menu-link');
   for (let i = 0; i < mobileMenu.length; i += 1) {
     mobileMenu[i].classList.toggle('open');
-    burger.classList.toggle('open');
   }
+  burger.classList.toggle('open');
 }
 
 // moves navbar from center to the sides and changes from transparent
@@ -43,9 +44,9 @@ class Navbar extends Component {
         <div className="navbar-icon">
           <Link to="/">
             <img
-                src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694780/dgdlogo.png"
-                alt="Dance Gavin Dance Logo"
-              />
+              src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694780/dgdlogo.png"
+              alt="Dance Gavin Dance Logo"
+            />
           </Link>
         </div>
         <ul className="navbar-menu">
