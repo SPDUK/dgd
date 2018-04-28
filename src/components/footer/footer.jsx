@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import _ from 'lodash';
 
 import './footer.css';
-
+// doesn't work on ipad tablets in vertical mode (??? why ???)
 class Footer extends Component {
   render() {
     return (

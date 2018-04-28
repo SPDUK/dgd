@@ -1,8 +1,18 @@
 .footer {
   color: white;
   font-size: 20px;
-  height: 300px;
-  font-weight: 800; }
+  height: 320px;
+  font-weight: 800;
+  margin-bottom: 0px; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: portrait) and (min-device-height: 1024px) and (max-device-height: 1024px) {
+    .footer {
+      margin-bottom: 300px; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (min-device-height: 1366px) and (max-device-height: 1366px) {
+    .footer {
+      margin-bottom: 600px; } }
+  @media (min-width: 768px) {
+    .footer {
+      height: 280px; } }
   .footer-top {
     display: flex;
     flex-wrap: wrap;
