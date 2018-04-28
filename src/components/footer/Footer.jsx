@@ -26,7 +26,7 @@ class Footer extends Component {
           <div className="footer-top-logo">
             <a href="/">
               <img
-                src="http://res.cloudinary.com/dmjolhdaq/image/upload/v1524694763/dgdwhite.png"
+                src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694763/dgdwhite.png"
                 alt=""
               />
             </a>
@@ -53,7 +53,7 @@ class Footer extends Component {
           <a href="/">DISCOGRAPHY</a>
         </div>
         <div className="footer-bottom">
-          <a href="http://spdevuk.com">
+          <a href="https://spdevuk.com">
             <p>WEBSITE CREATED BY SPDUK</p>
           </a>
         </div>

@@ -42,7 +42,7 @@ class Navbar extends Component {
       <nav id="navbar" className="navbar">
         <div className="navbar-icon">
           <img
-            src="http://res.cloudinary.com/dmjolhdaq/image/upload/v1524694780/dgdlogo.png"
+            src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694780/dgdlogo.png"
             alt="Dance Gavin Dance Logo"
           />
         </div>

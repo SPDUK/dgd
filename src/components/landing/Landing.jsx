@@ -18,7 +18,7 @@ class Landing extends Component {
         <div className="landing-title">
           <img
             alt="Dance Gavin Dance Logo"
-            src="http://res.cloudinary.com/dmjolhdaq/image/upload/q_auto/a_0/v1524694781/dgdtitle.png"
+            src="https://res.cloudinary.com/dmjolhdaq/image/upload/q_auto/a_0/v1524694781/dgdtitle.png"
           />
         </div>
         <div className="landing-info">

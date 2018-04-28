@@ -81,7 +81,7 @@ class NextTour extends Component {
                 role="link"
                 tabIndex="0"
                 onClick={openLatestTourURL}
-                src="http://res.cloudinary.com/dmjolhdaq/image/upload/e_grayscale,q_auto/v1524694781/nexttour.jpg"
+                src="https://res.cloudinary.com/dmjolhdaq/image/upload/e_grayscale,q_auto/v1524694781/nexttour.jpg"
                 alt="On Tour Live "
               />
             </LazyLoad>
