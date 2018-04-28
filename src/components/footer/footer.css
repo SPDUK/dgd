@@ -130,7 +130,7 @@
     text-align: center;
     margin-top: 20px; }
     .footer-bottom a:visited {
-      color: grey; }
+      color: grey !important; }
 
 .moved-footer {
   animation-name: moveFooter;

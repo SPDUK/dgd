@@ -53,7 +53,7 @@ class Footer extends Component {
           <a href="/">DISCOGRAPHY</a>
         </div>
         <div className="footer-bottom">
-          <a href="https://spdevuk.com">
+          <a href="http://spdevuk.com">
             <p>WEBSITE CREATED BY SPDUK</p>
           </a>
         </div>
