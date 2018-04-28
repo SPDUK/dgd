@@ -54,15 +54,10 @@ class Navbar extends Component {
             <li className="navbar-menu-link">STORE</li>
           </Link>
           <Link to="/">
-            <li className="navbar-menu-link">LIVE</li>
+            <li className="navbar-menu-link">TOUR</li>
           </Link>
           <Link to="/">
             <li className="navbar-menu-link">DISCOGRAPHY</li>
-          </Link>
-          <Link to="/">
-            <li id="lastMenu" className="navbar-menu-link">
-              ABOUT
-            </li>
           </Link>
         </ul>
         <div

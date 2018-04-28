@@ -5,7 +5,7 @@ import { animateScroll as scroll, scroller } from 'react-scroll';
 
 import './albums.css';
 
-import ClickedAlbum from './clickedalbum/clickedalbum';
+import ClickedAlbum from './clickedalbum/Clickedalbum';
 
 const artificialSelection =
   'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694737/artificial-selection.jpg';

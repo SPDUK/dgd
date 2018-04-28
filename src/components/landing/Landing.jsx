@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 
 import LandingVideos from './landingvideo/LandingVideos';
 import NextTour from './nexttour/NextTour';
-import Albums from './albums/albums';
-import Footer from '../footer/footer';
+import Albums from './albums/Albums';
+import Footer from '../footer/Footer';
 
 import './landing.css';
 
-import SocialLinks from './sociallinks/sociallinks';
+import SocialLinks from './sociallinks/Sociallinks';
 
 class Landing extends Component {
   render() {
