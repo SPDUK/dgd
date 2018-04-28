@@ -47,10 +47,10 @@ class Footer extends Component {
           </div>
         </div>
         <div className="footer-middle">
-          <a href="/">VIDEOS</a>
-          <a href="/">STORE</a>
-          <a href="/">TOUR</a>
-          <a href="/">DISCOGRAPHY</a>
+          <Link to="/">VIDEOS</Link>
+          <Link to="/">STORE</Link>
+          <Link to="/tours">TOUR</Link>
+          <Link to="/">DISCOGRAPHY</Link>
         </div>
         <div className="footer-bottom">
           <a href="http://spdevuk.com">
