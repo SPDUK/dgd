@@ -70,9 +70,9 @@ class NextTour extends Component {
             onClick={openLatestTourURL}
             className="nexttour-date"
           >
-            <h2 className="nexttour-date-day">Jan 1</h2>
-            <h2 className="nexttour-date-city">London</h2>
-            <h2 className="nexttour-date-country">England</h2>
+            <h2 className="nexttour-date-day">Loading..</h2>
+            <h2 className="nexttour-date-city">Loading..</h2>
+            <h2 className="nexttour-date-country">Loading..</h2>
           </div>
           <div className="nexttour-image">
             <LazyLoad height={300} offset={100} once>
