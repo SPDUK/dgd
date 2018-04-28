@@ -8,4 +8,13 @@
     width: 100%;
     text-align: center; }
   .tours-dates {
-    display: flex; }
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; }
+    .tours-dates-date {
+      flex-basis: 50%; }
+    .tours-dates-venue {
+      flex-basis: 50%; }
+    .tours-dates-tickets {
+      flex-basis: 100%;
+      text-align: center; }

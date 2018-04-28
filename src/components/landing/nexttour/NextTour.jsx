@@ -40,6 +40,7 @@ class NextTour extends Component {
     const nextTourURL = `https://rest.bandsintown.com/artists/Dance%20Gavin%20Dance/events?app_id=dgdsite&date=${today}%2C${endDate}`;
 
     axios.get(nextTourURL).then(res => {
+      console.log(res);
       // create a new date then turn it to a readable string and cut off the
       // start and end to show just the month and date
       const tourDateString = new Date(res.data[0].datetime)

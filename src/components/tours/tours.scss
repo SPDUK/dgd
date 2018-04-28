@@ -10,5 +10,17 @@
   }
   &-dates {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    &-date {
+      flex-basis: 50%;
+    }
+    &-venue {
+      flex-basis: 50%;
+    }
+    &-tickets {
+      flex-basis: 100%;
+      text-align: center;
+    }
   }
 }

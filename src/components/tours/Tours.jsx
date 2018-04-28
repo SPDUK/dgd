@@ -14,12 +14,17 @@ class Tours extends Component {
             <h1>TOUR DATES</h1>
           </div>
           <div className="tours-dates">
-            <div className="tours-dates-list">
-              <div className="tours-dates-list-date">
-                <h3 className="tours-dates-list-date-month">APR</h3>
-                <h3 className="tours-dates-list-date-day">30</h3>
-                <h3 className="tours-dates-list-date-year">2018</h3>
-              </div>
+            <div className="tours-dates-date">
+              <h3 className="tours-dates-date-month">APR</h3>
+              <h3 className="tours-dates-date-day">30</h3>
+              <h3 className="tours-dates-date-year">2018</h3>
+            </div>
+            <div className="tours-dates-venue">
+              <h3 className="tours-dates-venue-city">Oslo, Norway</h3>
+              <h3 className="tours-dates-venue-name">Foo Arena</h3>
+            </div>
+            <div className="tours-dates-tickets">
+              <div className="tours-dates-tickets-button">Haha</div>
             </div>
           </div>
         </div>
