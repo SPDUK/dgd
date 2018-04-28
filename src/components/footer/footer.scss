@@ -1,20 +1,22 @@
 @import '../../styles/variables.scss';
+
 .footer {
   color: white;
   font-size: 20px;
-  height: 320px;
+  height: 260px;
   font-weight: 800; 
+
   // makes the footer show up on ipads 
   @media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation:portrait) and (min-device-height: 1024px) and (max-device-height: 1024px) {
-    margin-bottom: 300px;
+    margin-bottom: 230px;
   }
   @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation:portrait) and (min-device-height: 1366px) and (max-device-height: 1366px) {
-    margin-bottom: 600px;
+    margin-bottom: 560px;
   }
   margin-bottom: 0px;
   
   @include breakpoint(sm) {
-    height: 280px;
+    height: 200px;
   }
   &-top {
     display: flex;
@@ -147,5 +149,25 @@
         color: grey;
       }
     }
+  }
+}
+
+//moves footer down enough to hide it when the initial image shows
+.moved-footer{
+  animation-name: moveFooter;
+  animation-duration: 0.5s;
+}
+@keyframes moveFooter {
+  0% {
+    opacity: 0;
+    margin-top: 1200px;
+  }
+  30% {
+    opacity: 0;
+    margin-top: 1200px;
+  }
+  100% {
+    opacity: 0.2;
+    margin-top: 0px;
   }
 }

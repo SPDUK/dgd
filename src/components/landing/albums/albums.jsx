@@ -51,9 +51,11 @@ class Albums extends Component {
       selectedAlbum: ''
     });
     const gridItems = document.querySelectorAll('.grid-item');
+    const footer = document.querySelector('.footer');
     for (let i = 0; i < gridItems.length; i += 1) {
       gridItems[i].classList.remove('grid-small');
     }
+    footer.classList.remove('moved-footer');
     const Masonry = require('masonry-layout');
     const msnry = new Masonry('.grid', {
       itemSelector: '.grid-item',
@@ -71,9 +73,11 @@ class Albums extends Component {
       info: inf
     });
     const gridItems = document.querySelectorAll('.grid-item');
+    const footer = document.querySelector('.footer');
     for (let i = 0; i < gridItems.length; i += 1) {
       gridItems[i].classList.add('grid-small');
     }
+    footer.classList.add('moved-footer');
     const Masonry = require('masonry-layout');
     const msnry = new Masonry('.grid', {
       itemSelector: '.grid-item',
