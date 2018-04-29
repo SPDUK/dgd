@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
+import { animateScroll as scroll, scroller } from 'react-scroll';
 
 import './navbar.css';
 
@@ -29,6 +30,10 @@ const handleScroll = _.throttle(() => {
   }
 }, 250);
 
+const openStoreLink = () => {
+  window.open('https://dgd.merchnow.com/');
+};
+
 class Navbar extends Component {
   componentDidMount() {
     window.addEventListener('scroll', handleScroll);
@@ -36,6 +41,32 @@ class Navbar extends Component {
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', handleScroll);
+  }
+
+  scrollToAlbums() {
+    function handleClick(e) {
+      e.preventDevault();
+    }
+    setTimeout(() => {
+      scroller.scrollTo('albums-title', {
+        duration: 1000,
+        offset: -70,
+        smooth: 'easeInOutQuad'
+      });
+    }, 50);
+  }
+
+  scrollToVideos() {
+    function handleClick(e) {
+      e.preventDevault();
+    }
+    setTimeout(() => {
+      scroller.scrollTo('landingvideo-title', {
+        duration: 1000,
+        offset: -70,
+        smooth: 'easeInOutQuad'
+      });
+    }, 50);
   }
 
   render() {
@@ -53,16 +84,16 @@ class Navbar extends Component {
           <Link id="homeLink" to="/">
             <li className="navbar-menu-link">HOME</li>
           </Link>
-          <Link to="/">
+          <Link onClick={this.scrollToVideos} to="/">
             <li className="navbar-menu-link">VIDEOS</li>
           </Link>
-          <Link to="/hello">
-            <li className="navbar-menu-link">STORE</li>
-          </Link>
+          <li onClick={openStoreLink} className="navbar-menu-link">
+            STORE
+          </li>
           <Link to="/tour">
             <li className="navbar-menu-link">TOUR</li>
           </Link>
-          <Link to="/">
+          <Link onClick={this.scrollToAlbums} to="/">
             <li className="navbar-menu-link">DISCOGRAPHY</li>
           </Link>
         </ul>

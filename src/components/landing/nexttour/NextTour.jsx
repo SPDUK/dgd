@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import LazyLoad from 'react-lazyload';
-// import { Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 import './nexttour.css';
 
@@ -58,6 +58,12 @@ class NextTour extends Component {
       window.open(this.state.currentDateURL);
     };
 
+    // simpler solution instead of  messing with all the CSS to fix
+    // a link being there
+    const tourButtonClick = () => {
+      window.location.assign('/#/tour');
+    };
+
     return (
       <div className="nexttour">
         <div className="nexttour-title">
@@ -99,7 +105,7 @@ class NextTour extends Component {
             <i className="fa fa-arrow-left" /> TICKETS{' '}
             <span>FOR THIS SHOW</span>
           </h1>
-          <h1 className="button">
+          <h1 onClick={tourButtonClick} className="button">
             <span>VIEW ALL</span> TOUR DATES <i className="fa fa-arrow-right" />
           </h1>
         </div>

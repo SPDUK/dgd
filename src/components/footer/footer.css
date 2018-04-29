@@ -68,6 +68,9 @@
             height: 72px; } }
     .footer-top-icons {
       display: inline-block; }
+      .footer-top-icons div {
+        display: inline-block;
+        cursor: pointer; }
       .footer-top-icons i {
         padding: 7px 17px;
         font-size: 1.2em;

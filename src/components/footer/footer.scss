@@ -75,6 +75,10 @@
     }
     &-icons {
       display: inline-block;
+      div {
+        display: inline-block;
+        cursor: pointer;
+      }
       i {
         padding: 7px 17px;
         font-size: 1.2em;

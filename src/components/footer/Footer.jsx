@@ -1,26 +1,52 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import { animateScroll as scroll, scroller } from 'react-scroll';
 import './footer.css';
 // doesn't work on ipad tablets in vertical mode (??? why ???)
+
 class Footer extends Component {
+  scrollToAlbums() {
+    function handleClick(e) {
+      e.preventDevault();
+    }
+    setTimeout(() => {
+      scroller.scrollTo('albums-title', {
+        duration: 1000,
+        offset: -70,
+        smooth: 'easeInOutQuad'
+      });
+    }, 50);
+  }
+
+  scrollToVideos() {
+    function handleClick(e) {
+      e.preventDevault();
+    }
+    setTimeout(() => {
+      scroller.scrollTo('landingvideo-title', {
+        duration: 1000,
+        offset: -70,
+        smooth: 'easeInOutQuad'
+      });
+    }, 50);
+  }
   render() {
     return (
       <div className="footer">
         <div className="footer-top">
           <div className="footer-top-icons">
-            <a href="">
+            <div>
               <i className="fab fa-facebook-f" />
-            </a>
-            <a href="">
+            </div>
+            <div>
               <i className="fab fa-instagram" />
-            </a>
-            <a href="">
+            </div>
+            <div>
               <i className="fab fa-twitter" />
-            </a>
-            <a href="">
+            </div>
+            <div>
               <i className="fab fa-youtube" />
-            </a>
+            </div>
           </div>
           <div className="footer-top-logo">
             <a href="/">
@@ -31,25 +57,29 @@ class Footer extends Component {
             </a>
           </div>
           <div className="footer-top-icons">
-            <a href="">
+            <div>
               <i className="fab fa-spotify" />
-            </a>
-            <a href="">
+            </div>
+            <div>
               <i className="fab fa-soundcloud" />
-            </a>
-            <a href="">
+            </div>
+            <div>
               <i className="fab fa-google-play" />
-            </a>
-            <a href="">
+            </div>
+            <div>
               <i className="fab fa-itunes-note" />
-            </a>
+            </div>
           </div>
         </div>
         <div className="footer-middle">
-          <Link to="/">VIDEOS</Link>
-          <Link to="/">STORE</Link>
+          <Link onClick={this.scrollToVideos} to="/">
+            VIDEOS
+          </Link>
+          <a href="https://dgd.merchnow.com/">STORE</a>
           <Link to="/tour">TOUR</Link>
-          <Link to="/">DISCOGRAPHY</Link>
+          <Link onClick={this.scrollToAlbums} to="/">
+            DISCOGRAPHY
+          </Link>
         </div>
         <div className="footer-bottom">
           <a href="http://spdevuk.com">
