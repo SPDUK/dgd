@@ -6,6 +6,9 @@
   width: 100%;
   line-height: 1.3em;
   font-size: 1em;
+  @include breakpoint(sm){
+    font-size: 1.1em;
+  }
   &-title {
     flex-basis: 100%;
     width: 100%;
@@ -17,8 +20,12 @@
     padding: 0px 20px 0px 20px;
     flex-wrap: wrap;
     margin-bottom: 30px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     font-size: 1.1em;
+    @include breakpoint(sm){
+      padding: 0px 10%;
+      flex-wrap: nowrap;
+    }
     &-date {
       flex-basis: 100%;
       text-align: left;
@@ -27,33 +34,62 @@
       justify-content: space-evenly;
       font-size: 0.9em;
       padding-bottom: 5px;
+      @include breakpoint(sm){
+        flex-basis: 30%;
+        line-height: 1em;
+        font-size: 0.8em;
+        justify-content: center;
+        padding-bottom: 0px;
+      }
       &-month {
         font-weight: 700;
+        @include breakpoint(sm){
+          font-size: 1em;
+        }
       }
       &-day {
         font-weight: 700;
+        @include breakpoint(sm){
+          font-size: 0.8em;
+        }
       }
       &-year {
         font-size: 0.9em;
         font-weight: 400;
+        @include breakpoint(sm){
+          font-size: 0.8em;
+        }
       }
     }
     &-venue {
       flex-basis: 100%;
       text-align: left;
+      @include breakpoint(sm){
+        align-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: 1.2em;
+      }
       &-city {
-        font-size: 1em;
         max-width: 100%;
-        font-size: 1em;
+        @include breakpoint(sm){
+          align-content: center;
+        }
       }
       &-name {
         font-weight: 400;
+
       }
     }
     &-tickets {
       flex-basis: 100%;
       display: flex;
       justify-content: flex-start;
+      @include breakpoint(sm){
+        justify-content: flex-end;
+      }
       &-button {
         align-content: center;
         text-align: center;
@@ -66,7 +102,7 @@
         border-radius: 2px;
         transition: 0.2s ease;
         cursor: pointer;
-        flex-basis: 35%;
+        width: 150px;
         font-weight: 400;
         &:hover {
           transition: 0.2s ease;
