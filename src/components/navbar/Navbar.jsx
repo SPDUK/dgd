@@ -73,12 +73,12 @@ class Navbar extends Component {
     return (
       <nav id="navbar" className="navbar">
         <div className="navbar-icon">
-          <Link to="/">
+          <a href="/">
             <img
               src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694780/dgdlogo.png"
               alt="Dance Gavin Dance Logo"
             />
-          </Link>
+          </a>
         </div>
         <ul className="navbar-menu">
           <Link id="homeLink" to="/">

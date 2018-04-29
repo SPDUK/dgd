@@ -67,57 +67,106 @@ class Footer extends Component {
       <div className="footer">
         <div className="footer-top">
           <div className="footer-top-icons">
-            <div onClick={facebookLink}>
+            <div
+              onKeyPress={facebookLink}
+              role="link"
+              tabIndex="0"
+              onClick={facebookLink}
+            >
               <i className="fab fa-facebook-f" />
               <span>Facebook</span>
             </div>
-            <div onClick={instagramLink}>
+            <div
+              onKeyPress={instagramLink}
+              role="link"
+              tabIndex="0"
+              onClick={instagramLink}
+            >
               <i className="fab fa-instagram" />
               <span>Instagram</span>
             </div>
-            <div onClick={twitterLink}>
+            <div
+              onKeyPress={twitterLink}
+              role="link"
+              tabIndex="0"
+              onClick={twitterLink}
+            >
               <i className="fab fa-twitter" />
               <span>Twitter</span>
             </div>
-            <div onClick={youtubeLink}>
+            <div
+              onKeyPress={youtubeLink}
+              role="link"
+              tabIndex="0"
+              onClick={youtubeLink}
+            >
               <i className="fab fa-youtube" />
               <span>Youtube</span>
             </div>
           </div>
           <div className="footer-top-logo">
-            <Link to="/">
+            <a href="/">
               <img
                 src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694763/dgdwhite.png"
                 alt=""
               />
-            </Link>
+            </a>
           </div>
           <div className="footer-top-icons">
-            <div onClick={spotifyLink}>
+            <div
+              onKeyPress={spotifyLink}
+              role="link"
+              tabIndex="0"
+              onClick={spotifyLink}
+            >
               <i className="fab fa-spotify" />
               <span>Spotify</span>
             </div>
-            <div onClick={soundcloudLink}>
+            <div
+              onKeyPress={soundcloudLink}
+              role="link"
+              tabIndex="0"
+              onClick={soundcloudLink}
+            >
               <i className="fab fa-soundcloud" />
               <span>Soundcloud</span>
             </div>
-            <div onClick={googlePlayLink}>
+            <div
+              onKeyPress={googlePlayLink}
+              role="link"
+              tabIndex="0"
+              onClick={googlePlayLink}
+            >
               <i className="fab fa-google-play" />
               <span>Google Play</span>
             </div>
-            <div onClick={itunesLink}>
+            <div
+              onKeyPress={itunesLink}
+              role="link"
+              tabIndex="0"
+              onClick={itunesLink}
+            >
               <i className="fab fa-itunes-note" />
               <span>iTunes</span>
             </div>
           </div>
         </div>
         <div className="footer-middle">
-          <Link onClick={this.scrollToVideos} to="/">
+          <Link
+            onKeyDown={this.scrollToVideos}
+            onClick={this.scrollToVideos}
+            to="/"
+          >
             VIDEOS
           </Link>
           <a href="https://dgd.merchnow.com/">STORE</a>
           <Link to="/tour">TOUR</Link>
-          <Link onClick={this.scrollToAlbums} to="/">
+          <Link
+            onKeyDown={this.scrollToAlbums}
+            tabIndex="0"
+            onClick={this.scrollToAlbums}
+            to="/"
+          >
             DISCOGRAPHY
           </Link>
         </div>
