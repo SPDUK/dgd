@@ -25,7 +25,7 @@ class Tours extends Component {
     const tourDateDay = document.querySelector('.tours-dates-date-day');
     const tourDateYear = document.querySelector('.tours-dates-date-year');
     const tourCity = document.querySelector('.tours-dates-venue-city');
-    const tourCountry = document.querySelector('.tours-dates-venue-name');
+    const tourVenue = document.querySelector('.tours-dates-venue-name');
     // find todays date in a way to split it up and put into the url
     let today = new Date();
     let dd = today.getDate();
@@ -44,16 +44,17 @@ class Tours extends Component {
 
     axios.get(nextTourURL).then(res => {
       console.log(res);
-      // create a new date then turn it to a readable string and cut off the
-      // start and end to show just the month and date
-      for (let i = 0; i < 10; i += 1) {
+      for (let i = 0; i < res.data.length; i += 1) {
         // get the first tour in the list (empty)
         // clone it and then insert the  day and location into each one
-        // remove the initial empty tour from the end
+        // remove the initial empty tour(s) from the end
         const firstTour = document.querySelector('.tours-dates');
         const clone = firstTour.cloneNode(true);
         const toursParent = document.getElementById('tours-parent');
         toursParent.appendChild(clone);
+
+        // create a new date then turn it to a readable string and cut off the
+        // start and end to show just the month and date
         const tourDateMonthString = new Date(res.data[i].datetime)
           .toDateString()
           .slice(3, -8);
@@ -69,11 +70,12 @@ class Tours extends Component {
           .slice(11);
         tourDateYear.innerText = tourDateYearString;
 
-        tourCity.innerText = res.data[i].venue.city;
-        tourCountry.innerText = res.data[i].venue.country;
+        tourCity.innerText = `${res.data[i].venue.city}, ${
+          res.data[i].venue.country
+        }`;
+        tourVenue.innerText = res.data[i].venue.name;
         this.setState({ currentTourDateURL: res.data[i].url });
       }
-
       for (let i = 0; i < 2; i += 1) {
         const toursParent = document.getElementById('tours-parent');
         toursParent.removeChild(toursParent.firstChild);

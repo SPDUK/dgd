@@ -19,7 +19,7 @@ class App extends Component {
           <div>
             <Navbar />
             <Route exact path="/" component={Landing} />
-            <Route exact path="/tours" component={Tours} />
+            <Route exact path="/tour" component={Tours} />
           </div>
         </HashRouter>
       </div>

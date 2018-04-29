@@ -103,3 +103,9 @@
           transition: 0.2s ease;
           background-color: white;
           color: black; }
+
+.tours-dates.hidden10 {
+  display: none; }
+
+.tours-dates.hidden20 {
+  display: none; }
