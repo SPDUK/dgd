@@ -71,6 +71,15 @@
       .footer-top-icons div {
         display: inline-block;
         cursor: pointer; }
+        .footer-top-icons div span {
+          transition: 0.3s ease;
+          font-size: 0.5em;
+          display: none;
+          opacity: 0;
+          text-align: center; }
+          @media (min-width: 768px) {
+            .footer-top-icons div span {
+              display: block; } }
       .footer-top-icons i {
         padding: 7px 17px;
         font-size: 1.2em;
@@ -97,6 +106,9 @@
             font-size: 1.6em; } }
         .footer-top-icons i:hover {
           transform: scale(1.2);
+          opacity: 1; }
+        .footer-top-icons i:hover + span {
+          transition: 0.3s ease;
           opacity: 1; }
   .footer-middle {
     margin-top: 20px;

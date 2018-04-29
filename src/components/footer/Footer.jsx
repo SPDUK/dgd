@@ -69,15 +69,19 @@ class Footer extends Component {
           <div className="footer-top-icons">
             <div onClick={facebookLink}>
               <i className="fab fa-facebook-f" />
+              <span>Facebook</span>
             </div>
             <div onClick={instagramLink}>
               <i className="fab fa-instagram" />
+              <span>Instagram</span>
             </div>
             <div onClick={twitterLink}>
               <i className="fab fa-twitter" />
+              <span>Twitter</span>
             </div>
             <div onClick={youtubeLink}>
               <i className="fab fa-youtube" />
+              <span>Youtube</span>
             </div>
           </div>
           <div className="footer-top-logo">
@@ -91,15 +95,19 @@ class Footer extends Component {
           <div className="footer-top-icons">
             <div onClick={spotifyLink}>
               <i className="fab fa-spotify" />
+              <span>Spotify</span>
             </div>
             <div onClick={soundcloudLink}>
               <i className="fab fa-soundcloud" />
+              <span>Soundcloud</span>
             </div>
             <div onClick={googlePlayLink}>
               <i className="fab fa-google-play" />
+              <span>Google Play</span>
             </div>
             <div onClick={itunesLink}>
               <i className="fab fa-itunes-note" />
+              <span>iTunes</span>
             </div>
           </div>
         </div>
