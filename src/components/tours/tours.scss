@@ -1,12 +1,11 @@
 @import '../../styles/variables.scss';
 .tours {
-  padding-top: 100px;
-  // height: 1200px;
+  padding-top: 100px; // height: 1200px;
   color: white;
   width: 100%;
   line-height: 1.3em;
   font-size: 1em;
-  @include breakpoint(sm){
+  @include breakpoint(sm) {
     font-size: 1.1em;
   }
   &-title {
@@ -21,7 +20,7 @@
     flex-wrap: wrap;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     font-size: 1.1em;
-    @include breakpoint(sm){
+    @include breakpoint(sm) {
       padding: 30px 10%;
       flex-wrap: nowrap;
     }
@@ -33,7 +32,7 @@
       justify-content: space-evenly;
       font-size: 0.9em;
       padding-bottom: 5px;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         flex-basis: 30%;
         line-height: 1em;
         font-size: 0.9em;
@@ -42,20 +41,20 @@
       }
       &-month {
         font-weight: 400;
-        @include breakpoint(sm){
+        @include breakpoint(sm) {
           font-size: 0.9em;
         }
       }
       &-day {
         font-weight: 700;
-        @include breakpoint(sm){
+        @include breakpoint(sm) {
           font-size: 1.2em;
         }
       }
       &-year {
         font-size: 0.9em;
         font-weight: 400;
-        @include breakpoint(sm){
+        @include breakpoint(sm) {
           font-size: 0.8em;
         }
       }
@@ -63,7 +62,7 @@
     &-venue {
       flex-basis: 100%;
       text-align: left;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         align-content: flex-start;
         display: flex;
         flex-direction: column;
@@ -73,13 +72,12 @@
       }
       &-city {
         max-width: 100%;
-        @include breakpoint(sm){
+        @include breakpoint(sm) {
           align-content: center;
         }
       }
       &-name {
         font-weight: 400;
-
       }
     }
     &-tickets {
@@ -92,7 +90,7 @@
           color: white;
         }
       }
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         justify-content: flex-end;
       }
       &-button {
@@ -109,8 +107,7 @@
         cursor: pointer;
         width: 150px;
         font-weight: 400;
-
-        @include breakpoint(sm){
+        @include breakpoint(sm) {
           padding: 10px 20px;
         }
         &:hover {
@@ -118,7 +115,6 @@
           background-color: white;
           color: black;
         }
-
       }
     }
   }
@@ -127,6 +123,7 @@
 .tours-dates.hidden10 {
   display: none;
 }
+
 .tours-dates.hidden20 {
   display: none;
 }

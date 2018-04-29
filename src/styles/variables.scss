@@ -2,7 +2,6 @@
 $orange: #FFA949;
 $darkGray: #191716;
 $offWhite: #EEEEE6;
-
 //Breakpoints
 @mixin breakpoint($class) {
   @if $class==xs {
@@ -35,7 +34,6 @@ $offWhite: #EEEEE6;
 //       width: 100%;
 //     }
 //   }
-
 /////////center      @include ctr(both) = center middle - (y) = vertical (x) = horizontal
 @mixin absolutecenter($axis: "both") {
   position: absolute;
