@@ -4,6 +4,8 @@
   height: 1200px;
   color: white;
   width: 100%;
+  line-height: 1.3em;
+  font-size: 1em;
   &-title {
     flex-basis: 100%;
     width: 100%;
@@ -14,41 +16,65 @@
     display: flex; 
     padding: 0px 20px 0px 20px;
     flex-wrap: wrap;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(255,255,255, 0.2);
+    font-size: 1.1em;
     &-date {
-      flex-basis: 30%;
+      flex-basis: 100%;
       text-align: left;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       font-size: 0.9em;
+      padding-bottom: 5px;
+      &-month{
+        font-weight: 700;
+      }
+      &-day{
+        font-weight: 700;
+      }
+      &-year{
+        font-size: 0.9em;
+        font-weight: 400;
+      }
     }
     &-venue {
-      flex-basis: 70%;
-      text-align: right;
+      flex-basis: 100%;
+      text-align: left;
       &-city {
+        // padding: 4px;
         font-size: 1em; 
         max-width: 100%;
-        overflow: hidden;
         font-size: 1em;
       }
       &-name {
+        // padding: 4px;
         font-weight: 400;
       }
     }
     &-tickets {
       flex-basis: 100%;
-      text-align: center;
-      margin-top: 6px;
-      padding: 3px;
-      border: 2px solid $orange;
-      font-weight: 700;
-      background-color: $orange;
-      border-radius: 3px;
-      transition: 0.2s ease;
-      cursor: pointer;
-      &:hover {
-        transition: 0.2s ease;
+      display: flex;
+      justify-content: flex-start;
+      &-button {
+        align-content: center;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 5px 15px;
+        border: 2px solid white;
+        font-weight: 700;
         background-color: $darkGray;
+        border-radius: 2px;
+        transition: 0.2s ease;
+        cursor: pointer;
+        flex-basis: 35%;
+        font-weight: 400;
+        &:hover {
+          transition: 0.2s ease;
+          background-color: white;
+          color:black;
+        }
       }
     }
   }

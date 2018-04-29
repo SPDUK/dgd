@@ -21,10 +21,9 @@ class Tours extends Component {
             </div>
             <div className="tours-dates-venue">
               <h3 className="tours-dates-venue-city">
-                <p>Wallingford</p>
-                <p>United States</p>
+                <p>Stockholm, Sweden</p>
               </h3>
-              <h3 className="tours-dates-venue-name">Foo Arena</h3>
+              <h3 className="tours-dates-venue-name">Ericsson Globe</h3>
             </div>
             <div className="tours-dates-tickets">
               <div className="tours-dates-tickets-button">TICKETS</div>
