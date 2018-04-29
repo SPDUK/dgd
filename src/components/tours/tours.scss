@@ -13,11 +13,11 @@
     margin-bottom: 50px;
   }
   &-dates {
-    display: flex; 
+    display: flex;
     padding: 0px 20px 0px 20px;
     flex-wrap: wrap;
     margin-bottom: 30px;
-    border-bottom: 2px solid rgba(255,255,255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     font-size: 1.1em;
     &-date {
       flex-basis: 100%;
@@ -27,13 +27,13 @@
       justify-content: space-evenly;
       font-size: 0.9em;
       padding-bottom: 5px;
-      &-month{
+      &-month {
         font-weight: 700;
       }
-      &-day{
+      &-day {
         font-weight: 700;
       }
-      &-year{
+      &-year {
         font-size: 0.9em;
         font-weight: 400;
       }
@@ -42,13 +42,11 @@
       flex-basis: 100%;
       text-align: left;
       &-city {
-        // padding: 4px;
-        font-size: 1em; 
+        font-size: 1em;
         max-width: 100%;
         font-size: 1em;
       }
       &-name {
-        // padding: 4px;
         font-weight: 400;
       }
     }
@@ -73,7 +71,7 @@
         &:hover {
           transition: 0.2s ease;
           background-color: white;
-          color:black;
+          color: black;
         }
       }
     }
