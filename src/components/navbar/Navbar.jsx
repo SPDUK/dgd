@@ -56,7 +56,7 @@ class Navbar extends Component {
           <Link to="/hello">
             <li className="navbar-menu-link">STORE</li>
           </Link>
-          <Link to="/tours">
+          <Link to="/tour">
             <li className="navbar-menu-link">TOUR</li>
           </Link>
           <Link to="/">

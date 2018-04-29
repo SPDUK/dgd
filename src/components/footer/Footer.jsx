@@ -48,7 +48,7 @@ class Footer extends Component {
         <div className="footer-middle">
           <Link to="/">VIDEOS</Link>
           <Link to="/">STORE</Link>
-          <Link to="/tours">TOUR</Link>
+          <Link to="/tour">TOUR</Link>
           <Link to="/">DISCOGRAPHY</Link>
         </div>
         <div className="footer-bottom">
