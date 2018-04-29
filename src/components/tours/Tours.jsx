@@ -46,11 +46,14 @@ class Tours extends Component {
       console.log(res);
       // create a new date then turn it to a readable string and cut off the
       // start and end to show just the month and date
-      for (let i = 0; i < 10; i++) {
-        const testt = document.getElementById('tour2');
-        const cln = testt.cloneNode(true);
-        const appendme = document.getElementById('testtt2');
-        appendme.appendChild(cln);
+      for (let i = 0; i < 10; i += 1) {
+        // get the first tour in the list (empty)
+        // clone it and then insert the  day and location into each one
+        // remove the initial empty tour from the end
+        const firstTour = document.querySelector('.tours-dates');
+        const clone = firstTour.cloneNode(true);
+        const toursParent = document.getElementById('tours-parent');
+        toursParent.appendChild(clone);
         const tourDateMonthString = new Date(res.data[i].datetime)
           .toDateString()
           .slice(3, -8);
@@ -70,9 +73,10 @@ class Tours extends Component {
         tourCountry.innerText = res.data[i].venue.country;
         this.setState({ currentTourDateURL: res.data[i].url });
       }
-      for (let i = 0; i < 2; i++) {
-        const appendmee = document.getElementById('testtt2');
-        appendmee.removeChild(appendmee.firstChild);
+
+      for (let i = 0; i < 2; i += 1) {
+        const toursParent = document.getElementById('tours-parent');
+        toursParent.removeChild(toursParent.firstChild);
       }
     });
   }
@@ -84,21 +88,23 @@ class Tours extends Component {
           <div className="tours-title">
             <h1>TOUR DATES</h1>
           </div>
-          <div id="testtt2">
-            <div id="tour2" className="tours-dates">
+          <div id="tours-parent">
+            <div className="tours-dates">
               <div className="tours-dates-date">
-                <h3 className="tours-dates-date-month">.</h3>
-                <h3 className="tours-dates-date-day">.</h3>
-                <h3 className="tours-dates-date-year">.</h3>
+                <h3 className="tours-dates-date-month">Loading..</h3>
+                <h3 className="tours-dates-date-day">Loading..</h3>
+                <h3 className="tours-dates-date-year">Loading..</h3>
               </div>
               <div className="tours-dates-venue">
                 <h3 className="tours-dates-venue-city">
-                  <p>.</p>
+                  <p>Loading..</p>
                 </h3>
-                <h3 className="tours-dates-venue-name">.</h3>
+                <h3 className="tours-dates-venue-name">Loading..</h3>
               </div>
               <div className="tours-dates-tickets">
-                <div className="tours-dates-tickets-button">TICKETS</div>
+                <a href={this.state.currentTourDateURL}>
+                  <div className="tours-dates-tickets-button">TICKETS</div>
+                </a>
               </div>
             </div>
           </div>

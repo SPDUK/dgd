@@ -75,6 +75,10 @@
       flex-basis: 100%;
       display: flex;
       justify-content: flex-start; }
+      .tours-dates-tickets a {
+        color: white; }
+        .tours-dates-tickets a:visited {
+          color: white; }
       @media (min-width: 768px) {
         .tours-dates-tickets {
           justify-content: flex-end; } }
