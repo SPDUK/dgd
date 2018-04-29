@@ -1,6 +1,7 @@
 .sociallinks {
   height: 90px;
-  background-color: #191716; }
+  background-color: #191716;
+  padding-top: 50px; }
   .sociallinks-bar {
     display: flex;
     justify-content: center; }
