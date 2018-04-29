@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center; }
     .nexttour-image img {
-      opacity: 1;
+      opacity: 0.9;
       transition: 0.2s ease;
       cursor: pointer;
       border-radius: 5px;
@@ -47,7 +47,7 @@
           max-height: 623px; } }
       .nexttour-image img:hover {
         transition: 0.2s ease;
-        opacity: 0.85; }
+        opacity: 1; }
   .nexttour-date {
     cursor: pointer;
     text-align: left;

@@ -27,7 +27,13 @@ class LandingVideo extends Component {
           <h1>VIDEOS</h1>
         </div>
         <div className="landingvideo-videos">
-          <div onClick={firstVideoClick} className="landingvideo-videos-first">
+          <div
+            onClick={firstVideoClick}
+            onKeyDown={firstVideoClick}
+            role="button"
+            tabIndex="0"
+            className="landingvideo-videos-first"
+          >
             <div>
               <LazyLoad height={300} offset={100} once>
                 <img
@@ -43,6 +49,9 @@ class LandingVideo extends Component {
           </div>
           <div
             onClick={secondVideoClick}
+            onKeyDown={secondVideoClick}
+            role="button"
+            tabIndex="0"
             className="landingvideo-videos-second"
           >
             <div>

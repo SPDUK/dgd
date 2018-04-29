@@ -33,6 +33,8 @@
         @media (min-width: 768px) {
           .landingvideo-videos-first:hover {
             transition: ease 3s; } }
+        .landingvideo-videos-first:hover img {
+          opacity: 1; }
       .landingvideo-videos-first-name {
         padding-top: 6px;
         text-align: center;
@@ -61,6 +63,8 @@
       @media (min-width: 768px) {
         .landingvideo-videos-second:hover {
           transition: ease 0.3s; } }
+      .landingvideo-videos-second:hover img {
+        opacity: 1; }
       .landingvideo-videos-second-name {
         padding-top: 6px;
         text-align: center;
@@ -81,10 +85,12 @@
           .landingvideo-videos-second-name {
             font-size: 2em; } }
     .landingvideo-videos img {
+      transition: 0.35s ease;
       cursor: pointer;
       height: auto;
       max-width: 100%;
-      border-radius: 5px; }
+      border-radius: 5px;
+      opacity: 0.9; }
   .landingvideo-more {
     padding-top: 30px;
     display: flex;

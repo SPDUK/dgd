@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     img {
-      opacity: 1;
+      opacity: 0.9;
       transition: 0.2s ease;
       cursor: pointer;
       border-radius: 5px;
@@ -51,7 +51,7 @@
       }
       &:hover {
         transition: 0.2s ease;
-        opacity: 0.85;
+        opacity: 1;
       }
     }
   } // align to center to keep in the same position when resizing the browser
