@@ -7,6 +7,11 @@ import Navbar from '../navbar/Navbar';
 
 import './tours.css';
 
+function showHomeUrl() {
+  const homeLink = document.getElementById('homeLink');
+  homeLink.classList.remove('hidden');
+}
+
 class Tours extends Component {
   constructor() {
     super();
@@ -18,6 +23,7 @@ class Tours extends Component {
 
   componentDidMount() {
     this.getDate();
+    showHomeUrl();
   }
   getDate() {
     // find each tour date piece

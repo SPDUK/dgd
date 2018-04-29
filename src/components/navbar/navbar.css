@@ -104,6 +104,8 @@
       @media (min-width: 768px) {
         .navbar-menu-link:hover {
           border-bottom: 2px solid white; } }
+  .navbar .hidden {
+    display: none; }
 
 @media (max-width: 767px) {
   .navbar-menu-link.open {

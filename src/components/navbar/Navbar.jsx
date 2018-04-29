@@ -50,6 +50,9 @@ class Navbar extends Component {
           </Link>
         </div>
         <ul className="navbar-menu">
+          <Link id="homeLink" to="/">
+            <li className="navbar-menu-link">HOME</li>
+          </Link>
           <Link to="/">
             <li className="navbar-menu-link">VIDEOS</li>
           </Link>

@@ -12,7 +12,15 @@ import './landing.css';
 
 import SocialLinks from './sociallinks/Sociallinks';
 
+function hideHomeUrl() {
+  const homeLink = document.getElementById('homeLink');
+  homeLink.classList.add('hidden');
+}
+
 class Landing extends Component {
+  componentDidMount() {
+    hideHomeUrl();
+  }
   render() {
     return (
       <div className="landing">
