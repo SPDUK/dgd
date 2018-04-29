@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import LazyLoad from 'react-lazyload';
-import { Redirect } from 'react-router-dom';
 
 import './nexttour.css';
 
@@ -105,7 +104,13 @@ class NextTour extends Component {
             <i className="fa fa-arrow-left" /> TICKETS{' '}
             <span>FOR THIS SHOW</span>
           </h1>
-          <h1 onClick={tourButtonClick} className="button">
+          <h1
+            role="link"
+            tabIndex="0"
+            onKeyPress={tourButtonClick}
+            onClick={tourButtonClick}
+            className="button"
+          >
             <span>VIEW ALL</span> TOUR DATES <i className="fa fa-arrow-right" />
           </h1>
         </div>

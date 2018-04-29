@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-// need props for title of album & date?
 import './clickedalbum.css';
 
 class ClickedAlbum extends Component {
@@ -45,7 +44,6 @@ class ClickedAlbum extends Component {
         </div>
       </div>
     );
-    // return <div>error 404, you should not see this message
   }
 }
 

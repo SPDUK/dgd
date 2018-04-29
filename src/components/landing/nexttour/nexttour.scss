@@ -96,7 +96,7 @@
     max-width: 1175px;
     flex-wrap: wrap;
     justify-content: center;
-    @include breakpoint(sm){
+    @include breakpoint(sm) {
       justify-content: space-around;
     }
     .button {
@@ -105,15 +105,15 @@
       padding: 10px 5px;
       width: 43%;
       text-align: right;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         width: 35%;
       }
-      @include breakpoint(md){
+      @include breakpoint(md) {
         width: 35%;
         text-align: right;
         font-size: 0.9em;
       }
-      @include breakpoint(md){
+      @include breakpoint(md) {
         width: 35%;
         font-size: 1em;
       }
@@ -123,8 +123,7 @@
       text-align: left;
       @include breakpoint(sm) {
         margin-right: 10px;
-        flex-wrap: nowrap; 
-        
+        flex-wrap: nowrap;
       }
       @include breakpoint(md) {
         margin-right: 0px;
@@ -132,7 +131,7 @@
     }
     span {
       display: none;
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         display: inline-block;
       }
     }

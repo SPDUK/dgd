@@ -271,7 +271,7 @@ class Albums extends Component {
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"
-                alt=""
+                alt="Instant Gratification Album Art"
               />
             </LazyLoad>
           </div>
@@ -284,7 +284,7 @@ class Albums extends Component {
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"
-                alt=""
+                alt="Acceptance Speech Album Art"
               />
             </LazyLoad>
           </div>
@@ -297,7 +297,7 @@ class Albums extends Component {
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"
-                alt=""
+                alt="Artificial Selection Album Art"
               />
             </LazyLoad>
           </div>
@@ -310,7 +310,7 @@ class Albums extends Component {
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"
-                alt=""
+                alt="Downtown Battle Mountain II Album Art"
               />
             </LazyLoad>
           </div>
@@ -323,7 +323,7 @@ class Albums extends Component {
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"
-                alt=""
+                alt="Happiness Album Art"
               />
             </LazyLoad>
           </div>
@@ -336,7 +336,7 @@ class Albums extends Component {
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"
-                alt=""
+                alt="Mothership Album Art"
               />
             </LazyLoad>
           </div>
@@ -349,7 +349,7 @@ class Albums extends Component {
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"
-                alt=""
+                alt="Downtown Battle Mountain Album Art"
               />
             </LazyLoad>
           </div>
@@ -362,7 +362,7 @@ class Albums extends Component {
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"
-                alt=""
+                alt="Dance Gavin Dance Album Art"
               />
             </LazyLoad>
           </div>
@@ -375,7 +375,7 @@ class Albums extends Component {
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"
-                alt=""
+                alt="Tree City Session Album Art"
               />
             </LazyLoad>
           </div>
@@ -388,7 +388,7 @@ class Albums extends Component {
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"
-                alt="Whatevr I say Is Royal Ocean Album Art"
+                alt="Whatever I say Is Royal Ocean Album Art"
               />
             </LazyLoad>
           </div>
