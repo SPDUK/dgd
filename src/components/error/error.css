@@ -1,0 +1,12 @@
+.errorpage {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 0.8em; }
+  .errorpage h2 {
+    font-size: 0.8em;
+    margin-bottom: 10px; }
+  .errorpage h3 {
+    margin-bottom: 50px;
+    font-weight: 400; }

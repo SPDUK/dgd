@@ -3,6 +3,7 @@ import axios from 'axios';
 // import { Link } from 'react-router-dom';
 
 import Footer from '../footer/Footer';
+import Navbar from '../navbar/Navbar';
 
 import './tours.css';
 
@@ -17,7 +18,6 @@ class Tours extends Component {
 
   componentDidMount() {
     this.getDate();
-    // this.test();
   }
   getDate() {
     // find each tour date piece
@@ -86,6 +86,7 @@ class Tours extends Component {
   render() {
     return (
       <div>
+        <Navbar />
         <div className="tours">
           <div className="tours-title">
             <h1>TOUR DATES</h1>

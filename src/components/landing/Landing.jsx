@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import LandingVideos from './landingvideo/LandingVideos';
 import NextTour from './nexttour/NextTour';
 import Albums from './albums/Albums';
+
+import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
 
 import './landing.css';
@@ -14,6 +16,7 @@ class Landing extends Component {
   render() {
     return (
       <div className="landing">
+        <Navbar />
         <div className="landing-background" />
         <div className="landing-title">
           <img

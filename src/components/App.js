@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import { HashRouter, Route } from 'react-router-dom';
-
-// global nav
-import Navbar from './navbar/Navbar';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 
 // pages
 import Landing from './landing/Landing';
 import Tours from './tours/Tours';
-
+import Error from './error/Error';
 // global css
 import '../styles/app.css';
 
@@ -16,11 +13,11 @@ class App extends Component {
     return (
       <div>
         <HashRouter>
-          <div>
-            <Navbar />
-            <Route exact path="/" component={Landing} />
-            <Route exact path="/tour" component={Tours} />
-          </div>
+          <Switch>
+            <Route path="/" exact component={Landing} />
+            <Route path="/tour" component={Tours} />
+            <Route path="*" component={Error} />
+          </Switch>
         </HashRouter>
       </div>
     );
