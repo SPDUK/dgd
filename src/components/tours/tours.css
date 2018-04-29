@@ -35,19 +35,19 @@
         .tours-dates-date {
           flex-basis: 30%;
           line-height: 1em;
-          font-size: 0.8em;
+          font-size: 0.9em;
           justify-content: center;
           padding-bottom: 0px; } }
       .tours-dates-date-month {
-        font-weight: 700; }
+        font-weight: 400; }
         @media (min-width: 768px) {
           .tours-dates-date-month {
-            font-size: 1em; } }
+            font-size: 0.9em; } }
       .tours-dates-date-day {
         font-weight: 700; }
         @media (min-width: 768px) {
           .tours-dates-date-day {
-            font-size: 0.8em; } }
+            font-size: 1.2em; } }
       .tours-dates-date-year {
         font-size: 0.9em;
         font-weight: 400; }
