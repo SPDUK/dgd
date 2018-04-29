@@ -11,8 +11,6 @@ import Tours from './tours/Tours';
 // global css
 import '../styles/app.css';
 
-import Footer from './footer/Footer';
-
 class App extends Component {
   render() {
     return (

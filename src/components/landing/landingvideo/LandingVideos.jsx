@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
+// eslint-disable-next-line
 import { animateScroll as scroll, scroller } from 'react-scroll';
 
 import './landingvideo.css';

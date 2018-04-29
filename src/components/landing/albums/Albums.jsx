@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
-
+// eslint-disable-next-line
 import { animateScroll as scroll, scroller } from 'react-scroll';
 
 import './albums.css';
@@ -38,6 +38,7 @@ class Albums extends Component {
   }
   componentDidMount() {
     const Masonry = require('masonry-layout');
+    // eslint-disable-next-line
     const msnry = new Masonry('.grid', {
       itemSelector: '.grid-item',
       isFitWidth: true
@@ -57,6 +58,7 @@ class Albums extends Component {
     }
     footer.classList.remove('moved-footer');
     const Masonry = require('masonry-layout');
+    // eslint-disable-next-line
     const msnry = new Masonry('.grid', {
       itemSelector: '.grid-item',
       isFitWidth: true
@@ -79,6 +81,7 @@ class Albums extends Component {
     }
     footer.classList.add('moved-footer');
     const Masonry = require('masonry-layout');
+    // eslint-disable-next-line
     const msnry = new Masonry('.grid', {
       itemSelector: '.grid-item',
       isFitWidth: true,
