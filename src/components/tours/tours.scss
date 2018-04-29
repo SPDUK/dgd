@@ -17,13 +17,12 @@
   }
   &-dates {
     display: flex;
-    padding: 0px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
     flex-wrap: wrap;
-    margin-bottom: 30px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     font-size: 1.1em;
     @include breakpoint(sm){
-      padding: 0px 10%;
+      padding: 30px 10%;
       flex-wrap: nowrap;
     }
     &-date {
@@ -104,6 +103,9 @@
         cursor: pointer;
         width: 150px;
         font-weight: 400;
+        @include breakpoint(sm){
+          padding: 10px 20px;
+        }
         &:hover {
           transition: 0.2s ease;
           background-color: white;
