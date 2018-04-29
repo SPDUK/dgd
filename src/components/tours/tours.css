@@ -6,7 +6,8 @@
   .tours-title {
     flex-basis: 100%;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 50px; }
   .tours-dates {
     display: flex;
     padding: 0px 20px 0px 20px;
