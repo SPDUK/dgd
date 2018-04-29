@@ -20,11 +20,14 @@ class Tours extends Component {
               <h3 className="tours-dates-date-year">2018</h3>
             </div>
             <div className="tours-dates-venue">
-              <h3 className="tours-dates-venue-city">Oslo, Norway</h3>
+              <h3 className="tours-dates-venue-city">
+                <p>Wallingford</p>
+                <p>United States</p>
+              </h3>
               <h3 className="tours-dates-venue-name">Foo Arena</h3>
             </div>
             <div className="tours-dates-tickets">
-              <div className="tours-dates-tickets-button">Haha</div>
+              <div className="tours-dates-tickets-button">TICKETS</div>
             </div>
           </div>
         </div>

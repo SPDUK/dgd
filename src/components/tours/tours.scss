@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .tours {
   padding-top: 100px;
   height: 1200px;
@@ -10,17 +12,46 @@
   }
   &-dates {
     display: flex;
-    width: 100%;
+    // width: 100%;
+    padding: 0px 20px 0px 20px;
     flex-wrap: wrap;
     &-date {
-      flex-basis: 50%;
+      flex-basis: 30%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      font-size: 0.9em;
     }
     &-venue {
-      flex-basis: 50%;
+      flex-basis: 70%;
+      text-align: right;
+      &-city {
+        font-size: 1em;
+        // max-height: 32px;
+        max-width: 100%;
+        overflow: hidden;
+        font-size: 1em;
+      }
+      &-name {
+        font-weight:400;
+      }
     }
     &-tickets {
       flex-basis: 100%;
       text-align: center;
+      margin-top: 6px;
+      padding: 3px;
+      border: 2px solid $orange;
+      font-weight: 700;
+      background-color: $orange;
+      border-radius: 3px;
+      transition: 0.2s ease;
+      cursor: pointer;
+      &:hover {
+        transition: 0.2s ease;
+        background-color: $darkGray;
+      }
     }
   }
 }

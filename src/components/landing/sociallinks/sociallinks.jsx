@@ -38,7 +38,6 @@ class SocialLinks extends Component {
           />
           <i
             role="link"
-            googleplay
             onKeyPress={googleplayLink}
             onClick={googleplayLink}
             tabIndex="0"

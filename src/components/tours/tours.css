@@ -9,12 +9,36 @@
     text-align: center; }
   .tours-dates {
     display: flex;
-    width: 100%;
+    padding: 0px 20px 0px 20px;
     flex-wrap: wrap; }
     .tours-dates-date {
-      flex-basis: 50%; }
+      flex-basis: 30%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      font-size: 0.9em; }
     .tours-dates-venue {
-      flex-basis: 50%; }
+      flex-basis: 70%;
+      text-align: right; }
+      .tours-dates-venue-city {
+        font-size: 1em;
+        max-width: 100%;
+        overflow: hidden;
+        font-size: 1em; }
+      .tours-dates-venue-name {
+        font-weight: 400; }
     .tours-dates-tickets {
       flex-basis: 100%;
-      text-align: center; }
+      text-align: center;
+      margin-top: 6px;
+      padding: 3px;
+      border: 2px solid #FFA949;
+      font-weight: 700;
+      background-color: #FFA949;
+      border-radius: 3px;
+      transition: 0.2s ease;
+      cursor: pointer; }
+      .tours-dates-tickets:hover {
+        transition: 0.2s ease;
+        background-color: #191716; }
