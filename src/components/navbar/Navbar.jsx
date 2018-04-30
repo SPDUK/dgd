@@ -73,7 +73,7 @@ class Navbar extends Component {
     return (
       <nav id="navbar" className="navbar">
         <div className="navbar-icon">
-          <a href="/">
+          <a href="https://spduk.github.io/dgd/#/">
             <img
               src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694780/dgdlogo.png"
               alt="Dance Gavin Dance Logo"

@@ -41,7 +41,7 @@ class LandingVideo extends Component {
                   alt=""
                 />
               </LazyLoad>
-              <a href="/">
+              <a href="https://www.youtube.com/watch?v=0dbXnfl8ZcM">
                 <i className="fa fa-play" />
               </a>
             </div>
@@ -61,7 +61,7 @@ class LandingVideo extends Component {
                   alt=""
                 />
               </LazyLoad>
-              <a href="/">
+              <a href="https://www.youtube.com/watch?v=Z-aQrBZ4Duw">
                 <i className="fa fa-play" />
               </a>
             </div>

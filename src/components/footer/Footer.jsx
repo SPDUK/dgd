@@ -105,7 +105,7 @@ class Footer extends Component {
             </div>
           </div>
           <div className="footer-top-logo">
-            <a href="/">
+            <a href="https://spduk.github.io/dgd/#/">
               <img
                 src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694763/dgdwhite.png"
                 alt=""
