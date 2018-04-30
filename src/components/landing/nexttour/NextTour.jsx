@@ -60,7 +60,7 @@ class NextTour extends Component {
     // simpler solution instead of  messing with all the CSS to fix
     // a link being there
     const tourButtonClick = () => {
-      window.location.assign('/#/tour');
+      window.location.assign('dgd/#/tour');
     };
 
     return (
