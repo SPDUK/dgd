@@ -62,6 +62,13 @@ class Footer extends Component {
     }, 50);
   }
 
+  scrollTop() {
+    scroll.scrollTo(0, {
+      duration: 600,
+      delay: 0
+    });
+  }
+
   render() {
     return (
       <div className="footer">
@@ -109,6 +116,7 @@ class Footer extends Component {
               <img
                 src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694763/dgdwhite.png"
                 alt=""
+                onClick={this.scrollTop}
               />
             </a>
           </div>

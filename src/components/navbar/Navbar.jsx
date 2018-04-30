@@ -69,6 +69,13 @@ class Navbar extends Component {
     }, 50);
   }
 
+  scrollTop() {
+    scroll.scrollTo(0, {
+      duration: 600,
+      delay: 0
+    });
+  }
+
   render() {
     return (
       <nav id="navbar" className="navbar">
@@ -77,6 +84,7 @@ class Navbar extends Component {
             <img
               src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694780/dgdlogo.png"
               alt="Dance Gavin Dance Logo"
+              onClick={this.scrollTop}
             />
           </a>
         </div>
