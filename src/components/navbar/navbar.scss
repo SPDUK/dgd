@@ -1,151 +1,151 @@
 @import '../../styles/variables.scss';
 .navbar {
-  -webkit-transition: all 350ms cubic-bezier(0.39, 0.575, 0.565, 1);
-  transition: all 350ms cubic-bezier(0.39, 0.575, 0.565, 1);
-  position: fixed;
-  z-index: 10;
-  font-weight: 700;
-  display: flex;
-  justify-content: space-between;
-  height: 70px;
-  width: 100%;
-  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.15);
-  background-color: white;
-  color: white;
-  @include breakpoint(sm) {
-    font-size: 1.1em;
-    animation: navAnim2 0.350s forwards;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0);
-    box-shadow: none;
-    animation-timing-function: ease-in-out;
-  }
-  &-icon {
-    cursor: pointer;
-    left: 15px;
-    width: 70px;
+    -webkit-transition: all 350ms cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: all 350ms cubic-bezier(0.39, 0.575, 0.565, 1);
+    position: fixed;
+    z-index: 10;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
     height: 70px;
-    padding-left: 15px;
-    @include breakpoint(sm) {
-      display: none;
-    }
-  }
-  &-burger {
-    height: 70px;
-    width: 80px;
-    @include breakpoint(sm) {
-      display: none;
-    }
-    span {
-      opacity: 1;
-      position: absolute;
-      transition: 0.35s ease-in;
-      height: 4px;
-      border-radius: 3px;
-      background-color: black;
-      width: 30px;
-      margin: 5px;
-      right: 10px;
-      display: inline-block;
-    }
-    span:nth-child(1) {
-      top: 15px;
-    }
-    span:nth-child(2) {
-      top: 25px;
-    }
-    span:nth-child(3) {
-      top: 35px;
-    }
-    &.open {
-      position: relative;
-      top: 15x;
-      float: right;
-      span:nth-child(1) {
-        transform: rotate(135deg);
-        top: 24px;
-      }
-      span:nth-child(2) {
-        opacity: 0;
-      }
-      span:nth-child(3) {
-        transform: rotate(-135deg);
-        top: 24px;
-      }
-    }
-    &:focus {
-      outline: none;
-    }
-  }
-  &-menu {
-    transform: translateY(70px);
-    justify-self: flex-end;
-    list-style-type: none;
-    align-items: center;
-    text-align: center;
-    visibility: hidden;
-    line-height: 0em;
     width: 100%;
-    @include breakpoint(xs) {
-      position: absolute;
-    }
+    box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    color: white;
     @include breakpoint(sm) {
-      visibility: visible;
-      display: flex;
-      justify-content: flex-end;
-      width: auto;
-      transform: translateY(0px);
+        font-size: 1.1em;
+        animation: navAnim2 0.350s forwards;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none;
+        animation-timing-function: ease-in-out;
     }
-    &-link {
-      box-sizing: border-box;
-      background-color: white;
-      cursor: pointer;
-      color: rgba(0, 0, 0, 0);
-      -webkit-transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
-      transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
-      padding: -20px 0px;
-      @include breakpoint(sm) {
-        background-color: rgba(0, 0, 0, 0);
-        color: white;
-        opacity: 1;
-        border-bottom: 2px solid rgba(0, 0, 0, 0); // For some reason different browsers respond differently to this padding?
-        // using 32 to make it fit properly on all browsers but would be better to
-        //have 1-3px more on chrome
-        padding: 32px 20px;
-        margin-right: 0px;
-      }
-      &:hover {
+    &-icon {
+        cursor: pointer;
+        left: 15px;
+        width: 70px;
+        height: 70px;
+        padding-left: 15px;
         @include breakpoint(sm) {
-          border-bottom: 2px solid white;
+            display: none;
         }
-      }
     }
-  }
-  .hidden {
-    display: none;
-  }
+    &-burger {
+        height: 70px;
+        width: 80px;
+        @include breakpoint(sm) {
+            display: none;
+        }
+        span {
+            opacity: 1;
+            position: absolute;
+            transition: 0.35s ease-in;
+            height: 4px;
+            border-radius: 3px;
+            background-color: black;
+            width: 30px;
+            margin: 5px;
+            right: 10px;
+            display: inline-block;
+        }
+        span:nth-child(1) {
+            top: 15px;
+        }
+        span:nth-child(2) {
+            top: 25px;
+        }
+        span:nth-child(3) {
+            top: 35px;
+        }
+        &.open {
+            position: relative;
+            top: 15x;
+            float: right;
+            span:nth-child(1) {
+                transform: rotate(135deg);
+                top: 24px;
+            }
+            span:nth-child(2) {
+                opacity: 0;
+            }
+            span:nth-child(3) {
+                transform: rotate(-135deg);
+                top: 24px;
+            }
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &-menu {
+        transform: translateY(70px);
+        justify-self: flex-end;
+        list-style-type: none;
+        align-items: center;
+        text-align: center;
+        visibility: hidden;
+        line-height: 0em;
+        width: 100%;
+        @include breakpoint(xs) {
+            position: absolute;
+        }
+        @include breakpoint(sm) {
+            visibility: visible;
+            display: flex;
+            justify-content: flex-end;
+            width: auto;
+            transform: translateY(0px);
+        }
+        &-link {
+            box-sizing: border-box;
+            background-color: white;
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0);
+            -webkit-transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
+            transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
+            padding: -20px 0px;
+            @include breakpoint(sm) {
+                background-color: rgba(0, 0, 0, 0);
+                color: white;
+                opacity: 1;
+                border-bottom: 2px solid rgba(0, 0, 0, 0); // For some reason different browsers respond differently to this padding?
+                // using 32 to make it fit properly on all browsers but would be better to
+                //have 1-3px more on chrome
+                padding: 32px 20px;
+                margin-right: 0px;
+            }
+            &:hover {
+                @include breakpoint(sm) {
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+    }
+    .hidden {
+        display: none;
+    }
 }
 
 .navbar-menu-link.open {
-  @include breakpoint(xs) {
-    color: rgba(0, 0, 0, 1);
-    line-height: 1em;
-    -webkit-transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
-    transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
-    visibility: visible;
-    padding: 20px 0px;
-  } // for sideways mobile views 
-  @media screen and (max-height: 350px),
-  screen and (max-width: 760px) {
-    padding: 15px 0px;
-  }
+    @include breakpoint(xs) {
+        color: rgba(0, 0, 0, 1);
+        line-height: 1em;
+        -webkit-transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
+        transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
+        visibility: visible;
+        padding: 20px 0px;
+    } // for sideways mobile views 
+    @media screen and (max-height: 350px),
+    screen and (max-width: 760px) {
+        padding: 15px 0px;
+    }
 }
 
 #lastMenu {
-  @include breakpoint(xs) {
-    box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.15);
-  }
+    @include breakpoint(xs) {
+        box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.15);
+    }
 }
 
 // hides scroll bar until you scroll down
@@ -153,51 +153,51 @@
 // turns to normal looking nav when scrolled
 //doesn't change anything for mobile
 .nav-scrolled {
-  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.15);
-  @include breakpoint(sm) {
-    animation: navAnim 0.35s forwards;
-    animation-timing-function: ease-out;
-    background-color: white;
-    justify-content: space-between;
-  }
-  .navbar-menu-link {
-    &:hover {
-      @include breakpoint(sm) {
-        border-bottom: 2px solid black;
-      }
-    }
+    box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.15);
     @include breakpoint(sm) {
-      color: black;
+        animation: navAnim 0.35s forwards;
+        animation-timing-function: ease-out;
+        background-color: white;
+        justify-content: space-between;
     }
-  }
-  .navbar-icon {
-    @include breakpoint(sm) {
-      display: block;
+    .navbar-menu-link {
+        &:hover {
+            @include breakpoint(sm) {
+                border-bottom: 2px solid black;
+            }
+        }
+        @include breakpoint(sm) {
+            color: black;
+        }
     }
-  }
+    .navbar-icon {
+        @include breakpoint(sm) {
+            display: block;
+        }
+    }
 }
 
 @keyframes navAnim {
-  0% {
-    transform: translate(0px, -100px);
-    justify-content: space-between;
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0px, 0px);
-  }
+    0% {
+        transform: translate(0px, -100px);
+        justify-content: space-between;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
 }
 
 @keyframes navAnim2 {
-  0% {
-    transform: translateY(-20px);
-    justify-content: center;
-    align-items: center;
-  }
-  10% {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+    0% {
+        transform: translateY(-20px);
+        justify-content: center;
+        align-items: center;
+    }
+    10% {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }

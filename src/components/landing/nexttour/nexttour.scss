@@ -1,139 +1,139 @@
 @import '../../../styles/variables.scss';
 .nexttour {
-  padding: 80px 10%;
-  background-color: $offWhite;
-  font-weight: 700;
-  &-hover {
-    cursor: pointer;
-    &-text {
-      visibility: hidden;
+    padding: 80px 10%;
+    background-color: $offWhite;
+    font-weight: 700;
+    &-hover {
+        cursor: pointer;
+        &-text {
+            visibility: hidden;
+        }
     }
-  }
-  &-title {
-    font-size: 0.8em;
-    text-align: center;
-    @include breakpoint(sm) {
-      font-size: 1em;
+    &-title {
+        font-size: 0.8em;
+        text-align: center;
+        @include breakpoint(sm) {
+            font-size: 1em;
+        }
     }
-  }
-  &-image {
-    display: flex;
-    justify-content: center;
-    img {
-      opacity: 0.9;
-      transition: 0.2s ease;
-      cursor: pointer;
-      border-radius: 5px;
-      height: auto;
-      display: block;
-      width: auto;
-      max-width: 280px;
-      max-height: 186px;
-      @media screen and (min-width: 400px) {
-        max-width: 380px;
-        max-height: 259px;
-      }
-      @media screen and (min-width: 600px) {
-        max-width: 500px;
-        max-height: 311px;
-      }
-      @include breakpoint(sm) {
-        max-width: 600px;
-        max-height: 373px;
-      }
-      @include breakpoint(md) {
-        max-width: 800px;
-        max-height: 498px;
-      }
-      @include breakpoint(lg) {
-        max-width: 1000px;
-        max-height: 623px;
-      }
-      &:hover {
-        transition: 0.2s ease;
-        opacity: 1;
-      }
+    &-image {
+        display: flex;
+        justify-content: center;
+        img {
+            opacity: 0.9;
+            transition: 0.2s ease;
+            cursor: pointer;
+            border-radius: 5px;
+            height: auto;
+            display: block;
+            width: auto;
+            max-width: 280px;
+            max-height: 186px;
+            @media screen and (min-width: 400px) {
+                max-width: 380px;
+                max-height: 259px;
+            }
+            @media screen and (min-width: 600px) {
+                max-width: 500px;
+                max-height: 311px;
+            }
+            @include breakpoint(sm) {
+                max-width: 600px;
+                max-height: 373px;
+            }
+            @include breakpoint(md) {
+                max-width: 800px;
+                max-height: 498px;
+            }
+            @include breakpoint(lg) {
+                max-width: 1000px;
+                max-height: 623px;
+            }
+            &:hover {
+                transition: 0.2s ease;
+                opacity: 1;
+            }
+        }
+    } // align to center to keep in the same position when resizing the browser
+    // transform to position in the top left of the image
+    &-date {
+        cursor: pointer;
+        text-align: left;
+        position: relative;
+        z-index: 2;
+        @include absolutecenter(x);
+        transform: translate(-120px, 0px);
+        @media screen and (min-width: 400px) {
+            transform: translate(-170px, 0px);
+            font-size: 1.3em;
+        }
+        @media screen and (min-width: 600px) {
+            transform: translate(-220px, 0px);
+            font-size: 1.6em;
+        }
+        @include breakpoint(sm) {
+            transform: translate(-270px, -0px);
+            font-size: 1.9em;
+        }
+        @include breakpoint(md) {
+            transform: translate(-370px, -0px);
+            font-size: 2.4em;
+        }
+        @include breakpoint(lg) {
+            transform: translate(-470px, -0px);
+            font-size: 3.1em;
+        }
+        &-day {
+            font-size: 1.7em;
+        }
     }
-  } // align to center to keep in the same position when resizing the browser
-  // transform to position in the top left of the image
-  &-date {
-    cursor: pointer;
-    text-align: left;
-    position: relative;
-    z-index: 2;
-    @include absolutecenter(x);
-    transform: translate(-120px, 0px);
-    @media screen and (min-width: 400px) {
-      transform: translate(-170px, 0px);
-      font-size: 1.3em;
+    &-button {
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        max-width: 1175px;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include breakpoint(sm) {
+            justify-content: space-around;
+        }
+        .button {
+            margin-bottom: 5px;
+            font-size: 0.8em;
+            padding: 10px 5px;
+            width: 43%;
+            text-align: right;
+            @include breakpoint(sm) {
+                width: 35%;
+            }
+            @include breakpoint(md) {
+                width: 35%;
+                text-align: right;
+                font-size: 0.9em;
+            }
+            @include breakpoint(md) {
+                width: 35%;
+                font-size: 1em;
+            }
+        }
+        .ticketsbutton {
+            opacity: 1;
+            text-align: left;
+            @include breakpoint(sm) {
+                margin-right: 10px;
+                flex-wrap: nowrap;
+            }
+            @include breakpoint(md) {
+                margin-right: 0px;
+            }
+        }
+        span {
+            display: none;
+            @include breakpoint(sm) {
+                display: inline-block;
+            }
+        }
     }
-    @media screen and (min-width: 600px) {
-      transform: translate(-220px, 0px);
-      font-size: 1.6em;
-    }
-    @include breakpoint(sm) {
-      transform: translate(-270px, -0px);
-      font-size: 1.9em;
-    }
-    @include breakpoint(md) {
-      transform: translate(-370px, -0px);
-      font-size: 2.4em;
-    }
-    @include breakpoint(lg) {
-      transform: translate(-470px, -0px);
-      font-size: 3.1em;
-    }
-    &-day {
-      font-size: 1.7em;
-    }
-  }
-  &-button {
-    margin: 0 auto;
-    margin-top: 20px;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    max-width: 1175px;
-    flex-wrap: wrap;
-    justify-content: center;
-    @include breakpoint(sm) {
-      justify-content: space-around;
-    }
-    .button {
-      margin-bottom: 5px;
-      font-size: 0.8em;
-      padding: 10px 5px;
-      width: 43%;
-      text-align: right;
-      @include breakpoint(sm) {
-        width: 35%;
-      }
-      @include breakpoint(md) {
-        width: 35%;
-        text-align: right;
-        font-size: 0.9em;
-      }
-      @include breakpoint(md) {
-        width: 35%;
-        font-size: 1em;
-      }
-    }
-    .ticketsbutton {
-      opacity: 1;
-      text-align: left;
-      @include breakpoint(sm) {
-        margin-right: 10px;
-        flex-wrap: nowrap;
-      }
-      @include breakpoint(md) {
-        margin-right: 0px;
-      }
-    }
-    span {
-      display: none;
-      @include breakpoint(sm) {
-        display: inline-block;
-      }
-    }
-  }
 }

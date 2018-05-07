@@ -2,89 +2,89 @@
 //stops white screen flashbang when routing around
 // attemps to stop lazyloading looking terrible on refresh
 @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0.35;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.35;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .landing {
-  height: 2300px;
-  background-color: $offWhite;
-  animation: fade-in;
-  animation-duration: 0.9s;
-  &-background {
-    background: url(https://res.cloudinary.com/dmjolhdaq/image/upload/q_auto/v1524694781/mobilepic.jpg)no-repeat center center;
-    background-size: cover;
-    height: 500px;
-    @include breakpoint(sm) {
-      background: url(https://res.cloudinary.com/dmjolhdaq/image/upload/q_auto/v1524694782/comp.jpg)no-repeat center center;
-      background-size: cover;
-      height: 620px;
+    height: 2300px;
+    background-color: $offWhite;
+    animation: fade-in;
+    animation-duration: 0.9s;
+    &-background {
+        background: url(https://res.cloudinary.com/dmjolhdaq/image/upload/q_auto/v1524694781/mobilepic.jpg)no-repeat center center;
+        background-size: cover;
+        height: 500px;
+        @include breakpoint(sm) {
+            background: url(https://res.cloudinary.com/dmjolhdaq/image/upload/q_auto/v1524694782/comp.jpg)no-repeat center center;
+            background-size: cover;
+            height: 620px;
+        }
+        @include breakpoint(md) {
+            height: 800px;
+        }
+        @include breakpoint(lg) {
+            height: 1000px;
+        }
+        @media screen and (min-width: 1450px) {
+            height: 1200px;
+        }
+        @media screen and (min-width: 1750px) {
+            height: 1248px;
+        }
+        @media screen and (min-width: 1950px) {
+            height: 1500px
+        }
+        @media screen and (min-width: 2550px) {
+            height: 2300px
+        }
+        @media screen and (min-width: 3000px) {
+            height: 100vw;
+        }
     }
-    @include breakpoint(md) {
-      height: 800px;
+    &-info {
+        position: absolute;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2em;
+        width: 235px;
+        @include absolutecenter(x);
+        margin-top: 50px;
+        color: black;
+        &-date {
+            color: $orange
+        }
+        @media screen and (max-width: 500px) {
+            width: 120px;
+        }
+        @include breakpoint(sm) {
+            visibility: hidden;
+        }
     }
-    @include breakpoint(lg) {
-      height: 1000px;
+    &-title {
+        @include absolutecenter(x);
+        position: absolute;
+        img {
+            width: 182px;
+            @media screen and (min-width: 420px) {
+                width: 200px;
+            }
+        }
+        @include breakpoint(sm) {
+            visibility: hidden;
+        }
     }
-    @media screen and (min-width: 1450px) {
-      height: 1200px;
-    }
-    @media screen and (min-width: 1750px) {
-      height: 1248px;
-    }
-    @media screen and (min-width: 1950px) {
-      height: 1500px
-    }
-    @media screen and (min-width: 2550px) {
-      height: 2300px
-    }
-    @media screen and (min-width: 3000px) {
-      height: 100vw;
-    }
-  }
-  &-info {
-    position: absolute;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.2em;
-    width: 235px;
-    @include absolutecenter(x);
-    margin-top: 50px;
-    color: black;
-    &-date {
-      color: $orange
-    }
-    @media screen and (max-width: 500px) {
-      width: 120px;
-    }
-    @include breakpoint(sm) {
-      visibility: hidden;
-    }
-  }
-  &-title {
-    @include absolutecenter(x);
-    position: absolute;
-    img {
-      width: 182px;
-      @media screen and (min-width: 420px) {
-        width: 200px;
-      }
-    }
-    @include breakpoint(sm) {
-      visibility: hidden;
-    }
-  }
 }
 
 // spacing for the mobile only title beneath background
 .mobile-block {
-  background-color: $offWhite;
-  height: 180px;
+    background-color: $offWhite;
+    height: 180px;
 }
