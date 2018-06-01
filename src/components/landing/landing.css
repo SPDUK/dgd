@@ -12,12 +12,12 @@
   animation: fade-in;
   animation-duration: 0.9s; }
   .landing-background {
-    background: url(https://res.cloudinary.com/dmjolhdaq/image/upload/q_auto/v1524694781/mobilepic.jpg) no-repeat center center;
+    background: url(http://res.cloudinary.com/dmjolhdaq/image/upload/v1524694781/DGD/mobilepic.jpg) no-repeat center center;
     background-size: cover;
     height: 500px; }
     @media (min-width: 768px) {
       .landing-background {
-        background: url(https://res.cloudinary.com/dmjolhdaq/image/upload/q_auto/v1524694782/comp.jpg) no-repeat center center;
+        background: url(http://res.cloudinary.com/dmjolhdaq/image/upload/v1524694782/DGD/comp.jpg) no-repeat center center;
         background-size: cover;
         height: 620px; } }
     @media (min-width: 992px) {
