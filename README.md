@@ -1,6 +1,6 @@
 # DGD
 
-semi-finished version at : https://spduk.github.io/dgd/#/
+### Finished version at : https://spduk.github.io/dgd/#/
 
 - To update latest videos just go to src/components/landing/landingvideo
 - Simply change the src for the img & the href on the a tag to the latest youtube video, then change the song name in the H2
