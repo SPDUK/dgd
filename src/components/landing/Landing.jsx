@@ -10,7 +10,7 @@ import Footer from '../footer/Footer';
 
 import './landing.css';
 
-import SocialLinks from './sociallinks/Sociallinks';
+import SocialLinks from './sociallinks/sociallinks';
 
 function hideHomeUrl() {
   const homeLink = document.getElementById('homeLink');

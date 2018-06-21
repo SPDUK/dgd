@@ -8,25 +8,25 @@ import './albums.css';
 import ClickedAlbum from './clickedalbum/Clickedalbum';
 
 const artificialSelection =
-  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694737/artificial-selection.jpg';
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694737/DGD/artificial-selection.jpg';
 const mothership =
-  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694738/mothership.jpg';
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694738/DGD/mothership.jpg';
 const treecitySessions =
-  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694738/treecity-sessions.jpg';
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694738/DGD/treecity-sessions.jpg';
 const instantGratification =
-  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/instant-gratification.jpg';
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/DGD/instant-gratification.jpg';
 const acceptanceSpeech =
-  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/acceptance-speech.jpg';
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/DGD/acceptance-speech.jpg';
 const downtownBattleMountainII =
-  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/downtown-battle-mtn-ii.jpg';
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/DGD/downtown-battle-mtn-ii.jpg';
 const happiness =
-  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/happiness.jpg';
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/DGD/happiness.jpg';
 const dancedgavindance =
-  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/dancedgavindance.jpg';
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/DGD/dancedgavindance.jpg';
 const downtownBattleMountain =
-  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/downtown-battle-mtn.jpg';
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/DGD/downtown-battle-mtn.jpg';
 const whateverISayIsRoyalOcean =
-  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/whatever-i-say-is-royal-ocean.jpg';
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/DGD/whatever-i-say-is-royal-ocean.jpg';
 
 class Albums extends Component {
   constructor() {

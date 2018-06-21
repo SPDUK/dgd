@@ -37,7 +37,7 @@ class LandingVideo extends Component {
             <div>
               <LazyLoad height={300} offset={100} once>
                 <img
-                  src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524696026/robots.jpg"
+                  src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524696026/DGD/robots.jpg"
                   alt=""
                 />
               </LazyLoad>
@@ -55,7 +55,7 @@ class LandingVideo extends Component {
             <div>
               <LazyLoad height={300} offset={100} once>
                 <img
-                  src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694780/second-small.jpg"
+                  src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694780/DGD/second-small.jpg"
                   alt=""
                 />
               </LazyLoad>
