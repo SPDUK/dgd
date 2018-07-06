@@ -82,7 +82,7 @@ class Navbar extends Component {
         <div className="navbar-icon">
           <a href="https://spduk.github.io/dgd/#/">
             <img
-              src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694780/dgdlogo.png"
+              src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694780/DGD/dgdlogo.png"
               alt="Dance Gavin Dance Logo"
               onClick={this.scrollTop}
             />
