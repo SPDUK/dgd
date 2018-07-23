@@ -1,13 +1,30 @@
-# DGD
+# [DGD]((https://spduk.github.io/dgd/#/))
 
-### Finished version at : https://spduk.github.io/dgd/#/
+##### A fan-site / concept website for the band "Dance Gavin Dance", simply because I like the band.
+###### Made with about 5 months of programming experience.
 
-- To update latest videos just go to src/components/landing/landingvideo
-- Simply change the src for the img & the href on the a tag to the latest youtube video, then change the song name in the H2
 
-- Tours and the tour on landing auto update and show 1 year ahead using bandsintown API
 
- - You can add a new album by adding a new component object  (album name,  image, date, youtube link)
- - Images are set as a constant in Albums.jsx and passed through to Clickedalbum.jsx with that object, used in both
-  Square images are 600x600
-  Wide images are 1092x614
+
+```
+npm install
+```
+
+```
+npm start
+```
+If any errors happen you might need to add: 
+```
+npm install npm-run-all --save-dev
+```
+
+
+___
+
+##### React and React-router.
+#####  BandsInTown API to get automatically updating tour dates and locations, using an algorithm to figure out what day it is today and find the nex
+##### The album viewer is using a masonry grid with a lot of custom CSS to make it transition from small to large the way it does. 
+##### Everything else is just custom CSS and JS.
+
+____
+
