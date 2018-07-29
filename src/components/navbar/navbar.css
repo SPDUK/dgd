@@ -14,7 +14,7 @@
   @media (min-width: 768px) {
     .navbar {
       font-size: 1.1em;
-      animation: navAnim2 0.350s forwards;
+      animation: navAnim2 0.35s forwards;
       justify-content: center;
       align-items: center;
       background-color: rgba(255, 255, 255, 0);
