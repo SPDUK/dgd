@@ -48,7 +48,6 @@ class Tours extends Component {
     const nextTourURL = `https://rest.bandsintown.com/artists/Dance%20Gavin%20Dance/events?app_id=dgdsite&date=${today}%2C${endDate}`;
 
     axios.get(nextTourURL).then(res => {
-      console.log(res);
       for (let i = 0; i < res.data.length; i += 1) {
         // get the first tour in the list (empty)
         // clone it and then insert the  day and location into each one

@@ -9,7 +9,6 @@ import './navbar.css';
 // loop through each link and enable visibility then add padding
 function toggleMenu() {
   const burger = document.querySelector('.navbar-burger');
-  console.log(burger);
   const mobileMenu = document.getElementsByClassName('navbar-menu-link');
   for (let i = 0; i < mobileMenu.length; i += 1) {
     mobileMenu[i].classList.toggle('open');
