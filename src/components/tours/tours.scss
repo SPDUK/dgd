@@ -1,129 +1,129 @@
 @import '../../styles/variables.scss';
 .tours {
-    padding-top: 100px; // height: 1200px;
-    color: white;
+  padding-top: 100px; // height: 1200px;
+  color: white;
+  width: 100%;
+  line-height: 1.3em;
+  font-size: 1em;
+  @include breakpoint(sm) {
+    font-size: 1.1em;
+  }
+  &-title {
+    flex-basis: 100%;
     width: 100%;
-    line-height: 1.3em;
-    font-size: 1em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &-dates {
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    flex-wrap: wrap;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.1em;
     @include breakpoint(sm) {
-        font-size: 1.1em;
+      padding: 30px 10%;
+      flex-wrap: nowrap;
     }
-    &-title {
-        flex-basis: 100%;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    &-dates {
-        display: flex;
-        padding: 20px 20px 20px 20px;
-        flex-wrap: wrap;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-        font-size: 1.1em;
+    &-date {
+      flex-basis: 100%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      font-size: 0.9em;
+      padding-bottom: 5px;
+      @include breakpoint(sm) {
+        flex-basis: 30%;
+        line-height: 1em;
+        font-size: 0.9em;
+        justify-content: center;
+        padding-bottom: 0px;
+      }
+      &-month {
+        font-weight: 400;
         @include breakpoint(sm) {
-            padding: 30px 10%;
-            flex-wrap: nowrap;
+          font-size: 0.9em;
         }
-        &-date {
-            flex-basis: 100%;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            font-size: 0.9em;
-            padding-bottom: 5px;
-            @include breakpoint(sm) {
-                flex-basis: 30%;
-                line-height: 1em;
-                font-size: 0.9em;
-                justify-content: center;
-                padding-bottom: 0px;
-            }
-            &-month {
-                font-weight: 400;
-                @include breakpoint(sm) {
-                    font-size: 0.9em;
-                }
-            }
-            &-day {
-                font-weight: 700;
-                @include breakpoint(sm) {
-                    font-size: 1.2em;
-                }
-            }
-            &-year {
-                font-size: 0.9em;
-                font-weight: 400;
-                @include breakpoint(sm) {
-                    font-size: 0.8em;
-                }
-            }
+      }
+      &-day {
+        font-weight: 700;
+        @include breakpoint(sm) {
+          font-size: 1.2em;
         }
-        &-venue {
-            flex-basis: 100%;
-            text-align: left;
-            @include breakpoint(sm) {
-                align-content: flex-start;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
-                font-size: 1.2em;
-            }
-            &-city {
-                max-width: 100%;
-                @include breakpoint(sm) {
-                    align-content: center;
-                }
-            }
-            &-name {
-                font-weight: 400;
-            }
+      }
+      &-year {
+        font-size: 0.9em;
+        font-weight: 400;
+        @include breakpoint(sm) {
+          font-size: 0.8em;
         }
-        &-tickets {
-            flex-basis: 100%;
-            display: flex;
-            justify-content: flex-start;
-            a {
-                color: white;
-                &:visited {
-                    color: white;
-                }
-            }
-            @include breakpoint(sm) {
-                justify-content: flex-end;
-            }
-            &-button {
-                align-content: center;
-                text-align: center;
-                margin-top: 15px;
-                margin-bottom: 15px;
-                padding: 5px 15px;
-                border: 2px solid white;
-                font-weight: 700;
-                background-color: $darkGray;
-                border-radius: 2px;
-                transition: 0.2s ease;
-                cursor: pointer;
-                width: 150px;
-                font-weight: 400;
-                @include breakpoint(sm) {
-                    padding: 10px 20px;
-                }
-                &:hover {
-                    transition: 0.2s ease;
-                    background-color: white;
-                    color: black;
-                }
-            }
-        }
+      }
     }
+    &-venue {
+      flex-basis: 100%;
+      text-align: left;
+      @include breakpoint(sm) {
+        align-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: 1.2em;
+      }
+      &-city {
+        max-width: 100%;
+        @include breakpoint(sm) {
+          align-content: center;
+        }
+      }
+      &-name {
+        font-weight: 400;
+      }
+    }
+    &-tickets {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: flex-start;
+      a {
+        color: white;
+        &:visited {
+          color: white;
+        }
+      }
+      @include breakpoint(sm) {
+        justify-content: flex-end;
+      }
+      &-button {
+        align-content: center;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 5px 15px;
+        border: 2px solid white;
+        font-weight: 700;
+        background-color: $darkGray;
+        border-radius: 2px;
+        transition: 0.2s ease;
+        cursor: pointer;
+        width: 150px;
+        font-weight: 400;
+        @include breakpoint(sm) {
+          padding: 10px 20px;
+        }
+        &:hover {
+          transition: 0.2s ease;
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
 }
 
 .tours-dates.hidden10 {
-    display: none;
+  display: none;
 }
 
 .tours-dates.hidden20 {
-    display: none;
+  display: none;
 }

@@ -1,188 +1,188 @@
 @import '../../styles/variables.scss';
 .footer {
-    color: white;
-    font-size: 20px;
-    height: 260px;
-    font-weight: 800; // makes the footer show up on ipads 
-    @media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation:portrait) and (min-device-height: 1024px) and (max-device-height: 1024px) {
-        margin-bottom: 230px;
-    }
-    @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation:portrait) and (min-device-height: 1366px) and (max-device-height: 1366px) {
-        margin-bottom: 560px;
-    }
-    margin-bottom: 0px;
+  color: white;
+  font-size: 20px;
+  height: 260px;
+  font-weight: 800; // makes the footer show up on ipads
+  @media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: portrait) and (min-device-height: 1024px) and (max-device-height: 1024px) {
+    margin-bottom: 230px;
+  }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (min-device-height: 1366px) and (max-device-height: 1366px) {
+    margin-bottom: 560px;
+  }
+  margin-bottom: 0px;
+  @include breakpoint(sm) {
+    height: 200px;
+  }
+  &-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
     @include breakpoint(sm) {
-        height: 200px;
+      flex-wrap: nowrap;
     }
-    &-top {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10px;
-        @include breakpoint(sm) {
-            flex-wrap: nowrap;
+    &-logo {
+      flex-basis: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0px;
+      @include breakpoint(sm) {
+        width: 35%;
+        flex-basis: 35%;
+      }
+      @media screen and (min-width: 950px) {
+        width: 380px;
+        flex-basis: 24.5%;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 520px;
+        flex-basis: 30.5%;
+      }
+      img {
+        height: 32px;
+        @media screen and (min-width: 400px) {
+          height: 42px;
         }
-        &-logo {
-            flex-basis: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 15px 0px;
-            @include breakpoint(sm) {
-                width: 35%;
-                flex-basis: 35%;
-            }
-            @media screen and (min-width: 950px) {
-                width: 380px;
-                flex-basis: 24.5%;
-            }
-            @media screen and (min-width: 1200px) {
-                width: 520px;
-                flex-basis: 30.5%;
-            }
-            img {
-                height: 32px;
-                @media screen and (min-width: 400px) {
-                    height: 42px;
-                }
-                @media screen and (min-width: 520px) {
-                    height: 48px;
-                }
-                @media screen and (min-width: 600px) {
-                    height: 55px;
-                }
-                @media screen and (min-width: 700px) {
-                    height: 60px;
-                }
-                @include breakpoint(sm) {
-                    height: 41px;
-                }
-                @media screen and (min-width: 850px) {
-                    height: 48px;
-                }
-                @media screen and (min-width: 950px) {
-                    height: 50px;
-                }
-                @media screen and (min-width: 1200px) {
-                    height: 72px;
-                }
-            }
+        @media screen and (min-width: 520px) {
+          height: 48px;
         }
-        &-icons {
-            display: inline-block;
-            div {
-                display: inline-block;
-                cursor: pointer;
-                span {
-                    transition: 0.3s ease;
-                    font-size: 0.5em;
-                    display: none;
-                    opacity: 0;
-                    text-align: center;
-                    @include breakpoint(sm) {
-                        display: block;
-                    }
-                }
-            }
-            i {
-                padding: 7px 17px;
-                font-size: 1.2em;
-                color: white;
-                transition: ease 0.2s;
-                opacity: 0.8;
-                @media screen and (min-width: 400px) {
-                    font-size: 1.4em;
-                }
-                @media screen and (min-width: 400px) {
-                    font-size: 1.4em;
-                }
-                @media screen and (min-width: 520px) {
-                    font-size: 1.6em;
-                }
-                @include breakpoint(sm) {
-                    font-size: 1.22em;
-                }
-                @media screen and (min-width: 850px) {
-                    font-size: 1.4em;
-                }
-                @media screen and (min-width: 950px) {
-                    font-size: 1.6em;
-                }
-                &:hover {
-                    transform: scale(1.2);
-                    opacity: 1;
-                }
-                &:hover+span {
-                    transition: 0.3s ease;
-                    opacity: 1;
-                }
-            }
+        @media screen and (min-width: 600px) {
+          height: 55px;
         }
-    }
-    &-middle {
-        margin-top: 20px;
-        text-align: center;
-        font-size: 0.45em;
-        @media screen and (min-width: 330px) {
-            font-size: 0.5em;
-        }
-        @media screen and (min-width: 410px) {
-            font-size: 0.6em;
-        }
-        @media screen and (min-width: 500px) {
-            font-size: 0.7em;
-        }
-        @media screen and (min-width: 680px) {
-            font-size: 0.8em;
+        @media screen and (min-width: 700px) {
+          height: 60px;
         }
         @include breakpoint(sm) {
-            font-size: 1em;
+          height: 41px;
         }
-        a {
-            color: white;
-            padding: 10px;
-            border-bottom: 1px solid $darkGray;
-            transition: ease 0.2s;
-            &:visited {
-                color: white
-            }
-            &:hover {
-                transition: ease 0.2s;
-                border-bottom: 1px solid $orange;
-            }
+        @media screen and (min-width: 850px) {
+          height: 48px;
         }
+        @media screen and (min-width: 950px) {
+          height: 50px;
+        }
+        @media screen and (min-width: 1200px) {
+          height: 72px;
+        }
+      }
     }
-    &-bottom {
-        font-size: 0.6em;
-        text-align: center;
-        margin-top: 20px;
-        a {
-            color: gray;
-            &:visited {
-                color: grey !important;
-            }
+    &-icons {
+      display: inline-block;
+      div {
+        display: inline-block;
+        cursor: pointer;
+        span {
+          transition: 0.3s ease;
+          font-size: 0.5em;
+          display: none;
+          opacity: 0;
+          text-align: center;
+          @include breakpoint(sm) {
+            display: block;
+          }
         }
+      }
+      i {
+        padding: 7px 17px;
+        font-size: 1.2em;
+        color: white;
+        transition: ease 0.2s;
+        opacity: 0.8;
+        @media screen and (min-width: 400px) {
+          font-size: 1.4em;
+        }
+        @media screen and (min-width: 400px) {
+          font-size: 1.4em;
+        }
+        @media screen and (min-width: 520px) {
+          font-size: 1.6em;
+        }
+        @include breakpoint(sm) {
+          font-size: 1.22em;
+        }
+        @media screen and (min-width: 850px) {
+          font-size: 1.4em;
+        }
+        @media screen and (min-width: 950px) {
+          font-size: 1.6em;
+        }
+        &:hover {
+          transform: scale(1.2);
+          opacity: 1;
+        }
+        &:hover + span {
+          transition: 0.3s ease;
+          opacity: 1;
+        }
+      }
     }
+  }
+  &-middle {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.45em;
+    @media screen and (min-width: 330px) {
+      font-size: 0.5em;
+    }
+    @media screen and (min-width: 410px) {
+      font-size: 0.6em;
+    }
+    @media screen and (min-width: 500px) {
+      font-size: 0.7em;
+    }
+    @media screen and (min-width: 680px) {
+      font-size: 0.8em;
+    }
+    @include breakpoint(sm) {
+      font-size: 1em;
+    }
+    a {
+      color: white;
+      padding: 10px;
+      border-bottom: 1px solid $darkGray;
+      transition: ease 0.2s;
+      &:visited {
+        color: white;
+      }
+      &:hover {
+        transition: ease 0.2s;
+        border-bottom: 1px solid $orange;
+      }
+    }
+  }
+  &-bottom {
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: 20px;
+    a {
+      color: gray;
+      &:visited {
+        color: grey !important;
+      }
+    }
+  }
 }
 
 //moves footer down enough to hide it when the initial image shows
 .moved-footer {
-    animation-name: moveFooter;
-    animation-duration: 0.5s;
+  animation-name: moveFooter;
+  animation-duration: 0.5s;
 }
 
 @keyframes moveFooter {
-    0% {
-        opacity: 0;
-        margin-top: 1200px;
-    }
-    30% {
-        opacity: 0;
-        margin-top: 1200px;
-    }
-    100% {
-        opacity: 0.2;
-        margin-top: 0px;
-    }
+  0% {
+    opacity: 0;
+    margin-top: 1200px;
+  }
+  30% {
+    opacity: 0;
+    margin-top: 1200px;
+  }
+  100% {
+    opacity: 0.2;
+    margin-top: 0px;
+  }
 }
