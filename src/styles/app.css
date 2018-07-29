@@ -1,5 +1,5 @@
 *:focus {
-  outline: 1px solid #FFA949; }
+  outline: 1px solid rgba(250, 250, 250, 0.5); }
 
 .button {
   cursor: pointer;
@@ -357,7 +357,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
+  outline: 1px solid rgba(199, 199, 199, 0.5); }
 
 /**
  * Correct the padding in Firefox.

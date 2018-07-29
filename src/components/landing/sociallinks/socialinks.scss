@@ -14,7 +14,7 @@
       font-size: 2em;
       opacity: 0.8;
       &:focus {
-        outline: 1px solid $orange;
+        outline: 1px solid rgba(#c7c7c7, 0.5);
       }
       &:hover {
         transition: 0.2s ease;

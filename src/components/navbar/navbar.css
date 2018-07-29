@@ -65,7 +65,7 @@
         transform: rotate(-135deg);
         top: 24px; }
     .navbar-burger:focus {
-      outline: none; }
+      outline: 1px solid rgba(199, 199, 199, 0.5); }
   .navbar-menu {
     transform: translateY(70px);
     justify-self: flex-end;
