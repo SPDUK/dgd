@@ -179,7 +179,7 @@ class Footer extends Component {
           </Link>
         </div>
         <div className="footer-bottom">
-          <a href="http://spdevuk.com">
+          <a href="https://spdevuk.com">
             <p>WEBSITE CREATED BY SPDUK</p>
           </a>
         </div>
