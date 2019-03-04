@@ -290,13 +290,13 @@ class Albums extends Component {
           <div className="grid-item grid-item--width2">
             <LazyLoad height={300} offset={100} once>
               <img
-                id="mothership"
+                id="dancedGavinDance"
                 onClick={renderAlbumClick}
-                src={mothership}
+                src={dancedgavindance}
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"
-                alt="Mothership Album Art"
+                alt="Dance Gavin Dance Album Art"
               />
             </LazyLoad>
           </div>
@@ -316,13 +316,13 @@ class Albums extends Component {
           <div className="grid-item">
             <LazyLoad height={300} offset={100} once>
               <img
-                id="dancedGavinDance"
+                id="mothership"
                 onClick={renderAlbumClick}
-                src={dancedgavindance}
+                src={mothership}
                 onKeyPress={renderAlbumClick}
                 tabIndex="0"
                 role="button"
-                alt="Dance Gavin Dance Album Art"
+                alt="Mothership Album Art"
               />
             </LazyLoad>
           </div>
