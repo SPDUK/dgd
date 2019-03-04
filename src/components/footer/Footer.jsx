@@ -113,11 +113,9 @@ class Footer extends Component {
           </div>
           <div className="footer-top-logo">
             <a href="https://spduk.github.io/dgd/#/">
-              <img
-                src="https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694763/DGD/dgdwhite.png"
-                alt=""
-                onClick={this.scrollTop}
-              />
+              <span onClick={this.scrollTop} className="dgdfooter dgdfont">
+                Dance Gavin Dance
+              </span>
             </a>
           </div>
           <div className="footer-top-icons">

@@ -162,3 +162,21 @@
   100% {
     opacity: 0.2;
     margin-top: 0px; } }
+
+.dgdfooter {
+  color: white;
+  letter-spacing: 4px;
+  font-size: 3rem;
+  font-weight: normal; }
+  @media screen and (min-width: 763px) {
+    .dgdfooter {
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 1150px) {
+    .dgdfooter {
+      font-size: 2rem; } }
+  @media screen and (min-width: 1280px) {
+    .dgdfooter {
+      font-size: 2.5rem; } }
+  @media screen and (min-width: 1580px) {
+    .dgdfooter {
+      font-size: 3rem; } }

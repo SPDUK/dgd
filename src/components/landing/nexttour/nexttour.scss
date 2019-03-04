@@ -61,6 +61,7 @@
     text-align: left;
     position: relative;
     z-index: 2;
+    color: rgb(243, 243, 243);
     @include absolutecenter(x);
     transform: translate(-120px, 0px);
     @media screen and (min-width: 400px) {

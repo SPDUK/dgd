@@ -8,7 +8,7 @@ import './albums.css';
 import ClickedAlbum from './clickedalbum/Clickedalbum';
 
 const artificialSelection =
-  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694737/DGD/artificial-selection.jpg';
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694737/DGD/dgdwall.jpg';
 const mothership =
   'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694738/DGD/mothership.jpg';
 const treecitySessions =
@@ -22,9 +22,9 @@ const downtownBattleMountainII =
 const happiness =
   'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/DGD/happiness.jpg';
 const dancedgavindance =
-  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/DGD/dancedgavindance.jpg';
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/DGD/dancegavindance.jpg';
 const downtownBattleMountain =
-  'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/DGD/downtown-battle-mtn.jpg';
+  'https://res.cloudinary.com/dmjolhdaq/image/upload/c_scale,w_720/v1551726832/DGD/downtown-battle-mtn.jpg';
 const whateverISayIsRoyalOcean =
   'https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694748/DGD/whatever-i-say-is-royal-ocean.jpg';
 

@@ -26,12 +26,6 @@ class Landing extends Component {
       <div className="landing">
         <Navbar />
         <div className="landing-background" />
-        <div className="landing-title">
-          <img
-            alt="Dance Gavin Dance Logo"
-            src="https://res.cloudinary.com/dmjolhdaq/image/upload/q_auto/a_0/v1524694781/DGD/dgdtitle.png"
-          />
-        </div>
         <div className="landing-info">
           <h2 className="landing-info-album">ARTIFICIAL SELECTION</h2>
           <h2 className="landing-info-date">JUNE 8TH 2018</h2>

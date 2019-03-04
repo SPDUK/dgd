@@ -53,6 +53,7 @@
     text-align: left;
     position: relative;
     z-index: 2;
+    color: #f3f3f3;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);

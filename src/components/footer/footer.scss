@@ -186,3 +186,22 @@
     margin-top: 0px;
   }
 }
+
+.dgdfooter {
+  color: white;
+  letter-spacing: 4px;
+  font-size: 3rem;
+  font-weight: normal;
+  @media screen and (min-width: 763px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (min-width: 1150px) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 2.5rem;
+  }
+  @media screen and (min-width: 1580px) {
+    font-size: 3rem;
+  }
+}

@@ -27,6 +27,9 @@
     width: 70px;
     height: 70px;
     padding-left: 15px;
+    color: black;
+    font-size: 3em;
+    font-weight: normal;
     @include breakpoint(sm) {
       display: none;
     }

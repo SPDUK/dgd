@@ -25,7 +25,10 @@
     left: 15px;
     width: 70px;
     height: 70px;
-    padding-left: 15px; }
+    padding-left: 15px;
+    color: black;
+    font-size: 3em;
+    font-weight: normal; }
     @media (min-width: 768px) {
       .navbar-icon {
         display: none; } }

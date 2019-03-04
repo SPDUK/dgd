@@ -19,12 +19,12 @@
   animation: fade-in;
   animation-duration: 0.9s;
   &-background {
-    background: url(https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694781/DGD/mobilepic.jpg)
+    background: url(https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694781/DGD/dgdwall.jpg)
       no-repeat center center;
     background-size: cover;
     height: 500px;
     @include breakpoint(sm) {
-      background: url(https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694782/DGD/comp.jpg)
+      background: url(https://res.cloudinary.com/dmjolhdaq/image/upload/v1524694782/DGD/dgdwall.jpg)
         no-repeat center center;
       background-size: cover;
       height: 620px;

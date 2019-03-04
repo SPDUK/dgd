@@ -562,3 +562,12 @@ template {
 [hidden] {
   display: none;
 }
+
+@font-face {
+  font-family: Eccentric;
+  src: url('../fonts/Eccentric.otf') format('opentype');
+}
+
+.dgdfont {
+  font-family: Eccentric;
+}
